@@ -2,6 +2,8 @@
 // Usage:
 //   node build.js          build index.html
 //   node build.js --keys   print every photo key as JSON (pipe into tools/fetch_photos.py)
+//   node build.js --bundle also write dist/: the page plus one photo bundle per category
+//                          (for hosts that limit the number of files, like Claude artifacts)
 const fs = require("fs");
 const path = require("path");
 
@@ -78,5 +80,23 @@ const marker = "/*__DATA__*/[]";
 if (!tpl.includes(marker)) throw new Error("template is missing the data marker");
 const json = JSON.stringify({ cats: outCats, photos }).replace(/</g, "\\u003c");
 fs.writeFileSync(path.join(__dirname, "index.html"), tpl.replace(marker, json));
+
+if (process.argv.includes("--bundle")) {
+  const dist = path.join(__dirname, "dist");
+  fs.rmSync(dist, { recursive: true, force: true });
+  fs.mkdirSync(path.join(dist, "photos"), { recursive: true });
+  const bjson = JSON.stringify({ cats: outCats, photos, bundle: true }).replace(/</g, "\\u003c");
+  fs.writeFileSync(path.join(dist, "index.html"), tpl.replace(marker, bjson));
+  for (const c of outCats) {
+    const map = {};
+    for (const q of c.q) if (q[4] >= 0) {
+      const f = photos[q[4]][0];
+      map[f] = "data:image/webp;base64," + fs.readFileSync(path.join(__dirname, f)).toString("base64");
+    }
+    fs.writeFileSync(path.join(dist, "photos", c.id + ".js"),
+      `window.__PH=window.__PH||{};window.__PH[${JSON.stringify(c.id)}]=${JSON.stringify(map)};`);
+  }
+  console.log(`Built dist/: index.html + ${outCats.length} photo bundles`);
+}
 console.log(`Built index.html: ${cats.length} categories, ${total} questions, ${withPhoto} with photos (${photos.length} unique)`);
 if (missing.length) console.log(`No photo for ${missing.length}:\n  ` + missing.join("\n  "));

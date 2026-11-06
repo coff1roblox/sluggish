@@ -407,9 +407,31 @@ function startGame() {
   view = "board"; ui.intro = true; ui.confetti = false;
   unlockAudio(); sfx.open(); save(); render(); preloadBoard();
 }
+/* Photos: plain files next to the page, or (published build) one script bundle per category. */
+const BUNDLE = !!BANK.bundle;
+const PH = window.__PH = window.__PH || {};
+const bundleLoading = {};
+function loadBundles(ids) {
+  if (!BUNDLE) return;
+  ids.forEach(id => {
+    if (PH[id] || bundleLoading[id]) return;
+    bundleLoading[id] = true;
+    const s = document.createElement("script");
+    s.src = "photos/" + id + ".js";
+    s.onload = () => { if (view === "question") render(); };
+    s.onerror = () => { bundleLoading[id] = false; };
+    document.head.appendChild(s);
+  });
+}
+function photoSrc(p, catId) {
+  const f = PHOTOS[p][0];
+  if (!BUNDLE) return f;
+  return (PH[catId] && PH[catId][f]) || "";
+}
 const preloaded = [];
 function preloadBoard() {
   if (!G || !G.board) return;
+  if (BUNDLE) { loadBundles(G.board.map(b => b.id)); return; }
   for (const b of G.board) for (const t of b.tiles) {
     const q = QS[t.q];
     if (q && q.p >= 0) { const im = new Image(); im.decoding = "async"; im.src = PHOTOS[q.p][0]; preloaded.push(im); }
@@ -684,7 +706,9 @@ function vQuestion() {
   else who = `دور ${esc(chooser)}${c.paused ? " (الوقت متوقف)" : ""}`;
   const showPic = q.p >= 0 && (q.m === "q" || c.stage === "reveal");
   const ph = showPic ? PHOTOS[q.p] : null;
-  const pic = ph ? `<figure class="q-pic"><img src="${esc(ph[0])}" alt=""><figcaption>Photo: ${esc(ph[1])} · ${esc(ph[2])}${ph[3] ? ` · <a href="${esc(ph[3])}" target="_blank" rel="noopener">source</a>` : ""}</figcaption></figure>` : "";
+  const src = ph ? photoSrc(q.p, b.id) : "";
+  if (ph && !src) loadBundles([b.id]);
+  const pic = ph && src ? `<figure class="q-pic"><img src="${src.startsWith("data:") ? src : esc(src)}" alt=""><figcaption>Photo: ${esc(ph[1])} · ${esc(ph[2])}${ph[3] ? ` · <a href="${esc(ph[3])}" target="_blank" rel="noopener">source</a>` : ""}</figcaption></figure>` : "";
   const canLife = c.stage === "ask";
   const canSwap = canLife && L.swap && replacement(c.ci, c.ti);
   let act;
@@ -862,6 +886,7 @@ function start(data) {
     view = "home";
   }
   render();
+  preloadBoard();
   if (view === "question") startTimer();
 }
 const hot = window.claude && window.claude.hot;
