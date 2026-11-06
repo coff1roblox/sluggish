@@ -1,5 +1,7 @@
-// Builds index.html from src/template.html + src/data/*.js and validates the question bank.
-// Usage: node build.js
+// Builds index.html from src/template.html + src/data/*.js + src/photos.json, and validates the question bank.
+// Usage:
+//   node build.js          build index.html
+//   node build.js --keys   print every photo key as JSON (pipe into tools/fetch_photos.py)
 const fs = require("fs");
 const path = require("path");
 
@@ -8,27 +10,37 @@ const files = fs.readdirSync(dataDir).filter(f => f.endsWith(".js")).sort();
 let cats = [];
 for (const f of files) cats = cats.concat(require(path.join(dataDir, f)));
 
+if (process.argv.includes("--keys")) {
+  const keys = new Set();
+  for (const c of cats) for (const row of c.q) if (row[3]) keys.add(row[3]);
+  process.stdout.write(JSON.stringify([...keys]));
+  process.exit(0);
+}
+
 const errors = [];
 const ids = new Set();
-const seenText = new Map();
+const seen = new Map();
 let total = 0;
 
 for (const c of cats) {
   for (const k of ["id", "name", "icon", "group"]) if (!c[k]) errors.push(`category ${c.id || "?"}: missing ${k}`);
+  if (c.pic && !["q", "a"].includes(c.pic)) errors.push(`${c.id}: pic must be "q" or "a"`);
   if (ids.has(c.id)) errors.push(`duplicate category id: ${c.id}`);
   ids.add(c.id);
   const count = { 1: 0, 2: 0, 3: 0 };
   (c.q || []).forEach((row, i) => {
-    const [d, text, answer] = row;
-    if (![1, 2, 3].includes(d)) errors.push(`${c.id}[${i}]: bad difficulty ${d}`);
+    const [d, text, answer, photo, show] = row;
+    if (![1, 2, 3].includes(d)) errors.push(`${c.id}[${i}]: bad level ${d}`);
     if (!text || !answer) errors.push(`${c.id}[${i}]: empty question or answer`);
+    if (show !== undefined && !["q", "a"].includes(show)) errors.push(`${c.id}[${i}]: show must be "q" or "a"`);
     count[d]++;
     total++;
-    const key = String(text).trim();
-    if (seenText.has(key)) errors.push(`duplicate question in ${c.id} and ${seenText.get(key)}: ${key}`);
-    seenText.set(key, c.id);
+    // Picture rounds reuse the same wording, so a question is its text plus its photo.
+    const key = String(text).trim() + "|" + (photo || "");
+    if (seen.has(key)) errors.push(`duplicate question in ${c.id} and ${seen.get(key)}: ${text}`);
+    seen.set(key, c.id);
   });
-  // A board needs 2 questions per level; a 3rd lets the swap lifeline work.
+  // A board needs 2 questions per level; a 3rd lets the swap helper work.
   for (const d of [1, 2, 3]) if (count[d] < 3) errors.push(`${c.id}: only ${count[d]} questions at level ${d} (need 3+)`);
 }
 
@@ -37,9 +49,30 @@ if (errors.length) {
   process.exit(1);
 }
 
+// Attach photos. Each question becomes [level, text, answer, show, photoIndex or -1].
+const photoIndex = fs.existsSync(path.join(__dirname, "src", "photos.json"))
+  ? JSON.parse(fs.readFileSync(path.join(__dirname, "src", "photos.json"), "utf8")) : {};
+const photos = [], photoPos = new Map();
+let withPhoto = 0;
+const missing = [];
+const outCats = cats.map(c => ({
+  id: c.id, name: c.name, icon: c.icon, group: c.group,
+  q: c.q.map(([d, t, a, key, show]) => {
+    let p = -1;
+    const info = key && photoIndex[key];
+    if (info && fs.existsSync(path.join(__dirname, info.f))) {
+      if (!photoPos.has(info.f)) { photoPos.set(info.f, photos.length); photos.push([info.f, info.by, info.lic, info.src]); }
+      p = photoPos.get(info.f);
+      withPhoto++;
+    } else missing.push(`${c.id}: ${key || "(no key)"}`);
+    return [d, t, a, show || c.pic || "a", p];
+  })
+}));
+
 const tpl = fs.readFileSync(path.join(__dirname, "src", "template.html"), "utf8");
 const marker = "/*__DATA__*/[]";
 if (!tpl.includes(marker)) throw new Error("template is missing the data marker");
-const json = JSON.stringify(cats).replace(/</g, "\\u003c");
+const json = JSON.stringify({ cats: outCats, photos }).replace(/</g, "\\u003c");
 fs.writeFileSync(path.join(__dirname, "index.html"), tpl.replace(marker, json));
-console.log(`Built index.html: ${cats.length} categories, ${total} questions`);
+console.log(`Built index.html: ${cats.length} categories, ${total} questions, ${withPhoto} with photos (${photos.length} unique)`);
+if (missing.length) console.log(`No photo for ${missing.length}:\n  ` + missing.join("\n  "));
