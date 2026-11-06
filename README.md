@@ -1,65 +1,65 @@
-# Sluggish
+# Kite
 
-An AI website builder that runs in your browser. Describe a website (or paste a screenshot of one you like), watch it get built live, then keep chatting to change anything. When you're happy, download it as a single HTML file.
+Free AI chat and coding, right in your browser.
 
-It runs on **free** AI models. The default is Google Gemini's free tier.
+- **Kite Chat**: chat with the best free AI models. Markdown, code highlighting, live "thinking", image input, conversation history, edit and retry.
+- **Kite Code**: describe a website, web app or game and watch it get built live. Keep chatting to change anything, step through versions, preview on desktop, tablet and phone, then download it as one HTML file.
+
+Kite runs on **free** models. You connect a free provider once and pick models from the menu next to the send button.
 
 ## Start in 2 minutes
 
-1. **Get a free Gemini API key:** go to [aistudio.google.com/apikey](https://aistudio.google.com/apikey), sign in with Google and click **Create API key**. No credit card.
-2. **Open the app** (see below). Settings opens by itself the first time.
-3. Paste the key, click **Check key & load models**, then **Save**.
-4. Type what you want, for example: *"a landing page for a padel club with court booking and pricing"*.
+1. Open the app (see below). A welcome screen shows up.
+2. Click **Open Google AI Studio**, sign in, click **Create API key**, copy it. No credit card.
+3. Paste it into Kite and click **Connect and start**.
 
 ### Ways to open it
 
 - **Local server (most reliable):** run `python3 -m http.server 8000` in this folder, then open http://localhost:8000
-- **Double-click `index.html`:** usually works. If requests fail, use the local server instead.
-- **Free hosting on GitHub Pages:** repo **Settings > Pages > Deploy from a branch > `main` / root**. You get a public link. Everyone who uses it pastes their own key.
+- **Free hosting on GitHub Pages:** repo **Settings > Pages > Deploy from a branch**, pick the branch and `/ (root)`. You get a public link. Everyone who uses it brings their own free key.
 
-## What it does
+## Models
 
-- Live preview that fills in while the AI is still writing
-- Desktop, tablet and phone preview sizes
-- Screenshot to website: attach, paste or drag in an image
-- Edit by chatting, with full version history (undo and redo)
-- Edit the code by hand and the preview updates as you type
-- Download, copy or open the site in a new tab
-- One-click quick edits: "make it more premium", "perfect on mobile", etc.
-- Also builds small web apps and games
-- Works on phones
-- Your chats and versions are saved in your browser
-
-## Free AI providers
-
-| Provider | Cost | Notes |
+| Provider | Cost | What you get |
 | --- | --- | --- |
-| Google Gemini | Free tier | Default and the strongest free option. Flash models are free, have a big output limit and understand images. Pro models may need billing. |
-| OpenRouter | Free models | Lots of open models. Only `:free` models are listed. Small daily request limit. |
-| Groq | Free tier | Very fast open models. Per-minute limits. |
-| Local (Ollama, LM Studio) | Free and private | Runs on your own computer. For Ollama: `OLLAMA_ORIGINS="*" OLLAMA_CONTEXT_LENGTH=32768 ollama serve` |
+| Google Gemini | Free key | Default and strongest. Pro, Flash and Flash-Lite tiers show up automatically. Pro may need billing on some accounts. |
+| OpenRouter | Free key | Dozens of free open models (DeepSeek, Qwen, Llama and more). Only free ones are listed. |
+| Groq | Free key | Very fast open models. |
+| Local | Free, private | Ollama or LM Studio on your own computer. Start Ollama with `OLLAMA_ORIGINS="*" OLLAMA_CONTEXT_LENGTH=32768 ollama serve` |
 
-Free tiers change all the time. If a model stops working, open Settings and click **Check key & load models**. If Google retires the saved Gemini model, Sluggish switches to the best available Flash model by itself.
+Connect any of them in **Settings > Models**. Kite reads each provider's live model list, so new models show up without an update. If Google retires a model you're using, Kite switches to the closest current one by itself.
 
-**Privacy:** on Google's free tier, Google may use what you send to improve its products. Don't paste anything private.
+**Privacy:** keys, chats and projects live only in your browser. On Google's free tier, Google may use what you send to improve its products, so don't paste anything private.
 
-## The prompt
+## Rename it
 
-The instructions that make the AI build good-looking, working websites are in [`prompt.js`](prompt.js). Edit that file to change the design rules, the default tech (Tailwind CSS), or the tone of the replies. Keep the "How to reply" section, because the app reads that format.
+Change `name` in [`js/config.js`](js/config.js). Every screen, prompt and title uses it.
+
+## Prompts
+
+[`js/prompts.js`](js/prompts.js) holds the instructions for Chat and for Code. The Code prompt is what makes the sites look designed instead of generic. Keep its "How to reply" section, because the app reads that format.
 
 ## Files
 
-| File | What it is |
+| Path | What it is |
 | --- | --- |
-| `index.html` | The page layout |
-| `styles.css` | The app's look |
-| `app.js` | Everything else: chat, AI providers, streaming, preview, versions, settings |
-| `prompt.js` | The website-building prompt |
+| `index.html` | Page skeleton |
+| `css/app.css` | The whole design system, light and dark |
+| `js/config.js` | App name and providers |
+| `js/prompts.js` | System prompts |
+| `js/ai.js` | Providers, model catalog, streaming, retries |
+| `js/store.js` | Saving chats, projects and settings |
+| `js/ui.js` | Icons, markdown, composer, model picker, dialogs |
+| `js/chat.js` | Kite Chat |
+| `js/code.js` | Kite Code |
+| `js/app.js` | Sidebar, routing, settings, onboarding |
+| `vendor/`, `fonts/` | Bundled libraries and fonts (see `vendor/LICENSES.md`) |
 
-No build step, no dependencies, no server code.
+No build step, no server, no dependencies to install.
 
 ## Honest limits
 
-- Your API key lives in your browser. That's fine for you and your friends. To sell this as a product, you'd need a small backend so users don't bring their own key, and then you pay for the AI usage.
-- Free models are good but not as strong as the best paid ones on big, complex sites.
-- Generated sites are single static HTML files: no real database, logins or payments without adding a service.
+- Everything runs in the browser with your own key. That's great for you and friends. To sell it as a product you'd need a backend that holds one key and handles accounts, and then you pay for everyone's AI usage.
+- Browser storage is about 5 MB. Big Code projects with many versions fill it up; export or delete old stuff in **Settings > Data**.
+- Free models are good but not as strong as the best paid ones on hard problems.
+- Kite Code builds single-file sites. No real database, logins or payments without plugging in a service.
