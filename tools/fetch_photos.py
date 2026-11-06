@@ -34,7 +34,7 @@ def get(url, params=None, binary=False, tries=6):
         except urllib.error.HTTPError as e:
             if e.code in (429, 500, 502, 503, 504) and attempt < tries - 1:
                 wait = e.headers.get("Retry-After")
-                time.sleep(int(wait) if wait and wait.isdigit() else 5 * 2 ** attempt)
+                time.sleep(min(int(wait), 30) if wait and wait.isdigit() else 5 * 2 ** attempt)
                 continue
             raise
         except (urllib.error.URLError, TimeoutError):

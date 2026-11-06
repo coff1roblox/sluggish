@@ -200,8 +200,8 @@ button.life:not(:disabled):hover{border-color:var(--tc)}
 .q-body.enter{animation:pop .3s ease}
 .q-body.has-pic{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center;gap:1.6rem}
 .q-txt{display:flex;flex-direction:column;gap:1.1rem;min-width:0}
-.q-pic{margin:0;display:flex;flex-direction:column;gap:.35rem;min-width:0;min-height:0;animation:pop .35s ease}
-.q-pic img{display:block;width:100%;height:auto;max-height:min(56vh,34rem);object-fit:contain;border-radius:1rem;background:var(--panel-2)}
+.q-pic{margin:0;display:flex;flex-direction:column;gap:.35rem;min-width:0;animation:pop .35s ease}
+.q-pic img{display:block;width:auto;max-width:100%;height:auto;max-height:min(56vh,34rem);margin-inline:auto;border-radius:1rem;background:#f6efe2}
 .q-pic figcaption{direction:ltr;text-align:left;font-size:.66rem;color:var(--muted);line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .q-pic figcaption a{color:inherit}
 .pic-q .q-pic img{max-height:min(60vh,38rem)}
@@ -237,7 +237,10 @@ button.life:not(:disabled):hover{border-color:var(--tc)}
   .q-lifes{flex-direction:row;width:auto;flex-wrap:wrap;align-items:center;justify-content:center}
   .q-lifes h3{display:none}
   .q-body{padding:1.1rem 1.2rem}
-  .q-body.has-pic{grid-template-columns:minmax(0,1fr);gap:.9rem;align-content:start}
+  .q-body.has-pic{display:flex;flex-direction:column;justify-content:flex-start;gap:.9rem}
+  .q-body.has-pic > *{flex:none}
+  .q-body.has-pic > .q-txt{align-self:stretch}
+  .q-body.revealed .q-pic img{max-height:22vh}
   .q-body.pic-q .q-pic{order:-1}
   .q-pic img{max-height:30vh}
   .pic-q .q-pic img{max-height:36vh}
@@ -699,7 +702,7 @@ function vQuestion() {
   }
   return `<div class="qv ${T(tone)}">
     <header class="q-head"><span class="q-cat"><span>${cat.icon}</span>${esc(cat.name)}</span><span class="q-val num">${v}</span>${c.bet !== null ? `<span class="bet-badge ${T(c.bet)}">دبّلها ×2</span>` : ""}<span class="spacer"></span><button class="icon-btn" data-act="menu" aria-label="القائمة">${ICON.menu}</button></header>
-    <section class="q-body ${ui.enter ? "enter" : ""} ${pic ? "has-pic" : ""} ${q.m === "q" ? "pic-q" : ""}"><div class="q-txt"><p class="q-who">${who}</p><p class="q-text">${esc(q.t)}</p>${c.stage === "reveal" ? `<div class="q-ans"><small>الإجابة</small><strong>${esc(q.a)}</strong></div>` : ""}</div>${pic}</section>
+    <section class="q-body ${ui.enter ? "enter" : ""} ${pic ? "has-pic" : ""} ${q.m === "q" ? "pic-q" : ""} ${c.stage === "reveal" ? "revealed" : ""}"><div class="q-txt"><p class="q-who">${who}</p><p class="q-text">${esc(q.t)}</p>${c.stage === "reveal" ? `<div class="q-ans"><small>الإجابة</small><strong>${esc(q.a)}</strong></div>` : ""}</div>${pic}</section>
     <aside class="q-side">${ring(c)}<div class="q-lifes ${T(c.chooser)}"><h3>مساعدات ${esc(chooser)}</h3>
       <button class="life ${L.time ? "" : "spent"}" data-act="time" ${canLife && L.time && c.total ? "" : "disabled"}>${ICON.time}<span>وقت زيادة +30</span></button>
       <button class="life ${L.swap ? "" : "spent"}" data-act="swap" ${canSwap ? "" : "disabled"}>${ICON.swap}<span>بدّل السؤال</span></button>
@@ -754,6 +757,8 @@ function render() {
   const toast = ui.toast && view === "board" ? `<div class="toast" aria-live="polite">${ui.toast.map(([i, txt, neg]) => `<span class="${T(i)} ${neg ? "neg" : ""}"><bdi>${esc(G.teams[i].name)}</bdi> <span class="num">${txt}</span></span>`).join("")}</div>` : "";
   app.innerHTML = band + `<div class="scr">${(views[view] || vHome)()}</div>` + band + (ui.modal ? modalHTML() : "") + toast;
   ui.intro = false; ui.enter = false;
+  const ans = view === "question" && document.querySelector(".q-ans");
+  if (ans && ans.scrollIntoView) ans.scrollIntoView({block: "nearest"});
   if (view === "end" && !ui.confetti) { ui.confetti = true; requestAnimationFrame(confetti); }
 }
 function confetti() {

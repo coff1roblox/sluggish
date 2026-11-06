@@ -61,7 +61,11 @@ const outCats = cats.map(c => ({
     let p = -1;
     const info = key && photoIndex[key];
     if (info && fs.existsSync(path.join(__dirname, info.f))) {
-      if (!photoPos.has(info.f)) { photoPos.set(info.f, photos.length); photos.push([info.f, info.by, info.lic, info.src]); }
+      if (!photoPos.has(info.f)) {
+        // Some Commons files put links in the author field; show a plain name instead.
+        const by = /https?:|www\./i.test(info.by) || !info.by.trim() ? "Wikimedia Commons" : info.by;
+        photoPos.set(info.f, photos.length); photos.push([info.f, by, info.lic, info.src]);
+      }
       p = photoPos.get(info.f);
       withPhoto++;
     } else missing.push(`${c.id}: ${key || "(no key)"}`);
