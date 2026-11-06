@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+  <meta name="theme-color" content="#f8f7f4" />
+  <meta name="description" content="Kite: free AI chat and coding in your browser. Chat with top free models, or build websites, apps and games with a live preview." />
+  <title>Kite</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f7b8a'/%3E%3Cpath d='M16 5 24 13 16 27 8 13Z' fill='%23fff'/%3E%3Cpath d='M8 13h16M16 5v22' stroke='%230f7b8a' stroke-width='1.4'/%3E%3C/svg%3E" />
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/app.css" />
+  <script>
+    // Set the theme before first paint to avoid a flash.
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem('kite.settings') || '{}');
+        var t = s.theme === 'dark' || s.theme === 'light' ? s.theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+<div class="app" id="app" data-mode="chat" data-sidebar="open">
+  <aside class="sidebar" id="sidebar" aria-label="Sidebar">
+    <div class="sb-head">
+      <a class="brand" href="#/chat"><span class="brand-mark" data-logo></span><span class="brand-name" data-app-name>Kite</span></a>
+      <button class="icon-btn" id="sbCollapse" type="button" title="Close sidebar" aria-label="Toggle sidebar" data-icon="sidebar"></button>
+    </div>
+
+    <button class="sb-new" id="sbNew" type="button" data-icon="plus"><span>New chat</span></button>
+
+    <nav class="sb-nav" aria-label="Sections">
+      <a class="sb-link" data-mode="chat" href="#/chat" data-icon="chat"><span>Chat</span></a>
+      <a class="sb-link" data-mode="code" href="#/code" data-icon="code"><span>Code</span></a>
+    </nav>
+
+    <div class="sb-list" id="sbList"></div>
+
+    <div class="sb-foot">
+      <button class="sb-user" id="sbUser" type="button" aria-label="Settings">
+        <span class="avatar" id="sbAvatar">Y</span>
+        <span class="sb-user-text"><span class="sb-user-name" id="sbUserName">You</span><span class="sb-user-sub" id="sbUserSub"></span></span>
+        <span class="sb-user-gear" data-icon="settings"></span>
+      </button>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn tb-menu" id="tbMenu" type="button" aria-label="Open sidebar" data-icon="sidebar"></button>
+      <button class="tb-title" id="tbTitle" type="button" title="Rename" hidden></button>
+      <div class="grow"></div>
+      <button class="icon-btn" id="tbTheme" type="button" aria-label="Toggle theme"></button>
+      <button class="icon-btn tb-new" id="tbNew" type="button" aria-label="New" data-icon="plus"></button>
+    </header>
+    <div class="views">
+      <section class="view" id="chatView" aria-label="Chat"></section>
+      <section class="view" id="codeView" aria-label="Code" hidden></section>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/marked.umd.js"></script>
+<script src="vendor/purify.min.js"></script>
+<script src="vendor/highlight.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/prompts.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/store.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/code.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
