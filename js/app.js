@@ -383,6 +383,7 @@
     route();
 
     if (!S.ai.anyConnected() && !settings.onboarded) setTimeout(onboarding, 200);
+    else S.ai.refreshStale().then((changed) => { if (changed) { S.chat.refreshModel(); S.code.refreshModel(); } });
   }
 
   S.app = { openSettings, navigate, setHashSilently, setTitle, refreshSidebar: renderSidebar, mode: () => mode };

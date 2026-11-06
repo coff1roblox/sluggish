@@ -180,6 +180,8 @@
     const wasOpen = col.querySelector('details.thinking') && col.querySelector('details.thinking').open;
     col.textContent = '';
 
+    if (m.notice) col.appendChild(el('div', { class: 'ai-notice', html: `${icon('refresh')}<span>${esc(m.notice)}</span>` }));
+
     if (m.thoughts) {
       const label = m.pending && !m.text ? 'Thinking' : m.thinkSecs ? `Thought for ${m.thinkSecs}s` : 'Thought process';
       const det = el('details', { class: `thinking ${m.pending && !m.text ? 'live' : ''}` },
@@ -282,6 +284,20 @@
     try {
       await S.ai.stream({
         ref,
+        mode: 'chat',
+        onFallback: ({ from, to, kind, persist }) => {
+          const ni = S.ai.resolve(to);
+          asst.model = to;
+          asst.modelName = ni ? ni.name : '';
+          asst.notice = S.ai.fallbackNote(from, to, kind);
+          if (persist) {
+            current.model = to;
+            settings.chatModel = to;
+            store.saveSettings();
+            comp.refreshModel();
+          }
+          schedulePaint(asst);
+        },
         system: S.prompts.chat(settings, info ? { name: info.name, provider: info.providerName } : null),
         messages: buildHistory(asst),
         signal: ctrl.signal,

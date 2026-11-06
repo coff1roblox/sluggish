@@ -319,7 +319,7 @@
             'aria-checked': m.ref === currentRef ? 'true' : 'false',
             onclick: () => { closePopover(); onPick(m.ref); },
           },
-          el('span', { class: 'mp-text' }, el('span', { class: 'mp-name', text: m.name }), m.desc ? el('span', { class: 'mp-desc', text: m.desc }) : null),
+          el('span', { class: 'mp-text' }, el('span', { class: 'mp-name', text: m.name }), m.desc ? el('span', { class: `mp-desc ${m.health ? 'warn' : ''}`, text: m.desc }) : null),
           m.ref === currentRef ? el('span', { class: 'mp-check', html: icon('check') }) : null));
         }
         if (hidden.length) {

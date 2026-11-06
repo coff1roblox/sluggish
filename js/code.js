@@ -317,6 +317,7 @@
     if (!n) return;
     const col = n.querySelector('.ai-col');
     col.textContent = '';
+    if (m.notice) col.appendChild(el('div', { class: 'ai-notice', html: `${icon('refresh')}<span>${esc(m.notice)}</span>` }));
     const text = live ? live.message : m.text;
     if (text) {
       const md = el('div', { class: 'md compact' });
@@ -476,15 +477,24 @@
     let lastPreview = 0;
     let queued = false;
     const draw = () => { queued = false; if (project === current) { paint(asst, out); wsThread.scrollTop = wsThread.scrollHeight; } };
-    const kind = (S.PROVIDERS[S.ai.parseRef(ref).provider] || {}).kind;
-
     try {
       const { finish } = await S.ai.stream({
         ref,
+        mode: 'code',
         system: S.prompts.code(settings),
         messages: buildHistory(userMsg),
         signal: ctrl.signal,
-        maxTokens: kind === 'gemini' ? 65536 : 0,
+        maxTokens: 65536,
+        onFallback: ({ from, to, kind, persist }) => {
+          asst.notice = S.ai.fallbackNote(from, to, kind);
+          if (persist) {
+            current.model = to;
+            settings.codeModel = to;
+            store.saveSettings();
+            comp.refreshModel();
+          }
+          if (!queued) { queued = true; requestAnimationFrame(draw); }
+        },
         onText: (t) => {
           raw += t;
           out = parseOutput(raw, false);

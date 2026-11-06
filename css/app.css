@@ -338,6 +338,9 @@ a { color: inherit; text-decoration: none; }
   animation: shimmer 1.6s linear infinite;
 }
 .ai-note { font-size: 13px; color: var(--text-3); }
+.ai-notice { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--text-3); line-height: 1.4; }
+.ai-notice .i { width: 14px; height: 14px; flex: none; }
+.mp-desc.warn { color: var(--warn); }
 .ai-error, .ai-warn { border-radius: 12px; padding: 12px 14px; font-size: 14px; white-space: pre-wrap; line-height: 1.5; }
 .ai-error { background: var(--danger-soft); color: var(--danger); border: 1px solid color-mix(in srgb, var(--danger) 25%, transparent); }
 .ai-warn { background: var(--warn-soft); color: var(--warn); border: 1px solid color-mix(in srgb, var(--warn) 25%, transparent); }
