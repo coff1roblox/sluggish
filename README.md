@@ -33,3 +33,5 @@ node build.js
 ```
 
 The build stops if a category has fewer than 3 questions at any level, or if a question is duplicated, and lists questions without a photo.
+
+`node build.js --bundle` also writes `dist/`: the same game with one photo bundle per category instead of 640 separate files, for hosts that limit the file count (this is what the published Claude artifact uses).
