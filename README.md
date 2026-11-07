@@ -15,15 +15,16 @@ Open `index.html` in any browser. Keep the `photos/` folder next to it.
 
 ## Photos
 
-Every photo is free-licensed from Wikipedia / Wikimedia Commons; the author and license show under each one in the game. Most photos appear only when the answer is revealed so they don't give it away; picture rounds (and a few questions where the photo doesn't spoil anything) show it with the question.
+Every photo is free-licensed from Wikipedia / Wikimedia Commons; the author and license show under each one in the game. Each question shows a hint photo while the teams answer, chosen so it doesn't give the answer away; when the answer is revealed it switches to an answer photo where there is one. In the picture rounds the photo is the question itself.
 
 ## Edit questions
 
-Questions live in `src/data/*.js` as `[level, question, answer, photo, show]`:
+Questions live in `src/data/*.js` as `[level, question, answer, questionPhoto, answerPhoto]`:
 
 - level: 1 = 200, 2 = 400, 3 = 600
-- photo: an English Wikipedia article title (its lead image is used), `File:Name.jpg` on Wikimedia Commons, `search:words` for a Commons search, or `""` for none
-- show (optional): `"q"` shows the photo with the question, `"a"` only with the answer
+- questionPhoto: shown while the teams answer, so it must not give the answer away
+- answerPhoto (optional): shown when the answer is revealed; defaults to the question photo
+- a photo is an English Wikipedia article title (its lead image is used), `File:Name.jpg` on Wikimedia Commons, or `search:words` for a Commons search
 
 After editing, fetch any new photos and rebuild:
 

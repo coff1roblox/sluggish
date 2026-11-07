@@ -6,12 +6,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Aaron_Paul_-_AMC_The_Grove_-_Ash.jpg",
   "file": "File:Aaron_Paul_-_AMC_The_Grove_-_Ash.jpg"
  },
+ "Abacus": {
+  "f": "photos/3c99a6a865dc.webp",
+  "by": "Pearson Scott Foresman",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Abacus_(PSF).png",
+  "file": "File:Abacus_(PSF).png"
+ },
  "Abbas ibn Firnas": {
   "f": "photos/p046.webp",
   "by": "Eulogia Merle",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Armen_Firman_Abb%C3%A1s_Ibn_Firn%C3%A1s_(MUNCYT,_Eulogia_Merle).jpg",
   "file": "File:Armen_Firman_Abbás_Ibn_Firnás_(MUNCYT,_Eulogia_Merle).jpg"
+ },
+ "Abdomen": {
+  "f": "photos/98c3132aef97.webp",
+  "by": "7mike5000",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Abdomen-periumbilical_region.png",
+  "file": "File:Abdomen-periumbilical_region.png"
  },
  "Abdulhussain Abdulredha": {
   "f": "photos/p345.webp",
@@ -34,12 +48,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:CelsiusKelvin.svg",
   "file": "File:CelsiusKelvin.svg"
  },
+ "Abu Simbel": {
+  "f": "photos/76972a013dad.webp",
+  "by": "youssef_alam",
+  "lic": "CC BY 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Ramsis,_Aswan_Governorate,_Egypt_-_panoramio.jpg",
+  "file": "File:Ramsis,_Aswan_Governorate,_Egypt_-_panoramio.jpg"
+ },
  "Abuja": {
   "f": "photos/p382.webp",
   "by": "MediaMOF",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Abuja_heritages_30.jpg",
   "file": "File:Abuja_heritages_30.jpg"
+ },
+ "Acacia": {
+  "f": "photos/866000ef41c7.webp",
+  "by": "Thennicke",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Acacia_baileyana_3,_Canberra_ACT.JPG",
+  "file": "File:Acacia_baileyana_3,_Canberra_ACT.JPG"
  },
  "Acapulco": {
   "f": "photos/p224.webp",
@@ -83,12 +111,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Ahmad_shawqy.jpg",
   "file": "File:Ahmad_shawqy.jpg"
  },
+ "Air traffic control": {
+  "f": "photos/ed3bd4a8e2f9.webp",
+  "by": "Yatrik Sheth",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:New-MIAL-ATC-Tower.jpg",
+  "file": "File:New-MIAL-ATC-Tower.jpg"
+ },
  "Airbus A380": {
   "f": "photos/p109.webp",
   "by": "Maarten Visser from Capelle aan den IJssel, Nederland",
   "lic": "CC BY-SA 2.0",
   "src": "https://commons.wikimedia.org/wiki/File:A6-EDY_A380_Emirates_31_jan_2013_jfk_(8442269364)_(cropped).jpg",
   "file": "File:A6-EDY_A380_Emirates_31_jan_2013_jfk_(8442269364)_(cropped).jpg"
+ },
+ "Aircraft cabin": {
+  "f": "photos/ad59767061e6.webp",
+  "by": "FLY!",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Lufthansa_737_interior.jpg",
+  "file": "File:Lufthansa_737_interior.jpg"
+ },
+ "Airliner": {
+  "f": "photos/10279c475285.webp",
+  "by": "G B_NZ",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:United_A320_N405UA_at_BOS_(33787222465).jpg",
+  "file": "File:United_A320_N405UA_at_BOS_(33787222465).jpg"
  },
  "Akira Toriyama": {
   "f": "photos/p126.webp",
@@ -118,6 +167,13 @@
   "src": "https://en.wikipedia.org/wiki/File:Al_Hamra_Tower.jpg",
   "file": "File:Al_Hamra_Tower.jpg"
  },
+ "Al Thumama Stadium": {
+  "f": "photos/5e3a4fa297f8.webp",
+  "by": "부처님 (talk · contribs)",
+  "lic": "CC-BY-SA-4.0",
+  "src": "https://en.wikipedia.org/wiki/File:Al_Thumama_Stadium_(2).jpg",
+  "file": "File:Al_Thumama_Stadium_(2).jpg"
+ },
  "Al-Abwa": {
   "f": "photos/p505.webp",
   "by": "Unknown author",
@@ -131,6 +187,13 @@
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Sura6.pdf",
   "file": "File:Sura6.pdf"
+ },
+ "Al-Andalus": {
+  "f": "photos/1a58b25b6906.webp",
+  "by": "Al-Andalus732.jpg:Q4767211492~commonswiki (talk · contribs) EmiratoDeC",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:Al-Andalus732.svg",
+  "file": "File:Al-Andalus732.svg"
  },
  "Al-Awwal Park": {
   "f": "photos/p340.webp",
@@ -328,12 +391,40 @@
   "src": "https://commons.wikimedia.org/wiki/File:Antarah_on_horse.jpg",
   "file": "File:Antarah_on_horse.jpg"
  },
+ "Antarctic krill": {
+  "f": "photos/c15973c2243b.webp",
+  "by": "Krill666.jpg: Uwe Kils I am willing to give the image in 1700 resoluti",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Antarctic_krill_(Euphausia_superba).jpg",
+  "file": "File:Antarctic_krill_(Euphausia_superba).jpg"
+ },
  "Apollo 11": {
   "f": "photos/p025.webp",
   "by": "Neil A. Armstrong",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:A_Man_on_the_Moon,_AS11-40-5903_(cropped).jpg",
   "file": "File:A_Man_on_the_Moon,_AS11-40-5903_(cropped).jpg"
+ },
+ "Apollo Lunar Module": {
+  "f": "photos/8b1a21c5b32c.webp",
+  "by": "NASA",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Apollo_14_Lunar_Module_(LM)_on_the_moon.jpg",
+  "file": "File:Apollo_14_Lunar_Module_(LM)_on_the_moon.jpg"
+ },
+ "Apple": {
+  "f": "photos/e21d16cf27a2.webp",
+  "by": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+  "lic": "GFDL 1.2",
+  "src": "https://commons.wikimedia.org/wiki/File:Pink_lady_and_cross_section.jpg",
+  "file": "File:Pink_lady_and_cross_section.jpg"
+ },
+ "Apple II": {
+  "f": "photos/5b9915d305b8.webp",
+  "by": "Rama & Musée Bolo",
+  "lic": "CC BY-SA 2.0 fr",
+  "src": "https://commons.wikimedia.org/wiki/File:Apple_II-IMG_7064.jpg",
+  "file": "File:Apple_II-IMG_7064.jpg"
  },
  "Apple Park": {
   "f": "photos/p168.webp",
@@ -342,12 +433,47 @@
   "src": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Apple_Park_dllu.jpg",
   "file": "File:Aerial_view_of_Apple_Park_dllu.jpg"
  },
+ "Apple tree": {
+  "f": "photos/e21d16cf27a2.webp",
+  "by": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+  "lic": "GFDL 1.2",
+  "src": "https://commons.wikimedia.org/wiki/File:Pink_lady_and_cross_section.jpg",
+  "file": "File:Pink_lady_and_cross_section.jpg"
+ },
  "Arab League": {
   "f": "photos/p632.webp",
   "by": "Flad",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Arab_League.svg",
   "file": "File:Flag_of_the_Arab_League.svg"
+ },
+ "Arabesque": {
+  "f": "photos/0aab6c0d157d.webp",
+  "by": "Jan Smith from Brisbane, Australia",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Flickr_-_jemasmith_-_Umayyad_Mosque,_Damascus,_Detail..jpg",
+  "file": "File:Flickr_-_jemasmith_-_Umayyad_Mosque,_Damascus,_Detail..jpg"
+ },
+ "Arabian Desert": {
+  "f": "photos/01bf1f58a23f.webp",
+  "by": "Aidas U.",
+  "lic": "CC BY 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Arabian_Desert_-_panoramio.jpg",
+  "file": "File:Arabian_Desert_-_panoramio.jpg"
+ },
+ "Arabian Peninsula": {
+  "f": "photos/d8adcab556bd.webp",
+  "by": "SeaWiFS Project, NASA/Goddard Space Flight Center, and ORBIMAGE",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Arabian_Peninsula_dust_SeaWiFS.jpg",
+  "file": "File:Arabian_Peninsula_dust_SeaWiFS.jpg"
+ },
+ "Arabian horse": {
+  "f": "photos/5fe7aff635dc.webp",
+  "by": "Ealdgyth",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Halterstandingshotarabianone.jpg",
+  "file": "File:Halterstandingshotarabianone.jpg"
  },
  "Arabic alphabet": {
   "f": "photos/p625.webp",
@@ -475,6 +601,20 @@
   "src": "https://commons.wikimedia.org/wiki/File:Badr_city.jpg",
   "file": "File:Badr_city.jpg"
  },
+ "Badshahi Mosque": {
+  "f": "photos/40a5e2d5aebc.webp",
+  "by": "Romero Maia",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Badshahi_Mosque_front_picture.jpg",
+  "file": "File:Badshahi_Mosque_front_picture.jpg"
+ },
+ "Bagan": {
+  "f": "photos/ec6f62aed57c.webp",
+  "by": "Corto Maltese 1999",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Bagan,_Burma.jpg",
+  "file": "File:Bagan,_Burma.jpg"
+ },
  "Baghdad": {
   "f": "photos/p451.webp",
   "by": "USACE HQ , JIM GORDAN, CIV, USACE",
@@ -489,12 +629,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Bahrain_National_Stadium.jpg",
   "file": "File:Bahrain_National_Stadium.jpg"
  },
+ "Baikonur Cosmodrome": {
+  "f": "photos/b61dbf8cbd22.webp",
+  "by": "Bill Ingalls",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Baikonur_Cosmodrome_Soyuz_launch_pad.jpg",
+  "file": "File:Baikonur_Cosmodrome_Soyuz_launch_pad.jpg"
+ },
  "Baker": {
   "f": "photos/p532.webp",
   "by": "Petty Officer 3rd Class Paul J. Perkins, U.S. Navy",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:USS_John_C._Stennis_baker.jpg",
   "file": "File:USS_John_C._Stennis_baker.jpg"
+ },
+ "Baker Street": {
+  "f": "photos/dbcde26b5a42.webp",
+  "by": "Dean Molyneaux",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Baker_Street,_W1_-_geograph.org.uk_-_1752307.jpg",
+  "file": "File:Baker_Street,_W1_-_geograph.org.uk_-_1752307.jpg"
  },
  "Baklava": {
   "f": "photos/p316.webp",
@@ -517,6 +671,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:2016_Ballon_dOr_CR7Museum.jpg",
   "file": "File:2016_Ballon_dOr_CR7Museum.jpg"
  },
+ "Bamboo": {
+  "f": "photos/84977b424350.webp",
+  "by": "Kamakura",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Bamboo_forest.jpg",
+  "file": "File:Bamboo_forest.jpg"
+ },
  "Banana": {
   "f": "photos/p481.webp",
   "by": "TimothyPilgrim",
@@ -537,6 +698,13 @@
   "lic": "CC BY-SA 3.0",
   "src": "https://commons.wikimedia.org/wiki/File:Banco_de_Espa%C3%B1a_(Madrid)_06.jpg",
   "file": "File:Banco_de_España_(Madrid)_06.jpg"
+ },
+ "Bank vault": {
+  "f": "photos/be31e02ef82b.webp",
+  "by": "Jonathunder",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:WinonaSavingsBankVault.JPG",
+  "file": "File:WinonaSavingsBankVault.JPG"
  },
  "Banknote": {
   "f": "photos/p550.webp",
@@ -559,6 +727,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:USA_vs._China_Mens_Basketball_-_Beijing_2008_Olympic_Games_(2751923597).jpg",
   "file": "File:USA_vs._China_Mens_Basketball_-_Beijing_2008_Olympic_Games_(2751923597).jpg"
  },
+ "Basmala": {
+  "f": "photos/89484ffc320f.webp",
+  "by": "Frater5",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Bismillah.svg",
+  "file": "File:Bismillah.svg"
+ },
  "Bat": {
   "f": "photos/p179.webp",
   "by": "PD-USGov, exact author unknown",
@@ -566,12 +741,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Big-eared-townsend-fledermaus.jpg",
   "file": "File:Big-eared-townsend-fledermaus.jpg"
  },
+ "Bathyscaphe Trieste": {
+  "f": "photos/5c2801c0e888.webp",
+  "by": "Unknown authorUnknown author",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Bathyscaphe_Trieste.jpg",
+  "file": "File:Bathyscaphe_Trieste.jpg"
+ },
+ "Battery (electricity)": {
+  "f": "photos/799319216f34.webp",
+  "by": "en:User:Brianiac",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Batteries.jpg",
+  "file": "File:Batteries.jpg"
+ },
  "Battle of Waterloo": {
   "f": "photos/p394.webp",
   "by": "William Sadler",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Battle_of_Waterloo_1815.PNG",
   "file": "File:Battle_of_Waterloo_1815.PNG"
+ },
+ "Beach": {
+  "f": "photos/21425d159dc8.webp",
+  "by": "Daniel Dudek",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Beach_at_Fort_Lauderdale.jpg",
+  "file": "File:Beach_at_Fort_Lauderdale.jpg"
  },
  "Bedouin": {
   "f": "photos/p274.webp",
@@ -608,12 +804,47 @@
   "src": "https://commons.wikimedia.org/wiki/File:Bundeshaus_Bern_2009,_Flooffy.jpg",
   "file": "File:Bundeshaus_Bern_2009,_Flooffy.jpg"
  },
+ "Big Ben": {
+  "f": "photos/1874504ecdc2.webp",
+  "by": "Christian David",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster,_London.jpg",
+  "file": "File:Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster,_London.jpg"
+ },
  "Bill Gates": {
   "f": "photos/p023.webp",
   "by": "Bogdan Hoyaux / European Union",
   "lic": "CC BY 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Bill_Gates_at_the_European_Commission_-_P067383-987995_(cropped)_5.jpg",
   "file": "File:Bill_Gates_at_the_European_Commission_-_P067383-987995_(cropped)_5.jpg"
+ },
+ "Bird": {
+  "f": "photos/8d00dc2b878d.webp",
+  "by": "C. Robiller / naturlichter.de (Hyla meridionalis)",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Kleiber_Flug.jpg",
+  "file": "File:Kleiber_Flug.jpg"
+ },
+ "Birmingham Quran manuscript": {
+  "f": "photos/c25b64cc7dca.webp",
+  "by": "AnonymousUnknown author",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Birmingham_Quran_manuscript_full.jpg",
+  "file": "File:Birmingham_Quran_manuscript_full.jpg"
+ },
+ "Black hole": {
+  "f": "photos/251bf3cc3634.webp",
+  "by": "Event Horizon Telescope, uploader cropped and converted TIF to JPG",
+  "lic": "CC BY 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87_crop_max_res.jpg",
+  "file": "File:Black_hole_-_Messier_87_crop_max_res.jpg"
+ },
+ "Blackboard": {
+  "f": "photos/0670ba2400e0.webp",
+  "by": "Unknown authorUnknown author",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Homer_E_Newell_NASA.jpg",
+  "file": "File:Homer_E_Newell_NASA.jpg"
  },
  "Blood": {
   "f": "photos/p480.webp",
@@ -629,6 +860,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Blood_donation_pictogram.svg",
   "file": "File:Blood_donation_pictogram.svg"
  },
+ "Blood transfusion": {
+  "f": "photos/edf48d8209a0.webp",
+  "by": "Erythrozytenkonzentrat.jpg: Pflegewiki-User Würfel derivative work:Mid",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Erythrozytenkonzentrat_neu.jpg",
+  "file": "File:Erythrozytenkonzentrat_neu.jpg"
+ },
  "Blood type": {
   "f": "photos/p572.webp",
   "by": "InvictaHOG",
@@ -636,12 +874,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:ABO_blood_type.svg",
   "file": "File:ABO_blood_type.svg"
  },
+ "Blue Quran": {
+  "f": "photos/1c5fb2ca2eff.webp",
+  "by": "Unknown authorUnknown author",
+  "lic": "CC BY 2.5",
+  "src": "https://commons.wikimedia.org/wiki/File:Folio_Blue_Quran_Met_2004.88.jpg",
+  "file": "File:Folio_Blue_Quran_Met_2004.88.jpg"
+ },
  "Blue whale": {
   "f": "photos/p513.webp",
   "by": "NOAA Photo Library",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg",
   "file": "File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg"
+ },
+ "Board game": {
+  "f": "photos/e7330436e92e.webp",
+  "by": "U.S. Navy photo by Chief Mass Communication Specialist Steve Carlson",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:US_Navy_110713-N-NT881-124_Personnel_Specialist_2nd_Class_James_Vail,_left,_and_Boatswain%27s_Mate_2nd_Class_Nathaniel_Eaton_play_board_games_with_ch.jpg",
+  "file": "File:US_Navy_110713-N-NT881-124_Personnel_Specialist_2nd_Class_James_Vail,_left,_and_Boatswain's_Mate_2nd_Class_Nathaniel_Eaton_play_board_games_with_ch.jpg"
  },
  "Bob Odenkirk": {
   "f": "photos/p033.webp",
@@ -678,6 +930,20 @@
   "src": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible,_Lenox_Copy,_New_York_Public_Library,_2009._Pic_01.jpg",
   "file": "File:Gutenberg_Bible,_Lenox_Copy,_New_York_Public_Library,_2009._Pic_01.jpg"
  },
+ "Border control": {
+  "f": "photos/e5e39c5fc744.webp",
+  "by": "Afifa Afrin",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Bhutan_gate_in_Phuentsoling_0.jpg",
+  "file": "File:Bhutan_gate_in_Phuentsoling_0.jpg"
+ },
+ "Borneo": {
+  "f": "photos/78936e16b9ae.webp",
+  "by": "M. Adiputra",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Administrative_map_of_Borneo_(Indonesian).png",
+  "file": "File:Administrative_map_of_Borneo_(Indonesian).png"
+ },
  "Bottlenose dolphin": {
   "f": "photos/p492.webp",
   "by": "NASA",
@@ -685,12 +951,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Tursiops_truncatus_01.jpg",
   "file": "File:Tursiops_truncatus_01.jpg"
  },
+ "Boxing": {
+  "f": "photos/8f1fd93da14f.webp",
+  "by": "Royal Navy official photographer",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Boxing_Tournament_in_Aid_of_King_George%27s_Fund_For_Sailors_at_the_Royal_Naval_Air_Station,_Henstridge,_Somerset,_July_1945_A29806.jpg",
+  "file": "File:Boxing_Tournament_in_Aid_of_King_George's_Fund_For_Sailors_at_the_Royal_Naval_Air_Station,_Henstridge,_Somerset,_July_1945_A29806.jpg"
+ },
  "Brasília": {
   "f": "photos/p076.webp",
   "by": "Arturdiasr",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Planalto_Central_(cropped).jpg",
   "file": "File:Planalto_Central_(cropped).jpg"
+ },
+ "Brazilian Carnival": {
+  "f": "photos/98f03685074f.webp",
+  "by": "Agência Brasil/Marco Antonio Cavalcanti",
+  "lic": "CC BY 3.0 br",
+  "src": "https://commons.wikimedia.org/wiki/File:Mangueira_2013_130211.jpg",
+  "file": "File:Mangueira_2013_130211.jpg"
  },
  "Brazilian real": {
   "f": "photos/p611.webp",
@@ -741,6 +1021,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Bugatti_Chiron_1.jpg",
   "file": "File:Bugatti_Chiron_1.jpg"
  },
+ "Bull": {
+  "f": "photos/26c1189601d2.webp",
+  "by": "Philip Halling",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:A_Friesian_Bull,_Llandeilo_Graban_-_geograph.org.uk_-_579885.jpg",
+  "file": "File:A_Friesian_Bull,_Llandeilo_Graban_-_geograph.org.uk_-_579885.jpg"
+ },
  "Burj Al Arab": {
   "f": "photos/p533.webp",
   "by": "Joi Ito",
@@ -754,6 +1041,13 @@
   "lic": "CC BY 2.0",
   "src": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_(worlds_tallest_building)_and_the_Dubai_skyline_(25781049892).jpg",
   "file": "File:Burj_Khalifa_(worlds_tallest_building)_and_the_Dubai_skyline_(25781049892).jpg"
+ },
+ "CERN": {
+  "f": "photos/70757a31a861.webp",
+  "by": "European Organization for Nuclear Research Organisation européenne pou",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:CERN_logo_badge.svg",
+  "file": "File:CERN_logo_badge.svg"
  },
  "Cairo": {
   "f": "photos/p562.webp",
@@ -783,6 +1077,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Kalender_Indonesia.jpg",
   "file": "File:Kalender_Indonesia.jpg"
  },
+ "Camera obscura": {
+  "f": "photos/33949e185fec.webp",
+  "by": "Pitchayawat",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:%E0%B9%80%E0%B8%87%E0%B8%B2%E0%B8%AA%E0%B8%B0%E0%B8%97%E0%B9%89%E0%B8%AD%E0%B8%99%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%A5%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87.jpg",
+  "file": "File:เงาสะท้อนพระธาตุลำปางหลวง.jpg"
+ },
  "Camp Nou": {
   "f": "photos/p422.webp",
   "by": "Oh-Barcelona.com from Barcelona, Spain",
@@ -804,6 +1105,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_canyons.jpg",
   "file": "File:Aerial_view_of_canyons.jpg"
  },
+ "Cappadocia": {
+  "f": "photos/d917a0bac57c.webp",
+  "by": "Arian Zwegers from Brussels, Belgium",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Cappadocia_balloon_trip,_Ortahisar_Castle_(11893715185).jpg",
+  "file": "File:Cappadocia_balloon_trip,_Ortahisar_Castle_(11893715185).jpg"
+ },
  "Capuchin monkey": {
   "f": "photos/p358.webp",
   "by": "David M. Jensen (Storkk)",
@@ -811,12 +1119,47 @@
   "src": "https://commons.wikimedia.org/wiki/File:Capuchin_Costa_Rica.jpg",
   "file": "File:Capuchin_Costa_Rica.jpg"
  },
+ "Car wash": {
+  "f": "photos/eeb5f2928a80.webp",
+  "by": "Jacek Halicki",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:2015_K%C5%82odzko,_ul._Dusznicka,_myjnia_samochodowa_02.jpg",
+  "file": "File:2015_Kłodzko,_ul._Dusznicka,_myjnia_samochodowa_02.jpg"
+ },
+ "Caravan (travellers)": {
+  "f": "photos/2df5567a72cd.webp",
+  "by": "Edwin Lord Weeks",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Weeks_Edwin_Lord_Arrival_of_a_Caravan_Outside_The_City_of_Morocco.jpg",
+  "file": "File:Weeks_Edwin_Lord_Arrival_of_a_Caravan_Outside_The_City_of_Morocco.jpg"
+ },
  "Carrot": {
   "f": "photos/p092.webp",
   "by": "Evan-Amos",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Vegetable-Carrot-Bundle-wStalks.jpg",
   "file": "File:Vegetable-Carrot-Bundle-wStalks.jpg"
+ },
+ "Castle": {
+  "f": "photos/964a01023bf9.webp",
+  "by": "Ángel Sanz de Andrés",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_Oto%C3%B1o_Alc%C3%A1zar_de_Segovia.jpg",
+  "file": "File:Panorámica_Otoño_Alcázar_de_Segovia.jpg"
+ },
+ "Catalonia": {
+  "f": "photos/8ac5592795ac.webp",
+  "by": "Motoroil",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Flag_of_Catalonia.svg",
+  "file": "File:Flag_of_Catalonia.svg"
+ },
+ "Cave": {
+  "f": "photos/aa74ee01cc5b.webp",
+  "by": "Dave Bunnell / Under Earth Images",
+  "lic": "CC BY-SA 2.5",
+  "src": "https://commons.wikimedia.org/wiki/File:Lechuguilla_Cave_Pearlsian_Gulf.jpg",
+  "file": "File:Lechuguilla_Cave_Pearlsian_Gulf.jpg"
  },
  "Central Bank of Kuwait": {
   "f": "photos/p370.webp",
@@ -832,6 +1175,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Intel_i9-14900KF_CPU.jpg",
   "file": "File:Intel_i9-14900KF_CPU.jpg"
  },
+ "Ceremony": {
+  "f": "photos/48a032f22104.webp",
+  "by": "Effeietsanders, Rijksoverheid.nl",
+  "lic": "CC BY-SA 2.5",
+  "src": "https://commons.wikimedia.org/wiki/File:Koninklijk_Koetsier_2013_74.JPG",
+  "file": "File:Koninklijk_Koetsier_2013_74.JPG"
+ },
  "Chain mail": {
   "f": "photos/p331.webp",
   "by": "Riad Salih",
@@ -846,12 +1196,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Charles_Darwin_seated_crop.jpg",
   "file": "File:Charles_Darwin_seated_crop.jpg"
  },
+ "Charyn Canyon": {
+  "f": "photos/2b5a33cf45ca.webp",
+  "by": "Bgag",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:Charyn_Canyon,_Kazakhstan_03.jpg",
+  "file": "File:Charyn_Canyon,_Kazakhstan_03.jpg"
+ },
  "Cheetah": {
   "f": "photos/p444.webp",
   "by": "AfricanConservation",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Male_cheetah_facing_left_in_South_Africa.jpg",
   "file": "File:Male_cheetah_facing_left_in_South_Africa.jpg"
+ },
+ "Chefchaouen": {
+  "f": "photos/53b11975e9c6.webp",
+  "by": "Badr Rachadi",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Chefchaouen-the-blue-city-of-morocco-with-palm-trees-and-the-mountain-view-in-the-backrgound.jpg",
+  "file": "File:Chefchaouen-the-blue-city-of-morocco-with-palm-trees-and-the-mountain-view-in-the-backrgound.jpg"
  },
  "Chess": {
   "f": "photos/p582.webp",
@@ -986,6 +1350,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:2016_Busola.JPG",
   "file": "File:2016_Busola.JPG"
  },
+ "Computer memory": {
+  "f": "photos/9dc525f4c3a4.webp",
+  "by": "ElooKoN",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:RAM_Module_(SDRAM-DDR4).jpg",
+  "file": "File:RAM_Module_(SDRAM-DDR4).jpg"
+ },
  "Concorde": {
   "f": "photos/p396.webp",
   "by": "Eduard Marmet",
@@ -999,6 +1370,27 @@
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Continental_models-Australia.gif",
   "file": "File:Continental_models-Australia.gif"
+ },
+ "Copacabana, Rio de Janeiro": {
+  "f": "photos/a7f143af78ab.webp",
+  "by": "[www.flickr.com/photos/26912057@N02/ bisonlux]",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Praia_de_Copacabana_-_Rio_de_Janeiro,_Brasil.jpg",
+  "file": "File:Praia_de_Copacabana_-_Rio_de_Janeiro,_Brasil.jpg"
+ },
+ "Coral": {
+  "f": "photos/3a77f5b84cd5.webp",
+  "by": "Toby Hudson",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Coral_Outcrop_Flynn_Reef.jpg",
+  "file": "File:Coral_Outcrop_Flynn_Reef.jpg"
+ },
+ "Coral reef": {
+  "f": "photos/182442266f54.webp",
+  "by": "Richard Ling <wikipedia@rling.com>",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Blue_Linckia_Starfish.JPG",
+  "file": "File:Blue_Linckia_Starfish.JPG"
  },
  "Couch": {
   "f": "photos/p018.webp",
@@ -1041,6 +1433,27 @@
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg",
   "file": "File:Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg"
+ },
+ "Crossword": {
+  "f": "photos/bce64072ac7a.webp",
+  "by": "Michael J",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:CrosswordUSA.svg",
+  "file": "File:CrosswordUSA.svg"
+ },
+ "Crowd": {
+  "f": "photos/70881541566b.webp",
+  "by": "Unknown author",
+  "lic": "CC BY 2.5",
+  "src": "https://commons.wikimedia.org/wiki/File:Crowd_in_street.jpg",
+  "file": "File:Crowd_in_street.jpg"
+ },
+ "Cubism": {
+  "f": "photos/59d65ca18f23.webp",
+  "by": "Pablo Picasso",
+  "lic": "PD-US",
+  "src": "https://en.wikipedia.org/wiki/File:Pablo_Picasso,_1910,_Girl_with_a_Mandolin_(Fanny_Tellier),_oil_on_canvas,_100.3_x_73.6_cm,_Museum_of_Modern_Art_New_York..jpg",
+  "file": "File:Pablo_Picasso,_1910,_Girl_with_a_Mandolin_(Fanny_Tellier),_oil_on_canvas,_100.3_x_73.6_cm,_Museum_of_Modern_Art_New_York..jpg"
  },
  "Damascus": {
   "f": "photos/p255.webp",
@@ -1097,6 +1510,20 @@
   "lic": "CC BY 2.0",
   "src": "https://commons.wikimedia.org/wiki/File:Deep_Blue.jpg",
   "file": "File:Deep_Blue.jpg"
+ },
+ "Desert": {
+  "f": "photos/43e2728eb670.webp",
+  "by": "Nepenthes",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Rub_al_Khali_002.JPG",
+  "file": "File:Rub_al_Khali_002.JPG"
+ },
+ "Desert rose (crystal)": {
+  "f": "photos/9f06bfd87712.webp",
+  "by": "Didier Descouens",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Roses_des_Sables_Tunisie.jpg",
+  "file": "File:Roses_des_Sables_Tunisie.jpg"
  },
  "Desert truffle": {
   "f": "photos/p147.webp",
@@ -1168,12 +1595,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Huskiesatrest.jpg",
   "file": "File:Huskiesatrest.jpg"
  },
+ "Dragon": {
+  "f": "photos/36f9a2234b08.webp",
+  "by": "Jan Baegert",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:St_Catherine,_St_George_and_the_Dragon_(M%C3%A4staren_fr%C3%A5n_Kappenberg)_-_Nationalmuseum_-_18337_(brightened),_draken.png",
+  "file": "File:St_Catherine,_St_George_and_the_Dragon_(Mästaren_från_Kappenberg)_-_Nationalmuseum_-_18337_(brightened),_draken.png"
+ },
+ "Drinking water": {
+  "f": "photos/152d0ca1ca87.webp",
+  "by": "Josh Estey/AusAID",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Clean_water_for_a_village_in_West_Lombok_(10686572086).jpg",
+  "file": "File:Clean_water_for_a_village_in_West_Lombok_(10686572086).jpg"
+ },
  "Dromedary": {
   "f": "photos/p246.webp",
   "by": "Florian Prischl",
   "lic": "CC BY-SA 3.0",
   "src": "https://commons.wikimedia.org/wiki/File:Camelus_dromedarius_in_Nuweiba.jpg",
   "file": "File:Camelus_dromedarius_in_Nuweiba.jpg"
+ },
+ "Dubai Creek": {
+  "f": "photos/fe35c7450459.webp",
+  "by": "Phil6007",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:The_view_of_Dubai_Creek.jpg",
+  "file": "File:The_view_of_Dubai_Creek.jpg"
  },
  "Dubai International Airport": {
   "f": "photos/p259.webp",
@@ -1182,12 +1630,40 @@
   "src": "https://commons.wikimedia.org/wiki/File:DXB_word_mark.svg",
   "file": "File:DXB_word_mark.svg"
  },
+ "Dubai Marina": {
+  "f": "photos/4d2ab4dc0129.webp",
+  "by": "Norlando Pobre",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Dubai_Marina_Skyline.jpg",
+  "file": "File:Dubai_Marina_Skyline.jpg"
+ },
  "Dubrovnik": {
   "f": "photos/p094.webp",
   "by": "Zysko serhii",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg",
   "file": "File:The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg"
+ },
+ "Dynamite": {
+  "f": "photos/1877187decc1.webp",
+  "by": "Alfred T. Palmer",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Inserting_dynamite_into_hole.jpg",
+  "file": "File:Inserting_dynamite_into_hole.jpg"
+ },
+ "Ear": {
+  "f": "photos/5c40865cdf3a.webp",
+  "by": "Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Human_right_ear_(cropped).jpg",
+  "file": "File:Human_right_ear_(cropped).jpg"
+ },
+ "Earth": {
+  "f": "photos/e44a5a9ffac7.webp",
+  "by": "EUMETSAT",
+  "lic": "Attribution",
+  "src": "https://commons.wikimedia.org/wiki/File:Meteosat-12-fci-march-equinox-2025-noon.jpg",
+  "file": "File:Meteosat-12-fci-march-equinox-2025-noon.jpg"
  },
  "Earthquake": {
   "f": "photos/p604.webp",
@@ -1203,6 +1679,20 @@
   "src": "https://commons.wikimedia.org/wiki/File:Flag_of_Ecuador.svg",
   "file": "File:Flag_of_Ecuador.svg"
  },
+ "Edinburgh Castle": {
+  "f": "photos/3573581f507b.webp",
+  "by": "Daniel Kraft",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_from_Esplanade_20211019.jpg",
+  "file": "File:Edinburgh_Castle_from_Esplanade_20211019.jpg"
+ },
+ "Edvard Munch": {
+  "f": "photos/964a57c26655.webp",
+  "by": "Unknown authorUnknown author",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Portrait_of_Edvard_Munch_(cropped).png",
+  "file": "File:Portrait_of_Edvard_Munch_(cropped).png"
+ },
  "Egg": {
   "f": "photos/p193.webp",
   "by": "Adolphe Millot",
@@ -1216,6 +1706,20 @@
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons_(cropped).jpg",
   "file": "File:Tour_Eiffel_Wikimedia_Commons_(cropped).jpg"
+ },
+ "Electricity": {
+  "f": "photos/b3e110a4347d.webp",
+  "by": "mattbuck (category)",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:London_MMB_%C2%BB1E6_Lightning.jpg",
+  "file": "File:London_MMB_»1E6_Lightning.jpg"
+ },
+ "Electrocardiography": {
+  "f": "photos/70b8a65d763f.webp",
+  "by": "Created by Agateller (Anthony Atkielski), converted to svg by atom.",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:SinusRhythmLabels.svg",
+  "file": "File:SinusRhythmLabels.svg"
  },
  "Electronic Arts": {
   "f": "photos/p113.webp",
@@ -1259,6 +1763,20 @@
   "src": "https://commons.wikimedia.org/wiki/File:United_Arab_Emirates_location_map.svg",
   "file": "File:United_Arab_Emirates_location_map.svg"
  },
+ "Enigma machine": {
+  "f": "photos/69ae4bdeba0e.webp",
+  "by": "Alessandro Nassiri",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Enigma_(crittografia)_-_Museo_scienza_e_tecnologia_Milano.jpg",
+  "file": "File:Enigma_(crittografia)_-_Museo_scienza_e_tecnologia_Milano.jpg"
+ },
+ "Eratosthenes": {
+  "f": "photos/a3c7f5191215.webp",
+  "by": "Unknown author",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Portrait_of_Eratosthenes.png",
+  "file": "File:Portrait_of_Eratosthenes.png"
+ },
  "Erling Haaland": {
   "f": "photos/p007.webp",
   "by": "Bryan Berlin",
@@ -1266,12 +1784,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg",
   "file": "File:Erling_Haaland_Morocco_v_Norway_7_June_2026-51.jpg"
  },
+ "Escape room": {
+  "f": "photos/857378e81b01.webp",
+  "by": "ORpretom",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Tulleys_Farm_Outfitter_Escape_Room.jpg",
+  "file": "File:Tulleys_Farm_Outfitter_Escape_Room.jpg"
+ },
+ "Estadio Azteca": {
+  "f": "photos/845eebcd4633.webp",
+  "by": "ProtoplasmaKid",
+  "lic": "CC BY 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Azteca_-_2026_-_02.jpg",
+  "file": "File:Vista_aérea_del_Estadio_Azteca_-_2026_-_02.jpg"
+ },
  "Estadio Centenario": {
   "f": "photos/p354.webp",
   "by": "Marcelo Campi",
   "lic": "CC BY-SA 2.0",
   "src": "https://commons.wikimedia.org/wiki/File:Estadio_Centenario_2021.jpg",
   "file": "File:Estadio_Centenario_2021.jpg"
+ },
+ "Euphrates": {
+  "f": "photos/e0bd9268467f.webp",
+  "by": "Carole Raddato from Frankfurt, Germany",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:The_Euphrates_River_in_Turkey,_Rumkale_(52031477798).jpg",
+  "file": "File:The_Euphrates_River_in_Turkey,_Rumkale_(52031477798).jpg"
  },
  "Euro": {
   "f": "photos/p474.webp",
@@ -1286,6 +1825,13 @@
   "lic": "CC BY 2.0",
   "src": "https://commons.wikimedia.org/wiki/File:Trofeo_UEFA_Champions_League.jpg",
   "file": "File:Trofeo_UEFA_Champions_League.jpg"
+ },
+ "European Parliament": {
+  "f": "photos/d7919386feae.webp",
+  "by": "European Union",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:European_Parliament_logo.svg",
+  "file": "File:European_Parliament_logo.svg"
  },
  "FIFA World Cup Trophy": {
   "f": "photos/p061.webp",
@@ -1329,6 +1875,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Le_si%C3%A8ge_de_Constantinople_(1453)_by_Jean_Le_Tavernier_after_1455.jpg",
   "file": "File:Le_siège_de_Constantinople_(1453)_by_Jean_Le_Tavernier_after_1455.jpg"
  },
+ "Fast food": {
+  "f": "photos/ffbab29927d5.webp",
+  "by": "Tim Reckmann from Hamm, Deutschland",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Hamburger_(12164386105).jpg",
+  "file": "File:Hamburger_(12164386105).jpg"
+ },
  "Femur": {
   "f": "photos/p433.webp",
   "by": "Anatomography",
@@ -1356,6 +1909,20 @@
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Fibonacci_Squares.svg",
   "file": "File:Fibonacci_Squares.svg"
+ },
+ "Film set": {
+  "f": "photos/6c5548d58d0c.webp",
+  "by": "The RKO Encino Ranch (RetroWeb)",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:BedfordFallsGeneseeStreet.jpg",
+  "file": "File:BedfordFallsGeneseeStreet.jpg"
+ },
+ "Fireworks": {
+  "f": "photos/46bc8e99cc3c.webp",
+  "by": "Rob Chandler",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:New_Year%27s_Eve_on_Sydney_Harbour.jpg",
+  "file": "File:New_Year's_Eve_on_Sydney_Harbour.jpg"
  },
  "Flag of Algeria": {
   "f": "photos/p362.webp",
@@ -1595,6 +2162,20 @@
   "src": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States_(DDD-F-416E_specifications).svg",
   "file": "File:Flag_of_the_United_States_(DDD-F-416E_specifications).svg"
  },
+ "Floodlight": {
+  "f": "photos/c36f54b60799.webp",
+  "by": "Joe Ravi",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Floodlights.jpg",
+  "file": "File:Floodlights.jpg"
+ },
+ "Flower": {
+  "f": "photos/67915c6fc6d6.webp",
+  "by": "Ianaré Sévi",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Magnolia_grandiflora_-_flower_1.jpg",
+  "file": "File:Magnolia_grandiflora_-_flower_1.jpg"
+ },
  "Foal": {
   "f": "photos/p398.webp",
   "by": "Ealdgyth",
@@ -1602,12 +2183,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Standingarabianfoalone.jpg",
   "file": "File:Standingarabianfoalone.jpg"
  },
+ "Fog": {
+  "f": "photos/2bf78dcfaaad.webp",
+  "by": "Abdul Momin",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:A_foggy_winter_morning.jpg",
+  "file": "File:A_foggy_winter_morning.jpg"
+ },
  "Football pitch": {
   "f": "photos/p083.webp",
   "by": "snater.com",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Association_Football_field_diagram_-en.svg",
   "file": "File:Association_Football_field_diagram_-en.svg"
+ },
+ "Forbidden City": {
+  "f": "photos/632903cc4535.webp",
+  "by": "Pixelflake",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+  "file": "File:The_Forbidden_City_-_View_from_Coal_Hill.jpg"
+ },
+ "Forest": {
+  "f": "photos/cbde9e832e9f.webp",
+  "by": "lubasi",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Amazon_Rainforest.jpg",
+  "file": "File:Aerial_view_of_the_Amazon_Rainforest.jpg"
  },
  "Fraction": {
   "f": "photos/p605.webp",
@@ -1623,12 +2225,40 @@
   "src": "https://commons.wikimedia.org/wiki/File:Map-Francophone_World.svg",
   "file": "File:Map-Francophone_World.svg"
  },
+ "Fruit": {
+  "f": "photos/dccfb3b1a39f.webp",
+  "by": "روتانا",
+  "lic": "CC BY 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Fruit_Platter-_Seasonal_Fruits.jpg",
+  "file": "File:Fruit_Platter-_Seasonal_Fruits.jpg"
+ },
+ "Galaxy": {
+  "f": "photos/2d7740dd9992.webp",
+  "by": "The Hubble Heritage Team (AURA/STScI/NASA)NASA Headquarters - Greatest",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:NGC_4414_(NASA-med).jpg",
+  "file": "File:NGC_4414_(NASA-med).jpg"
+ },
+ "Galápagos Islands": {
+  "f": "photos/b89e5dc75425.webp",
+  "by": "Diego Delso",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Lobo_marino_(Zalophus_californianus_wollebaeki),_Punta_Pitt,_isla_de_San_Crist%C3%B3bal,_islas_Gal%C3%A1pagos,_Ecuador,_2015-07-24,_DD_11.JPG",
+  "file": "File:Lobo_marino_(Zalophus_californianus_wollebaeki),_Punta_Pitt,_isla_de_San_Cristóbal,_islas_Galápagos,_Ecuador,_2015-07-24,_DD_11.JPG"
+ },
  "Game Boy": {
   "f": "photos/p130.webp",
   "by": "Transfrom JPEG version and remove white background. Original by Evan-A",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Game-Boy-FL.png",
   "file": "File:Game-Boy-FL.png"
+ },
+ "Garry Kasparov": {
+  "f": "photos/4f7af6c30760.webp",
+  "by": "Fryta 73 from Strzegom",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Garri_Kasparow_(18776605665)_(cropped)_2.jpg",
+  "file": "File:Garri_Kasparow_(18776605665)_(cropped)_2.jpg"
  },
  "George R. R. Martin": {
   "f": "photos/p030.webp",
@@ -1686,6 +2316,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Pyramids_of_the_Giza_Necropolis.jpg",
   "file": "File:Pyramids_of_the_Giza_Necropolis.jpg"
  },
+ "Globe": {
+  "f": "photos/39e2f6555657.webp",
+  "by": "David Keddie",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:The_Great_Globe,_Guyot_Hall,_Princeton_University.jpg",
+  "file": "File:The_Great_Globe,_Guyot_Hall,_Princeton_University.jpg"
+ },
  "Go Nagai": {
   "f": "photos/p384.webp",
   "by": "Georges Seguin (Okki)",
@@ -1699,6 +2336,13 @@
   "lic": "CC BY-SA 3.0 de",
   "src": "https://commons.wikimedia.org/wiki/File:Gold-crystals.jpg",
   "file": "File:Gold-crystals.jpg"
+ },
+ "Gold bar": {
+  "f": "photos/5465924dc129.webp",
+  "by": "Szaaman",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Gold_bullion_2.jpg",
+  "file": "File:Gold_bullion_2.jpg"
  },
  "Golden Gate Bridge": {
   "f": "photos/p108.webp",
@@ -1749,6 +2393,20 @@
   "src": "https://commons.wikimedia.org/wiki/File:ISS-45_StoryOfWater,_Great_Barrier_Reef,_Australia.jpg",
   "file": "File:ISS-45_StoryOfWater,_Great_Barrier_Reef,_Australia.jpg"
  },
+ "Great Ocean Road": {
+  "f": "photos/318e66921658.webp",
+  "by": "Bobak Ha'Eri",
+  "lic": "CC BY 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:2009-0825-GreatOceanRoadsign.jpg",
+  "file": "File:2009-0825-GreatOceanRoadsign.jpg"
+ },
+ "Great Sphinx of Giza": {
+  "f": "photos/735baecbc2de.webp",
+  "by": "Hesham Ebaid",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:Sphinx_with_the_third_pyramid.jpg",
+  "file": "File:Sphinx_with_the_third_pyramid.jpg"
+ },
  "Great Wall of China": {
   "f": "photos/p616.webp",
   "by": "Severin.stalder",
@@ -1798,6 +2456,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Gulf_of_Suez_map.jpg",
   "file": "File:Gulf_of_Suez_map.jpg"
  },
+ "Gyeongbokgung": {
+  "f": "photos/f2819a814877.webp",
+  "by": "서울관광 아카이브",
+  "lic": "KOGL Type 1",
+  "src": "https://commons.wikimedia.org/wiki/File:%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg",
+  "file": "File:광화문_월대.jpg"
+ },
  "Ha Long Bay": {
   "f": "photos/p564.webp",
   "by": "Taewangkorea",
@@ -1819,6 +2484,41 @@
   "src": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_(228968325).jpeg",
   "file": "File:Hagia_Sophia_(228968325).jpeg"
  },
+ "Hajar Mountains": {
+  "f": "photos/be43fd1ee841.webp",
+  "by": "Mark Hills from London, England",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Nakhal_Fort_1.jpg",
+  "file": "File:Nakhal_Fort_1.jpg"
+ },
+ "Hamad International Airport": {
+  "f": "photos/0d4f07ecd997.webp",
+  "by": "Contrarian Metal Resources President Jim Halliday: jhalliday@metalreso",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Hamad_International_Airport_Qatar.jpg",
+  "file": "File:Hamad_International_Airport_Qatar.jpg"
+ },
+ "Hanafuda": {
+  "f": "photos/4e1ac3ea8662.webp",
+  "by": "Marcus Richert",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Hanafuda_Koi-Koi_Setup_1.jpg",
+  "file": "File:Hanafuda_Koi-Koi_Setup_1.jpg"
+ },
+ "Handshake": {
+  "f": "photos/87cc5f6cbf8c.webp",
+  "by": "Rufino",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Hermandad_-_friendship.jpg",
+  "file": "File:Hermandad_-_friendship.jpg"
+ },
+ "Hang gliding": {
+  "f": "photos/0b69db58bf96.webp",
+  "by": "Audrey from USA",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Hang_gliding_hyner.jpg",
+  "file": "File:Hang_gliding_hyner.jpg"
+ },
  "Harees": {
   "f": "photos/p136.webp",
   "by": "Ketone16",
@@ -1832,6 +2532,13 @@
   "lic": "CC-BY-SA-4.0",
   "src": "https://en.wikipedia.org/wiki/File:Hassan_II_mosque,_Casablanca_2.jpg",
   "file": "File:Hassan_II_mosque,_Casablanca_2.jpg"
+ },
+ "Hayao Miyazaki": {
+  "f": "photos/2599f1db3b5a.webp",
+  "by": "Natasha Baucas at https://www.flickr.com/photos/sdnatasha/",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:HayaoMiyazakiCCJuly09.jpg",
+  "file": "File:HayaoMiyazakiCCJuly09.jpg"
  },
  "Hayat Al-Fahad": {
   "f": "photos/p612.webp",
@@ -1861,6 +2568,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Igel.JPG",
   "file": "File:Igel.JPG"
  },
+ "Helsinki": {
+  "f": "photos/108f8e1b565a.webp",
+  "by": "Michal Pise, Michal.Pise",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Suomenlinna_(cropped).jpg",
+  "file": "File:Suomenlinna_(cropped).jpg"
+ },
  "Hexagon": {
   "f": "photos/p324.webp",
   "by": "László Németh",
@@ -1868,12 +2582,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Regular_polygon_6_annotated.svg",
   "file": "File:Regular_polygon_6_annotated.svg"
  },
+ "Heydar Aliyev Center": {
+  "f": "photos/12c9fc8a67f4.webp",
+  "by": "Original architectural work: Zaha Hadid Depiction: Interfase",
+  "lic": "PD",
+  "src": "https://en.wikipedia.org/wiki/File:Heydar_Aliyev_Cultural_Center.jpg",
+  "file": "File:Heydar_Aliyev_Cultural_Center.jpg"
+ },
  "Honey": {
   "f": "photos/p552.webp",
   "by": "Scott Bauer, USDA ARS",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Runny_hunny.jpg",
   "file": "File:Runny_hunny.jpg"
+ },
+ "Honeycomb": {
+  "f": "photos/24a0016bdbe4.webp",
+  "by": "Merdal at Turkish Wikipedia",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Honey_comb.jpg",
+  "file": "File:Honey_comb.jpg"
+ },
+ "Hospital": {
+  "f": "photos/1da2af458534.webp",
+  "by": "H501zalc",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Hospital-de-Bellvitge.jpg",
+  "file": "File:Hospital-de-Bellvitge.jpg"
  },
  "Hourglass": {
   "f": "photos/p284.webp",
@@ -1889,12 +2624,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Mouse_white_background.jpg",
   "file": "File:Mouse_white_background.jpg"
  },
+ "House of Wisdom": {
+  "f": "photos/d684d9e455d9.webp",
+  "by": "Zereshk",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Maqamat_hariri.jpg",
+  "file": "File:Maqamat_hariri.jpg"
+ },
  "House sparrow": {
   "f": "photos/p305.webp",
   "by": "Rhododendrites",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:House_sparrow_male_in_Prospect_Park_(53532).jpg",
   "file": "File:House_sparrow_male_in_Prospect_Park_(53532).jpg"
+ },
+ "Human": {
+  "f": "photos/0cdf5dda0eb1.webp",
+  "by": "Weltenbummler84",
+  "lic": "CC BY-SA 2.0 de",
+  "src": "https://commons.wikimedia.org/wiki/File:Akha_cropped_hires.JPG",
+  "file": "File:Akha_cropped_hires.JPG"
+ },
+ "Human body": {
+  "f": "photos/7204269b2cf1.webp",
+  "by": "Leonardo da Vinci",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Anatomical_Male_Figure_Showing_Heart,_Lungs,_and_Main_Arteries.jpg",
+  "file": "File:Anatomical_Male_Figure_Showing_Heart,_Lungs,_and_Main_Arteries.jpg"
  },
  "Human skeleton": {
   "f": "photos/p517.webp",
@@ -1952,12 +2708,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Ibn_al-Haytham_crop.jpg",
   "file": "File:Ibn_al-Haytham_crop.jpg"
  },
+ "Iceberg": {
+  "f": "photos/e89c17d74052.webp",
+  "by": "AWeith",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Iceberg_in_the_Arctic_with_its_underside_exposed.jpg",
+  "file": "File:Iceberg_in_the_Arctic_with_its_underside_exposed.jpg"
+ },
+ "Iguazu Falls": {
+  "f": "photos/025aa49b1a96.webp",
+  "by": "Mariordo (Mario Roberto Durán Ortiz)",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg",
+  "file": "File:Aerial_Foz_de_Iguaçu_26_Nov_2005.jpg"
+ },
  "Imru' al-Qais": {
   "f": "photos/p458.webp",
   "by": "Unknown authorUnknown author",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Imru_al-Qays.png",
   "file": "File:Imru_al-Qays.png"
+ },
+ "Incandescent light bulb": {
+  "f": "photos/24936793f774.webp",
+  "by": "KMJ, alpha masking by Edokter",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Gluehlampe_01_KMJ.png",
+  "file": "File:Gluehlampe_01_KMJ.png"
  },
  "India": {
   "f": "photos/p133.webp",
@@ -2001,6 +2778,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Insects_-_Neoptera_-_Paleoptera_-_Apterygota.jpg",
   "file": "File:Insects_-_Neoptera_-_Paleoptera_-_Apterygota.jpg"
  },
+ "Insulin": {
+  "f": "photos/f860c5e5e678.webp",
+  "by": "User:AtikaAtikawa",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Insulin_struct.png",
+  "file": "File:Insulin_struct.png"
+ },
  "Isaac Newton": {
   "f": "photos/p091.webp",
   "by": "Godfrey Kneller",
@@ -2008,12 +2792,40 @@
   "src": "https://commons.wikimedia.org/wiki/File:Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg",
   "file": "File:Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg"
  },
+ "Islamic architecture": {
+  "f": "photos/7428b8dab3c8.webp",
+  "by": "Ludvig14",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Jerusalem_DomeoftheRock_J65.JPG",
+  "file": "File:Jerusalem_DomeoftheRock_J65.JPG"
+ },
+ "Islamic art": {
+  "f": "photos/c2624b060a8b.webp",
+  "by": "Yves Remedios",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Atauriques.jpg",
+  "file": "File:Atauriques.jpg"
+ },
  "Islamic calligraphy": {
   "f": "photos/p385.webp",
   "by": "Unknown author",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Folios_1b-2a_from_Part_15_of_a_30-part_Qur%E2%80%99an_copied_by_Ya%27qut_al-Musta%27simi_in_Baghdad_1282-1283_AD_(681_AH)_(cropped).jpg",
   "file": "File:Folios_1b-2a_from_Part_15_of_a_30-part_Qur’an_copied_by_Ya'qut_al-Musta'simi_in_Baghdad_1282-1283_AD_(681_AH)_(cropped).jpg"
+ },
+ "Islamic geometric patterns": {
+  "f": "photos/0d0014678f03.webp",
+  "by": "Ian Alexander",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Doorway_in_Ben_Youssef_Madrasa.JPG",
+  "file": "File:Doorway_in_Ben_Youssef_Madrasa.JPG"
+ },
+ "Island": {
+  "f": "photos/8dd8abfbe3b4.webp",
+  "by": "Jacques Descloitres",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Hawaje-NoRedLine.jpg",
+  "file": "File:Hawaje-NoRedLine.jpg"
  },
  "Italian resistance movement": {
   "f": "photos/p233.webp",
@@ -2092,6 +2904,20 @@
   "src": "https://commons.wikimedia.org/wiki/File:JenniferAnistonHWoFFeb2012.jpg",
   "file": "File:JenniferAnistonHWoFFeb2012.jpg"
  },
+ "Jerusalem": {
+  "f": "photos/17571dcd8a38.webp",
+  "by": "askii",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Dome_of_the_Rock_seen_from_the_Mount_of_Olives_(12395649153)_(cropped).jpg",
+  "file": "File:Dome_of_the_Rock_seen_from_the_Mount_of_Olives_(12395649153)_(cropped).jpg"
+ },
+ "Jigsaw puzzle": {
+  "f": "photos/3ec084e030fe.webp",
+  "by": "Scouten",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Jigsaw_puzzle_01_by_Scouten.jpg",
+  "file": "File:Jigsaw_puzzle_01_by_Scouten.jpg"
+ },
  "Johannes Gutenberg": {
   "f": "photos/p378.webp",
   "by": "Kenneth C. Zirkel",
@@ -2169,6 +2995,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Khalid_ibn_al-Walid_Mosque.jpg",
   "file": "File:Khalid_ibn_al-Walid_Mosque.jpg"
  },
+ "Khan el-Khalili": {
+  "f": "photos/c1ed994b370b.webp",
+  "by": "Heba otefy",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:%D8%AE%D8%A7%D9%86_%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D9%84%D9%8A_1.jpg",
+  "file": "File:خان_الخليلي_1.jpg"
+ },
  "King Fahd Causeway": {
   "f": "photos/p005.webp",
   "by": "Roke (original uploader)",
@@ -2176,12 +3009,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:King_Fahd_causeway_satellite.png",
   "file": "File:King_Fahd_causeway_satellite.png"
  },
+ "King Khalid International Airport": {
+  "f": "photos/75bb3ee6be14.webp",
+  "by": "http://www.amc.af.mil/",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Riyadh-airport.jpg",
+  "file": "File:Riyadh-airport.jpg"
+ },
  "Kingdom Arena": {
   "f": "photos/p475.webp",
   "by": "Cergun62",
   "lic": "CC BY 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Kingdom_Arena_Logo.svg",
   "file": "File:Kingdom_Arena_Logo.svg"
+ },
+ "Kingdom Centre": {
+  "f": "photos/c8fd277df66e.webp",
+  "by": "Hamza A. Durrani",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Kingdom_Centre_Riyadh_2024.jpeg",
+  "file": "File:Kingdom_Centre_Riyadh_2024.jpeg"
  },
  "Kit Harington": {
   "f": "photos/p085.webp",
@@ -2203,6 +3050,13 @@
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D8%B3%D9%87%D9%84%D8%A9.jpg",
   "file": "File:مسجد_السهلة.jpg"
+ },
+ "Kufic": {
+  "f": "photos/57c37717b57a.webp",
+  "by": "Unknown, North Africa or Southern Spain, 9th or 10th Century (North Af",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Unknown,_North_Africa_or_Southern_Spain,_9th_or_10th_Century_-_Blue_Qur%27an_Page_-_Google_Art_Project_(cropped).jpg",
+  "file": "File:Unknown,_North_Africa_or_Southern_Spain,_9th_or_10th_Century_-_Blue_Qur'an_Page_-_Google_Art_Project_(cropped).jpg"
  },
  "Kuwait Airways": {
   "f": "photos/p399.webp",
@@ -2253,12 +3107,40 @@
   "src": "https://commons.wikimedia.org/wiki/File:Kylian_Mbappe_France_v_Senegal_16_June_2026-391_(cropped).jpg",
   "file": "File:Kylian_Mbappe_France_v_Senegal_16_June_2026-391_(cropped).jpg"
  },
+ "Kyoto": {
+  "f": "photos/e0e5fd49d145.webp",
+  "by": "Martin Falbisoner",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-02.jpg",
+  "file": "File:Kiyomizu-dera,_Kyoto,_November_2016_-02.jpg"
+ },
  "La Bombonera": {
   "f": "photos/p321.webp",
   "by": "ProtoplasmaKid",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_Estadio_Alberto_J._Armando_%22La_Bombonera%22_01.jpg",
   "file": "File:Vista_aérea_del_Estadio_Alberto_J._Armando_\"La_Bombonera\"_01.jpg"
+ },
+ "Laboratory": {
+  "f": "photos/75c269254b19.webp",
+  "by": "Photograph by Mike Peel (www.mikepeel.net).",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:At_Manchester_2023_2023_006.jpg",
+  "file": "File:At_Manchester_2023_2023_006.jpg"
+ },
+ "Labyrinth": {
+  "f": "photos/3a6d69925bc4.webp",
+  "by": "AlMare",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Knossos_silver_coin_400bc.jpg",
+  "file": "File:Knossos_silver_coin_400bc.jpg"
+ },
+ "Lake Geneva": {
+  "f": "photos/a2bec9611351.webp",
+  "by": "Copernicus Sentinel-2, ESA",
+  "lic": "CC BY-SA 3.0 igo",
+  "src": "https://commons.wikimedia.org/wiki/File:Lake_Geneva_by_Sentinel-2.jpg",
+  "file": "File:Lake_Geneva_by_Sentinel-2.jpg"
  },
  "Lamborghini Aventador": {
   "f": "photos/p278.webp",
@@ -2280,6 +3162,34 @@
   "lic": "CC BY-SA 3.0",
   "src": "https://commons.wikimedia.org/wiki/File:Karte_Schweizer_Sprachgebiete_2026.png",
   "file": "File:Karte_Schweizer_Sprachgebiete_2026.png"
+ },
+ "Laser": {
+  "f": "photos/b14c1bd955b6.webp",
+  "by": "ESO/A. Ghizzi Panizza (www.albertoghizzipanizza.com)",
+  "lic": "CC BY 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Guiding_the_Milky_Way_(potw2222a).jpg",
+  "file": "File:Guiding_the_Milky_Way_(potw2222a).jpg"
+ },
+ "Latitude": {
+  "f": "photos/7f4c7d78e3e2.webp",
+  "by": "source: Pearson Scott Foresman, donated to the Wikimedia Foundation sv",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Latitude_lines_color.svg",
+  "file": "File:Latitude_lines_color.svg"
+ },
+ "Lawn": {
+  "f": "photos/89d935391135.webp",
+  "by": "Berglund from Richardson, Texas, USA",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:The_Lawn_UVa_2007.jpg",
+  "file": "File:The_Lawn_UVa_2007.jpg"
+ },
+ "Lawyer": {
+  "f": "photos/858d983e7888.webp",
+  "by": "Elliott & Fry",
+  "lic": "No restrictions",
+  "src": "https://commons.wikimedia.org/wiki/File:Helena_Normanton.jpg",
+  "file": "File:Helena_Normanton.jpg"
  },
  "Layla and Majnun": {
   "f": "photos/p004.webp",
@@ -2337,12 +3247,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg",
   "file": "File:Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg"
  },
+ "Liquid nitrogen": {
+  "f": "photos/61583003dbe9.webp",
+  "by": "Cory Doctorow aka gruntzoki on Flickr",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Liquidnitrogen.jpg",
+  "file": "File:Liquidnitrogen.jpg"
+ },
  "Lisa Kudrow": {
   "f": "photos/p022.webp",
   "by": "Lan Bui",
   "lic": "CC BY-SA 2.0",
   "src": "https://commons.wikimedia.org/wiki/File:Lisa_Kudrow_2.jpg",
   "file": "File:Lisa_Kudrow_2.jpg"
+ },
+ "Lisbon": {
+  "f": "photos/4b81f121de5b.webp",
+  "by": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Lisboa_-_Portugal_(52597836992).jpg",
+  "file": "File:Lisboa_-_Portugal_(52597836992).jpg"
  },
  "Liver": {
   "f": "photos/p268.webp",
@@ -2385,6 +3309,13 @@
   "lic": "CC BY 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Luanda_2025_focused_(cropped).jpg",
   "file": "File:Luanda_2025_focused_(cropped).jpg"
+ },
+ "Lucerne": {
+  "f": "photos/a5b1b05b1295.webp",
+  "by": "Валерий Дед",
+  "lic": "CC BY 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:L%C3%B6wendenkmal_-_panoramio.jpg",
+  "file": "File:Löwendenkmal_-_panoramio.jpg"
  },
  "Ludwig van Beethoven": {
   "f": "photos/p527.webp",
@@ -2442,6 +3373,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Mag_glass_request.jpg",
   "file": "File:Mag_glass_request.jpg"
  },
+ "Maldives": {
+  "f": "photos/f33b4ce71251.webp",
+  "by": "See File history, below, for details.",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Flag_of_Maldives.svg",
+  "file": "File:Flag_of_Maldives.svg"
+ },
  "Manama": {
   "f": "photos/p551.webp",
   "by": "Wadiia",
@@ -2449,12 +3387,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Manama,_Bahrain_Decembre_2014.jpg",
   "file": "File:Manama,_Bahrain_Decembre_2014.jpg"
  },
+ "Manchester": {
+  "f": "photos/6900d9c9404d.webp",
+  "by": "David Dixon",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Tower_Blocks_over_Knott_Mill,_geograph_6866152_by_David_Dixon.jpg",
+  "file": "File:Tower_Blocks_over_Knott_Mill,_geograph_6866152_by_David_Dixon.jpg"
+ },
  "Mandarin Chinese": {
   "f": "photos/p346.webp",
   "by": "LiliCharlie (user name)",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Guanhua_swapped.svg",
   "file": "File:Guanhua_swapped.svg"
+ },
+ "Manuscript": {
+  "f": "photos/6328c53816d2.webp",
+  "by": "Unknown author",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Codex_Bruchsal_1_68r.jpg",
+  "file": "File:Codex_Bruchsal_1_68r.jpg"
+ },
+ "Map": {
+  "f": "photos/685e80b7153b.webp",
+  "by": "Gerard van Schagen",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:World_Map_1689.JPG",
+  "file": "File:World_Map_1689.JPG"
  },
  "Maracanã Stadium": {
   "f": "photos/p393.webp",
@@ -2519,6 +3478,27 @@
   "src": "https://commons.wikimedia.org/wiki/File:Sura19.pdf",
   "file": "File:Sura19.pdf"
  },
+ "Mask": {
+  "f": "photos/cdbf063d3f6f.webp",
+  "by": "Photo: Andreas Praefcke",
+  "lic": "CC BY 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Ravensburg_Fasnet_Papierkrattler_2005.jpg",
+  "file": "File:Ravensburg_Fasnet_Papierkrattler_2005.jpg"
+ },
+ "Masmak Fort": {
+  "f": "photos/9b47d316c6a2.webp",
+  "by": "Francisco Anzola",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Masmak_Fort_(12753717253).jpg",
+  "file": "File:Masmak_Fort_(12753717253).jpg"
+ },
+ "Mathematics": {
+  "f": "photos/8e8b50b7bc1e.webp",
+  "by": "Attributed to Meliacin Master",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Woman_teaching_geometry.jpg",
+  "file": "File:Woman_teaching_geometry.jpg"
+ },
  "Matt Groening": {
   "f": "photos/p610.webp",
   "by": "PhilipRomanoPhoto",
@@ -2547,6 +3527,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Matthew_Perry_in_support_of_Awareness_on_Drug_Courts_and_Reduced_Substance_Abuse.jpg",
   "file": "File:Matthew_Perry_in_support_of_Awareness_on_Drug_Courts_and_Reduced_Substance_Abuse.jpg"
  },
+ "Maze": {
+  "f": "photos/a922192abb3a.webp",
+  "by": "Niki Odolphie from Frome, England",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Longleat-maze.jpg",
+  "file": "File:Longleat-maze.jpg"
+ },
  "McDonald's": {
   "f": "photos/p529.webp",
   "by": "McDonald's",
@@ -2574,6 +3561,13 @@
   "lic": "CC0",
   "src": "https://commons.wikimedia.org/wiki/File:Al-Masjid_An-Nabawi_(Bird%27s_Eye_View).jpg",
   "file": "File:Al-Masjid_An-Nabawi_(Bird's_Eye_View).jpg"
+ },
+ "Mediterranean Sea": {
+  "f": "photos/659b0f99accc.webp",
+  "by": "of the modification : Eric Gaba (Sting)",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Mediterranean_Sea_16.61811E_38.99124N.jpg",
+  "file": "File:Mediterranean_Sea_16.61811E_38.99124N.jpg"
  },
  "Megabat": {
   "f": "photos/p522.webp",
@@ -2631,6 +3625,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%AF%D9%8A%D9%86.jpg",
   "file": "File:مدين.jpg"
  },
+ "Milford Sound": {
+  "f": "photos/3c32ffc4a61e.webp",
+  "by": "Maros M r a z (Maros)",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Milford_Sound_(New_Zealand).JPG",
+  "file": "File:Milford_Sound_(New_Zealand).JPG"
+ },
  "Milk": {
   "f": "photos/p543.webp",
   "by": "NIAID",
@@ -2658,6 +3659,20 @@
   "lic": "CC BY-SA 3.0",
   "src": "https://commons.wikimedia.org/wiki/File:Minaret_of_Qayt_Bey,_Umayyad_Mosque.jpg",
   "file": "File:Minaret_of_Qayt_Bey,_Umayyad_Mosque.jpg"
+ },
+ "Mineirão": {
+  "f": "photos/6976a84d96d1.webp",
+  "by": "Governo Federal Brasileiro",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Mineir%C3%A3o_(Top_View).jpg",
+  "file": "File:Mineirão_(Top_View).jpg"
+ },
+ "Mining": {
+  "f": "photos/0c3592063d8b.webp",
+  "by": "Aditya Suseno",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:Sulphur_Mining_at_Kawah_Ijen_3.jpg",
+  "file": "File:Sulphur_Mining_at_Kawah_Ijen_3.jpg"
  },
  "Mirror": {
   "f": "photos/p609.webp",
@@ -2687,12 +3702,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg",
   "file": "File:Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg"
  },
+ "Molsheim": {
+  "f": "photos/4d0b54aeb560.webp",
+  "by": "Lybil BER",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Eglise_des_j%C3%A9suites.jpg",
+  "file": "File:Eglise_des_jésuites.jpg"
+ },
  "Mona Lisa": {
   "f": "photos/p618.webp",
   "by": "Leonardo da Vinci",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
   "file": "File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"
+ },
+ "Money": {
+  "f": "photos/8ed29f85ec1a.webp",
+  "by": "Avij (talk · contribs)",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Euro_coins_and_banknotes_(cropped).jpg",
+  "file": "File:Euro_coins_and_banknotes_(cropped).jpg"
+ },
+ "Mont-Saint-Michel": {
+  "f": "photos/4e78d6b38dcc.webp",
+  "by": "Amaustan",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Mont-Saint-Michel_vu_du_ciel.jpg",
+  "file": "File:Mont-Saint-Michel_vu_du_ciel.jpg"
  },
  "Monty Python": {
   "f": "photos/p210.webp",
@@ -2735,6 +3771,27 @@
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Mount_Sinai_from_the_southwest.jpg",
   "file": "File:Mount_Sinai_from_the_southwest.jpg"
+ },
+ "Mountaineering": {
+  "f": "photos/ddbb52ed61de.webp",
+  "by": "Troymason",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:M_Rainier.jpg",
+  "file": "File:M_Rainier.jpg"
+ },
+ "Movie camera": {
+  "f": "photos/e9cefe3fb9b1.webp",
+  "by": "Unknown author",
+  "lic": "CC BY 2.5",
+  "src": "https://commons.wikimedia.org/wiki/File:IMAX_camera_1.jpg",
+  "file": "File:IMAX_camera_1.jpg"
+ },
+ "Movie theater": {
+  "f": "photos/897727c99694.webp",
+  "by": "Ajznponar",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Ptuj,_city_cinema.jpg",
+  "file": "File:Ptuj,_city_cinema.jpg"
  },
  "Muhammad Ali": {
   "f": "photos/p283.webp",
@@ -2799,6 +3856,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
   "file": "File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg"
  },
+ "Naqsh-e Jahan Square": {
+  "f": "photos/8b872d40779e.webp",
+  "by": "احمد جمالی مقدم",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Naqsh-i_Jahan_Square,_Jan._2018.jpg",
+  "file": "File:Naqsh-i_Jahan_Square,_Jan._2018.jpg"
+ },
  "Naskh (script)": {
   "f": "photos/p153.webp",
   "by": "Aziz Efendi (d. 16 August 1934)",
@@ -2826,6 +3890,20 @@
   "lic": "CC-BY-SA-4.0",
   "src": "https://en.wikipedia.org/wiki/File:Nmoq.jpg",
   "file": "File:Nmoq.jpg"
+ },
+ "Nautilus": {
+  "f": "photos/979b5f8fb6ae.webp",
+  "by": "Manuae",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Nautilus_belauensis_from_Palau.jpg",
+  "file": "File:Nautilus_belauensis_from_Palau.jpg"
+ },
+ "Navigation": {
+  "f": "photos/1393b68abe02.webp",
+  "by": "Deerpeter",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Kaart_Lezen.jpg",
+  "file": "File:Kaart_Lezen.jpg"
  },
  "Naypyidaw": {
   "f": "photos/p212.webp",
@@ -2883,6 +3961,27 @@
   "src": "https://commons.wikimedia.org/wiki/File:Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg",
   "file": "File:Neymar_Junior_Brazil_V_Morocco_13_June_2026-40.jpg"
  },
+ "Niagara Falls": {
+  "f": "photos/cf09ce9c7df0.webp",
+  "by": "Saffron Blaze",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:3Falls_Niagara.jpg",
+  "file": "File:3Falls_Niagara.jpg"
+ },
+ "Night": {
+  "f": "photos/77c4bd835c04.webp",
+  "by": "Benh LIEU SONG",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Savault_Chapel_Under_Milky_Way_BLS.jpg",
+  "file": "File:Savault_Chapel_Under_Milky_Way_BLS.jpg"
+ },
+ "Night sky": {
+  "f": "photos/67d752f41c34.webp",
+  "by": "Alexey Elfimov",
+  "lic": "CC BY 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B2%D0%B5%D1%82_%D0%BE%D1%82_%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BD%D0%B8_-_panoramio.jpg",
+  "file": "File:Свет_от_деревни_-_panoramio.jpg"
+ },
  "Nike, Inc.": {
   "f": "photos/p536.webp",
   "by": "Gary Halvorson, Oregon State Archives",
@@ -2911,12 +4010,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_logo.svg",
   "file": "File:Nintendo_Switch_logo.svg"
  },
+ "Nobel Prize": {
+  "f": "photos/718a81cec48d.webp",
+  "by": "Photograph: JonathunderMedal: Erik Lindberg (1873-1966)",
+  "lic": "PD-US",
+  "src": "https://en.wikipedia.org/wiki/File:Nobel_Prize.png",
+  "file": "File:Nobel_Prize.png"
+ },
  "Nokia 3310": {
   "f": "photos/p542.webp",
   "by": "Nokia",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Nokia_3310_logo.svg",
   "file": "File:Nokia_3310_logo.svg"
+ },
+ "Oasis": {
+  "f": "photos/a855996879bd.webp",
+  "by": "NASA",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:ISS-64_Jubba_with_Nefud_Desert,_Saudi_Arabia.jpg",
+  "file": "File:ISS-64_Jubba_with_Nefud_Desert,_Saudi_Arabia.jpg"
+ },
+ "Observatory": {
+  "f": "photos/dd5b22ea25cc.webp",
+  "by": "Adusha",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Royal_observatory_Greenwich.JPG",
+  "file": "File:Royal_observatory_Greenwich.JPG"
  },
  "Ocean": {
   "f": "photos/p307.webp",
@@ -2939,6 +4059,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Octopus2.jpg",
   "file": "File:Octopus2.jpg"
  },
+ "Oil platform": {
+  "f": "photos/4cde07168b7b.webp",
+  "by": "Russian.dissident",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:LUN-A.jpg",
+  "file": "File:LUN-A.jpg"
+ },
  "Old Trafford": {
   "f": "photos/p051.webp",
   "by": "Arne Müseler from Salzburg, AT",
@@ -2953,12 +4080,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Olympic_rings_without_rims.svg",
   "file": "File:Olympic_rings_without_rims.svg"
  },
+ "Olympic medal": {
+  "f": "photos/7c17fe381008.webp",
+  "by": "Unknown authorUnknown author",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:1896_Olympic_medal.jpg",
+  "file": "File:1896_Olympic_medal.jpg"
+ },
  "Olympic symbols": {
   "f": "photos/p017.webp",
   "by": "Original author: Pierre de Coubertin (1863-1937)",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Olympic_rings_without_rims.svg",
   "file": "File:Olympic_rings_without_rims.svg"
+ },
+ "Online shopping": {
+  "f": "photos/e2ed2cc1431e.webp",
+  "by": "Bogdan Hoyaux / European Commission",
+  "lic": "CC BY 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Shopping_online_with_bank_card.jpg",
+  "file": "File:Shopping_online_with_bank_card.jpg"
  },
  "Orange (fruit)": {
   "f": "photos/p584.webp",
@@ -2967,6 +4108,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Oranges_-_whole-halved-segment.jpg",
   "file": "File:Oranges_-_whole-halved-segment.jpg"
  },
+ "Orchestra": {
+  "f": "photos/be7f47f1a1c4.webp",
+  "by": "Սէրուժ Ուրիշեան (Serouj Ourishian)",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:National_Chamber_Orchestra_of_Armenia.jpg",
+  "file": "File:National_Chamber_Orchestra_of_Armenia.jpg"
+ },
  "Ottawa": {
   "f": "photos/p106.webp",
   "by": "No machine-readable author provided. Arctic.gnome assumed (based on co",
@@ -2974,12 +4122,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Parliament-Ottawa.jpg",
   "file": "File:Parliament-Ottawa.jpg"
  },
+ "Oud": {
+  "f": "photos/8ed81ddcc585.webp",
+  "by": "Creator:Manol (Emmanuel Venios)",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:%C5%AAd_MET_DP340079.jpg",
+  "file": "File:Ūd_MET_DP340079.jpg"
+ },
+ "Outback": {
+  "f": "photos/4cdfd27ebd05.webp",
+  "by": "Gabriele Delhey",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Mount_Conner,_August_2003.jpg",
+  "file": "File:Mount_Conner,_August_2003.jpg"
+ },
  "Outer space": {
   "f": "photos/p327.webp",
   "by": "NASA, ESA, CSA, and STScI",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Webb%27s_First_Deep_Field.jpg",
   "file": "File:Webb's_First_Deep_Field.jpg"
+ },
+ "Owl": {
+  "f": "photos/516ba09058d7.webp",
+  "by": "Carlos Delgado",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Bubo_bubo_sibiricus_-_01.JPG",
+  "file": "File:Bubo_bubo_sibiricus_-_01.JPG"
  },
  "Ozone layer": {
   "f": "photos/p207.webp",
@@ -3008,6 +4177,27 @@
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:01_Paella_Valenciana_original.jpg",
   "file": "File:01_Paella_Valenciana_original.jpg"
+ },
+ "Paint": {
+  "f": "photos/84ac15e76ea3.webp",
+  "by": "Joyful spherical creature",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Multicolored_tempera_paints.jpg",
+  "file": "File:Multicolored_tempera_paints.jpg"
+ },
+ "Paintbrush": {
+  "f": "photos/1b56a1bc3066.webp",
+  "by": "Krestavilis at English Wikipedia",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Paintbrushes.jpg",
+  "file": "File:Paintbrushes.jpg"
+ },
+ "Pamukkale": {
+  "f": "photos/63d63314dbe5.webp",
+  "by": "Biologg",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Pamukkale,_Denizli_2026_68.jpg",
+  "file": "File:Pamukkale,_Denizli_2026_68.jpg"
  },
  "Pancreas": {
   "f": "photos/p531.webp",
@@ -3079,12 +4269,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:South_Shetland-2016-Deception_Island%E2%80%93Chinstrap_penguin_(Pygoscelis_antarctica)_04.jpg",
   "file": "File:South_Shetland-2016-Deception_Island–Chinstrap_penguin_(Pygoscelis_antarctica)_04.jpg"
  },
+ "Penicillin": {
+  "f": "photos/030008936ee3.webp",
+  "by": "User:Innerstream",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Penicillin_Core_v2.svg",
+  "file": "File:Penicillin_Core_v2.svg"
+ },
  "Percentage": {
   "f": "photos/p516.webp",
   "by": "Joliv",
   "lic": "CC BY-SA 3.0",
   "src": "https://commons.wikimedia.org/wiki/File:Web-browser_usage_on_Wikimedia.svg",
   "file": "File:Web-browser_usage_on_Wikimedia.svg"
+ },
+ "Periodic table": {
+  "f": "photos/e7e114b8c143.webp",
+  "by": "Lekritz",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Colour_18-col_PT_with_labels.svg",
+  "file": "File:Colour_18-col_PT_with_labels.svg"
  },
  "Persepolis": {
   "f": "photos/p209.webp",
@@ -3099,6 +4303,13 @@
   "lic": "CC BY-SA 3.0",
   "src": "https://commons.wikimedia.org/wiki/File:Farsi.svg",
   "file": "File:Farsi.svg"
+ },
+ "Personal computer": {
+  "f": "photos/277c7d458ac2.webp",
+  "by": "Claireneon",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Golden_ratio_logo_design_technique.jpg",
+  "file": "File:Golden_ratio_logo_design_technique.jpg"
  },
  "Petra": {
   "f": "photos/p121.webp",
@@ -3142,12 +4353,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Pink_sapphire_ring.jpg",
   "file": "File:Pink_sapphire_ring.jpg"
  },
+ "Pirate": {
+  "f": "photos/eaf8b2b13f50.webp",
+  "by": "WarX, edited by Manuel Strehl",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Flag_of_Edward_England.svg",
+  "file": "File:Flag_of_Edward_England.svg"
+ },
+ "Pistachio": {
+  "f": "photos/823150633ab0.webp",
+  "by": "THOR",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Pistachio_vera.jpg",
+  "file": "File:Pistachio_vera.jpg"
+ },
  "Pizza": {
   "f": "photos/p401.webp",
   "by": "igorovsyannykov",
   "lic": "CC0",
   "src": "https://commons.wikimedia.org/wiki/File:Pizza-3007395.jpg",
   "file": "File:Pizza-3007395.jpg"
+ },
+ "Plankton": {
+  "f": "photos/9c9fb4dc8167.webp",
+  "by": "Jay Nadeau, Chris Lindensmith, Jody W. Deming, Vicente I. Fernandez, a",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Marine_microplankton.jpg",
+  "file": "File:Marine_microplankton.jpg"
  },
  "Platypus": {
   "f": "photos/p624.webp",
@@ -3162,6 +4394,13 @@
   "lic": "CC0",
   "src": "https://commons.wikimedia.org/wiki/File:Black_and_white_Playstation_5_base_edition_with_controller.png",
   "file": "File:Black_and_white_Playstation_5_base_edition_with_controller.png"
+ },
+ "Playground": {
+  "f": "photos/6173e7d8807c.webp",
+  "by": "NikosLikomitros",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:Argos_playground.jpg",
+  "file": "File:Argos_playground.jpg"
  },
  "Playing card": {
   "f": "photos/p157.webp",
@@ -3183,6 +4422,20 @@
   "lic": "CC0",
   "src": "https://commons.wikimedia.org/wiki/File:Pokemon_Center_Tohoku_in_SENDAI_PARCO.jpg",
   "file": "File:Pokemon_Center_Tohoku_in_SENDAI_PARCO.jpg"
+ },
+ "Polar bear": {
+  "f": "photos/adb7b3abab7d.webp",
+  "by": "Alan Wilson",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg",
+  "file": "File:Polar_Bear_-_Alaska_(cropped).jpg"
+ },
+ "Pork pie hat": {
+  "f": "photos/e28370c6d6f6.webp",
+  "by": "KDS444",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Brown_Porkpie_Hat.JPG",
+  "file": "File:Brown_Porkpie_Hat.JPG"
  },
  "Portuguese language": {
   "f": "photos/p454.webp",
@@ -3212,6 +4465,20 @@
   "src": "https://commons.wikimedia.org/wiki/File:Primes-vs-composites.svg",
   "file": "File:Primes-vs-composites.svg"
  },
+ "Printing press": {
+  "f": "photos/6a6d8de09fd6.webp",
+  "by": "International Printing Museum",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:Gutenberg_press.png",
+  "file": "File:Gutenberg_press.png"
+ },
+ "Puzzle": {
+  "f": "photos/b7d4e1e07695.webp",
+  "by": "Lpele",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Set_of_various_puzzles.jpg",
+  "file": "File:Set_of_various_puzzles.jpg"
+ },
  "Qasr Al Watan": {
   "f": "photos/p090.webp",
   "by": "Renek78",
@@ -3225,6 +4492,13 @@
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Qatar_Airways_Airbus_A350-1000_(A7-ANA).jpg",
   "file": "File:Qatar_Airways_Airbus_A350-1000_(A7-ANA).jpg"
+ },
+ "Quill": {
+  "f": "photos/6bfc6e87b00d.webp",
+  "by": "Mushki Brichta",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:%D7%A7%D7%9C%D7%A3,_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg",
+  "file": "File:קלף,_נוצה_ודיו.jpg"
  },
  "Quran": {
   "f": "photos/p496.webp",
@@ -3261,6 +4535,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Double-alaskan-rainbow.jpg",
   "file": "File:Double-alaskan-rainbow.jpg"
  },
+ "Rainforest": {
+  "f": "photos/11ecb1bbe9ac.webp",
+  "by": "Bild von bere von awstburg auf Pixabay https://pixabay.com/de/photos/d",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:Chiapas_Rainforest_crop.jpg",
+  "file": "File:Chiapas_Rainforest_crop.jpg"
+ },
  "Raisin": {
   "f": "photos/p435.webp",
   "by": "Paweł Kuźniar (Jojo_1, Jojo)",
@@ -3281,6 +4562,13 @@
   "lic": "CC BY-SA 3.0",
   "src": "https://commons.wikimedia.org/wiki/File:Mohammad_adil-Rashidun-empire-at-its-peak-close.PNG",
   "file": "File:Mohammad_adil-Rashidun-empire-at-its-peak-close.PNG"
+ },
+ "Recreational vehicle": {
+  "f": "photos/16bb3e7f3947.webp",
+  "by": "High Contrast",
+  "lic": "CC BY 3.0 de",
+  "src": "https://commons.wikimedia.org/wiki/File:Dodge-based_recreational_vehicle_in_Munich.JPG",
+  "file": "File:Dodge-based_recreational_vehicle_in_Munich.JPG"
  },
  "Red Sea": {
   "f": "photos/p585.webp",
@@ -3352,6 +4640,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Amundsen_in_fur_skins.jpg",
   "file": "File:Amundsen_in_fur_skins.jpg"
  },
+ "Robben Island": {
+  "f": "photos/e01ee052295b.webp",
+  "by": "South African Tourism from South Africa",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Robben_Island_-_Cape_Town,_South_Africa_(3883849594).jpg",
+  "file": "File:Robben_Island_-_Cape_Town,_South_Africa_(3883849594).jpg"
+ },
  "Robert F. Kennedy Memorial Stadium": {
   "f": "photos/p241.webp",
   "by": "Duane Lempke",
@@ -3373,6 +4668,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:HONDA_ASIMO.jpg",
   "file": "File:HONDA_ASIMO.jpg"
  },
+ "Rock dove": {
+  "f": "photos/d6d44cef0c88.webp",
+  "by": "william_stephens",
+  "lic": "CC BY 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Columba_livia_(Rock_Dove,_wild),_Duncansby_Head,_Caithness,_Scotland_1.jpg",
+  "file": "File:Columba_livia_(Rock_Dove,_wild),_Duncansby_Head,_Caithness,_Scotland_1.jpg"
+ },
  "Rock of Gibraltar": {
   "f": "photos/p231.webp",
   "by": "Original by Eric Gaba (Sting), label/legend edits by Jeff Dahl",
@@ -3386,6 +4688,13 @@
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Logo_da_Rolex.png",
   "file": "File:Logo_da_Rolex.png"
+ },
+ "Romeo and Juliet": {
+  "f": "photos/a2769b6950d6.webp",
+  "by": "Ford Madox Brown",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Romeo_and_juliet_brown.jpg",
+  "file": "File:Romeo_and_juliet_brown.jpg"
  },
  "Ronaldinho": {
   "f": "photos/p588.webp",
@@ -3401,6 +4710,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Primary_and_secondary_cotton_roots.jpg",
   "file": "File:Primary_and_secondary_cotton_roots.jpg"
  },
+ "Rosario, Santa Fe": {
+  "f": "photos/944558e90ee6.webp",
+  "by": "Falk2",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:J30_869_Rosario.jpg",
+  "file": "File:J30_869_Rosario.jpg"
+ },
  "Royal Mint of Spain": {
   "f": "photos/p135.webp",
   "by": "Carlos Delgado",
@@ -3415,6 +4731,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Rub_al_Khali_002.JPG",
   "file": "File:Rub_al_Khali_002.JPG"
  },
+ "Rubik's Cube": {
+  "f": "photos/dc1e172cfe8c.webp",
+  "by": "Mike Gonzalez (TheCoffee)",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Rubiks_cube_solved.jpg",
+  "file": "File:Rubiks_cube_solved.jpg"
+ },
  "Russia": {
   "f": "photos/p449.webp",
   "by": "Unknown author",
@@ -3428,6 +4751,13 @@
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Current_Russian_Ruble_(coins).png",
   "file": "File:Current_Russian_Ruble_(coins).png"
+ },
+ "Saadiyat Island": {
+  "f": "photos/4a295c5e6683.webp",
+  "by": "Slywire",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Al_Jubail_Saadiyat_Island_aerial_view.jpg",
+  "file": "File:Al_Jubail_Saadiyat_Island_aerial_view.jpg"
  },
  "Sadu House": {
   "f": "photos/p421.webp",
@@ -3457,6 +4787,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Sahara_real_color.jpg",
   "file": "File:Sahara_real_color.jpg"
  },
+ "Saint Basil's Cathedral": {
+  "f": "photos/595b08c77666.webp",
+  "by": "Tsy1980",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Saint_Basil%27s_Cathedral_in_Moscow.jpg",
+  "file": "File:Saint_Basil's_Cathedral_in_Moscow.jpg"
+ },
  "Saladin": {
   "f": "photos/p222.webp",
   "by": "Classical Numismatic Group (CNG)",
@@ -3485,6 +4822,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Salvador_Dal%C3%AD_1939.jpg",
   "file": "File:Salvador_Dalí_1939.jpg"
  },
+ "Samarkand Kufic Quran": {
+  "f": "photos/20a8343c1634.webp",
+  "by": "Khalili Collections",
+  "lic": "CC BY-SA 3.0 igo",
+  "src": "https://commons.wikimedia.org/wiki/File:Khalili_Collection_Islamic_Art_kfq_0096.jpg",
+  "file": "File:Khalili_Collection_Islamic_Art_kfq_0096.jpg"
+ },
  "Samsung": {
   "f": "photos/p306.webp",
   "by": "Oskar Alexanderson",
@@ -3492,12 +4836,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Samsung_headquarters.jpg",
   "file": "File:Samsung_headquarters.jpg"
  },
+ "Sand dune": {
+  "f": "photos/0735fb6cb8d7.webp",
+  "by": "Himarerme",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Dunas_de_Maspalomas.jpg",
+  "file": "File:Dunas_de_Maspalomas.jpg"
+ },
  "Sandal": {
   "f": "photos/p368.webp",
   "by": "Muhammad Mahdi Karim",
   "lic": "GFDL 1.2",
   "src": "https://commons.wikimedia.org/wiki/File:Men%27s_size_10_Sandals.jpg",
   "file": "File:Men's_size_10_Sandals.jpg"
+ },
+ "Sandia Mountains": {
+  "f": "photos/128ebbd21230.webp",
+  "by": "G. Thomas at en.wikipedia",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:SandiaMtnNM.jpg",
+  "file": "File:SandiaMtnNM.jpg"
  },
  "Santiago Bernabéu Stadium": {
   "f": "photos/p208.webp",
@@ -3534,12 +4892,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:HZ-AR29_Boeing_787-10_Saudia_Arabian_Airlines_LHR_3.1.25.jpg",
   "file": "File:HZ-AR29_Boeing_787-10_Saudia_Arabian_Airlines_LHR_3.1.25.jpg"
  },
+ "Savanna": {
+  "f": "photos/5d329afb1e34.webp",
+  "by": "ProfessorX",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Tarangire-Natpark800600.jpg",
+  "file": "File:Tarangire-Natpark800600.jpg"
+ },
  "Scimitar": {
   "f": "photos/p540.webp",
   "by": "Unknown authorUnknown author",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Sabel,_shamshir,_Egypten,_1800-talet%3F_-_Livrustkammaren_-_60711.tif",
   "file": "File:Sabel,_shamshir,_Egypten,_1800-talet?_-_Livrustkammaren_-_60711.tif"
+ },
+ "Scoreboard": {
+  "f": "photos/959d9f7bdaed.webp",
+  "by": "Schmackity at English Wikipedia",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:New_scoreboard.jpg",
+  "file": "File:New_scoreboard.jpg"
  },
  "Sea": {
   "f": "photos/p252.webp",
@@ -3548,12 +4920,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Mediterranean_Sea_16.61811E_38.99124N.jpg",
   "file": "File:Mediterranean_Sea_16.61811E_38.99124N.jpg"
  },
+ "Sea anemone": {
+  "f": "photos/ade719f37679.webp",
+  "by": "Giacomo Merculiano",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Actiniaria.jpg",
+  "file": "File:Actiniaria.jpg"
+ },
  "Sea sponge": {
   "f": "photos/p064.webp",
   "by": "Twilight Zone Expedition Team 2007, NOAA-OE",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Sponges_in_Caribbean_Sea,_Cayman_Islands.jpg",
   "file": "File:Sponges_in_Caribbean_Sea,_Cayman_Islands.jpg"
+ },
+ "Seagrass": {
+  "f": "photos/b3d2c6fc40a3.webp",
+  "by": "Daderot",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:Zostera_marina_-_National_Museum_of_Nature_and_Science,_Tokyo_-_DSC07663.JPG",
+  "file": "File:Zostera_marina_-_National_Museum_of_Nature_and_Science,_Tokyo_-_DSC07663.JPG"
  },
  "Seahorse": {
   "f": "photos/p250.webp",
@@ -3590,6 +4976,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:US_199_Redwood_Highway.jpg",
   "file": "File:US_199_Redwood_Highway.jpg"
  },
+ "Serengeti": {
+  "f": "photos/81e34edc3537.webp",
+  "by": "Bamse",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Parks_Tanzania.svg",
+  "file": "File:Parks_Tanzania.svg"
+ },
  "Sewing needle": {
   "f": "photos/p598.webp",
   "by": "Thamizhpparithi Maari",
@@ -3604,6 +4997,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:00-Taschdid.svg",
   "file": "File:00-Taschdid.svg"
  },
+ "Sharm El Sheikh": {
+  "f": "photos/1aad6ce870bf.webp",
+  "by": "cpadula",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Naama_Bay_beach_(cropped).jpg",
+  "file": "File:Naama_Bay_beach_(cropped).jpg"
+ },
  "Sheikh Zayed Grand Mosque": {
   "f": "photos/p570.webp",
   "by": "Wikiemirati",
@@ -3611,12 +5011,26 @@
   "src": "https://en.wikipedia.org/wiki/File:Sheikh_Zayed_Mosque_view.jpg",
   "file": "File:Sheikh_Zayed_Mosque_view.jpg"
  },
+ "Sheikh Zayed Road": {
+  "f": "photos/9ff4c6cc7a5f.webp",
+  "by": "Imre Solt",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Sheikh_Zayed_Road_on_28_December_2007.jpg",
+  "file": "File:Sheikh_Zayed_Road_on_28_December_2007.jpg"
+ },
  "Shigeru Miyamoto": {
   "f": "photos/p144.webp",
   "by": "文部科学省",
   "lic": "CC BY 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Miyamoto_Shigeru_2026.jpg",
   "file": "File:Miyamoto_Shigeru_2026.jpg"
+ },
+ "Shuttlecock": {
+  "f": "photos/d9123be9c465.webp",
+  "by": "Arne Nordmann (user:norro), Germany",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Shuttlecocks_Yonex_Aerosensa_20.jpg",
+  "file": "File:Shuttlecocks_Yonex_Aerosensa_20.jpg"
  },
  "Sibawayh": {
   "f": "photos/p151.webp",
@@ -3667,12 +5081,47 @@
   "src": "https://commons.wikimedia.org/wiki/File:Domenico_Fetti_-_Sleeping_Girl_-_WGA7863.jpg",
   "file": "File:Domenico_Fetti_-_Sleeping_Girl_-_WGA7863.jpg"
  },
+ "Smartphone": {
+  "f": "photos/bb37ad91a06b.webp",
+  "by": "Sage Ross",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Wikipedia_homepage_on_a_large_Android_phone,_2015-04-16.jpg",
+  "file": "File:Wikipedia_homepage_on_a_large_Android_phone,_2015-04-16.jpg"
+ },
  "Snowman": {
   "f": "photos/p279.webp",
   "by": "GutMaze",
   "lic": "CC BY-SA 3.0",
   "src": "https://commons.wikimedia.org/wiki/File:Snowman_in_Indiana_2014.jpg",
   "file": "File:Snowman_in_Indiana_2014.jpg"
+ },
+ "Social media": {
+  "f": "photos/4f306f3bac7a.webp",
+  "by": "Gemdation",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:Social_media_platter.svg",
+  "file": "File:Social_media_platter.svg"
+ },
+ "Soil": {
+  "f": "photos/791401214e8a.webp",
+  "by": "HolgerK at English Wikipedia",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Stagnogley.JPG",
+  "file": "File:Stagnogley.JPG"
+ },
+ "Sound barrier": {
+  "f": "photos/15c24aa99649.webp",
+  "by": "Ensign John Gay, U.S. Navy",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:FA-18_Hornet_breaking_sound_barrier_(7_July_1999).jpg",
+  "file": "File:FA-18_Hornet_breaking_sound_barrier_(7_July_1999).jpg"
+ },
+ "Souq": {
+  "f": "photos/d1f4c7d1ea59.webp",
+  "by": "Antonio Cristofaro",
+  "lic": "CC BY 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Turkey_(68742801).jpeg",
+  "file": "File:Turkey_(68742801).jpeg"
  },
  "Souq Al-Mubarakiya": {
   "f": "photos/p286.webp",
@@ -3695,6 +5144,20 @@
   "src": "https://commons.wikimedia.org/wiki/File:Currency_South_Korea.jpg",
   "file": "File:Currency_South_Korea.jpg"
  },
+ "South Pole": {
+  "f": "photos/ec8b4a73b268.webp",
+  "by": "Unknown author",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Pole-south.gif",
+  "file": "File:Pole-south.gif"
+ },
+ "Space Shuttle Discovery": {
+  "f": "photos/5c48000655e5.webp",
+  "by": "NASA",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:STS-133_Space_Shuttle_Discovery_after_undocking_3_(cropped).jpg",
+  "file": "File:STS-133_Space_Shuttle_Discovery_after_undocking_3_(cropped).jpg"
+ },
  "Spanish language": {
   "f": "photos/p448.webp",
   "by": "Salvabl",
@@ -3709,12 +5172,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Earth_to_Sun_-_en.png",
   "file": "File:Earth_to_Sun_-_en.png"
  },
+ "Speedometer": {
+  "f": "photos/dc4f456f5b67.webp",
+  "by": "Kskhh",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Toyota_Corolla_2016_speedometer.jpg",
+  "file": "File:Toyota_Corolla_2016_speedometer.jpg"
+ },
  "Sperm whale": {
   "f": "photos/p328.webp",
   "by": "Gabriel Barathieu",
   "lic": "CC BY-SA 2.0",
   "src": "https://commons.wikimedia.org/wiki/File:Mother_and_baby_sperm_whale.jpg",
   "file": "File:Mother_and_baby_sperm_whale.jpg"
+ },
+ "Spice": {
+  "f": "photos/692f247065f5.webp",
+  "by": "Photo taken by Bertrand Devouard",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Spices1.jpg",
+  "file": "File:Spices1.jpg"
  },
  "Spider": {
   "f": "photos/p047.webp",
@@ -3737,12 +5214,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Paris_Court_Philippe-Chatrier.jpg",
   "file": "File:Paris_Court_Philippe-Chatrier.jpg"
  },
+ "Stadium": {
+  "f": "photos/5e50bdba043d.webp",
+  "by": "A Cricket Premi",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Narendra_Modi_Stadium_view_from_the_gallery.jpg",
+  "file": "File:Narendra_Modi_Stadium_view_from_the_gallery.jpg"
+ },
+ "Stanford University": {
+  "f": "photos/f1c2e5e5b26e.webp",
+  "by": "Arthur Bridgeman Clark",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Seal_of_Leland_Stanford_Junior_University.svg",
+  "file": "File:Seal_of_Leland_Stanford_Junior_University.svg"
+ },
  "Stapes": {
   "f": "photos/p139.webp",
   "by": "Hariadhi",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Stapes_bone_svg_hariadhi.svg",
   "file": "File:Stapes_bone_svg_hariadhi.svg"
+ },
+ "Starting blocks": {
+  "f": "photos/1c4c05eaf7f6.webp",
+  "by": "Andrew Hecker",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:PressureSensitiveStartingBlocks.jpg",
+  "file": "File:PressureSensitiveStartingBlocks.jpg"
  },
  "Statue of Liberty": {
   "f": "photos/p638.webp",
@@ -3793,6 +5291,20 @@
   "src": "https://commons.wikimedia.org/wiki/File:Silent_film_comic_Charley_Chase_(SAYRE_21396).jpg",
   "file": "File:Silent_film_comic_Charley_Chase_(SAYRE_21396).jpg"
  },
+ "Sudoku": {
+  "f": "photos/11b3c443ed96.webp",
+  "by": "Tim Stellmach",
+  "lic": "CC0",
+  "src": "https://commons.wikimedia.org/wiki/File:Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg",
+  "file": "File:Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg"
+ },
+ "Sugarloaf Mountain": {
+  "f": "photos/cdcd9585d167.webp",
+  "by": "Arne Müseler",
+  "lic": "CC BY-SA 3.0 de",
+  "src": "https://commons.wikimedia.org/wiki/File:P%C3%A3o_de_A%C3%A7ucar_-_Sugarloaf_Mountain_-_Zuckerhut_-_2022.jpg",
+  "file": "File:Pão_de_Açucar_-_Sugarloaf_Mountain_-_Zuckerhut_-_2022.jpg"
+ },
  "Sultan bin Salman Al Saud": {
   "f": "photos/p593.webp",
   "by": "World Travel & Tourism Council",
@@ -3821,12 +5333,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:STS-134_EVA4_view_to_the_Russian_Orbital_Segment.jpg",
   "file": "File:STS-134_EVA4_view_to_the_Russian_Orbital_Segment.jpg"
  },
+ "Sunrise": {
+  "f": "photos/99d2888ace36.webp",
+  "by": "Nick Harris",
+  "lic": "CC BY 2.5",
+  "src": "https://commons.wikimedia.org/wiki/File:Spring_Lake,_New_Jersey_Beach_at_Sunrise.jpg",
+  "file": "File:Spring_Lake,_New_Jersey_Beach_at_Sunrise.jpg"
+ },
  "Sushi": {
   "f": "photos/p547.webp",
   "by": "chidorian from Japan",
   "lic": "CC BY-SA 2.0",
   "src": "https://commons.wikimedia.org/wiki/File:Sushi_platter.jpg",
   "file": "File:Sushi_platter.jpg"
+ },
+ "Swiss Guard": {
+  "f": "photos/b6836bd92ce5.webp",
+  "by": "Versaldi",
+  "lic": "CC BY-SA 2.5",
+  "src": "https://commons.wikimedia.org/wiki/File:BANDERA_GUARDIA_VATICA_LEOXIV.svg",
+  "file": "File:BANDERA_GUARDIA_VATICA_LEOXIV.svg"
  },
  "Sydney Opera House": {
   "f": "photos/p235.webp",
@@ -3842,6 +5368,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Screenshot_20200623_202323_com.android.gallery3d.jpg",
   "file": "File:Screenshot_20200623_202323_com.android.gallery3d.jpg"
  },
+ "Table Mountain": {
+  "f": "photos/c5f53a235eff.webp",
+  "by": "Danie van der Merwe from Cape Town, South Africa",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Table_Mountain_DanieVDM.jpg",
+  "file": "File:Table_Mountain_DanieVDM.jpg"
+ },
  "Taj Mahal": {
   "f": "photos/p074.webp",
   "by": "Yann; edited by Jim Carter",
@@ -3849,12 +5382,61 @@
   "src": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg",
   "file": "File:Taj_Mahal_(Edited).jpeg"
  },
+ "Tandoor": {
+  "f": "photos/9fd48a470a8d.webp",
+  "by": "GDobriy",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Luxury_tandoor.png",
+  "file": "File:Luxury_tandoor.png"
+ },
+ "Tangier": {
+  "f": "photos/c61991e3c894.webp",
+  "by": "Ifni95",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Tanger_cor.jpg",
+  "file": "File:Tanger_cor.jpg"
+ },
+ "Tangram": {
+  "f": "photos/b041bd746e7e.webp",
+  "by": "Nevit Dilmen",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Tangram_set_00.jpg",
+  "file": "File:Tangram_set_00.jpg"
+ },
+ "Telephone": {
+  "f": "photos/16f68a8a1a9d.webp",
+  "by": "Berthold Werner",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Telefon_BW_2012-02-18_13-44-32.JPG",
+  "file": "File:Telefon_BW_2012-02-18_13-44-32.JPG"
+ },
+ "Telescope": {
+  "f": "photos/65e7b071ad00.webp",
+  "by": "Andrew Dunn",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:100inchHooker.jpg",
+  "file": "File:100inchHooker.jpg"
+ },
+ "Television": {
+  "f": "photos/6046a6118e69.webp",
+  "by": "Wags05 at English Wikipedia",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Cptvdisplay.jpg",
+  "file": "File:Cptvdisplay.jpg"
+ },
  "Tennis": {
   "f": "photos/p411.webp",
   "by": "Brendan Dennis",
   "lic": "CC BY-SA 3.0",
   "src": "https://commons.wikimedia.org/wiki/File:2013_Australian_Open_-_Guillaume_Rufin.jpg",
   "file": "File:2013_Australian_Open_-_Guillaume_Rufin.jpg"
+ },
+ "Teotihuacan": {
+  "f": "photos/503c6abb8d15.webp",
+  "by": "Hdlrosa",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:ZA77_Teotihuac%C3%A1n_edo_de_mex_Herberto_de_la_rosa.jpg",
+  "file": "File:ZA77_Teotihuacán_edo_de_mex_Herberto_de_la_rosa.jpg"
  },
  "Terracotta Army": {
   "f": "photos/p309.webp",
@@ -3869,6 +5451,13 @@
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Tesla_Model_3_(2023)_Autofr%C3%BChling_Ulm_IMG_9282.jpg",
   "file": "File:Tesla_Model_3_(2023)_Autofrühling_Ulm_IMG_9282.jpg"
+ },
+ "The Canon of Medicine": {
+  "f": "photos/9e01745d58fb.webp",
+  "by": "Coffeetalkh",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:The_Canon_of_Medicine.jpg",
+  "file": "File:The_Canon_of_Medicine.jpg"
  },
  "The Scream": {
   "f": "photos/p518.webp",
@@ -3891,6 +5480,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Le_Penseur_by_Rodin_(Kunsthalle_Bielefeld)_2014-04-10.JPG",
   "file": "File:Le_Penseur_by_Rodin_(Kunsthalle_Bielefeld)_2014-04-10.JPG"
  },
+ "Theatre": {
+  "f": "photos/fa36b21047ff.webp",
+  "by": "Lafayette Photo, London",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Bernhardt_Hamlet2.jpg",
+  "file": "File:Bernhardt_Hamlet2.jpg"
+ },
  "Thermometer": {
   "f": "photos/p330.webp",
   "by": "Anonimski",
@@ -3911,6 +5507,27 @@
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Thomas_Edison2.jpg",
   "file": "File:Thomas_Edison2.jpg"
+ },
+ "Throne": {
+  "f": "photos/421606865b14.webp",
+  "by": "Aaron Zhu",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Gamla_Stan,_S%C3%B6dermalm,_Stockholm,_Sweden_-_panoramio_(225).jpg",
+  "file": "File:Gamla_Stan,_Södermalm,_Stockholm,_Sweden_-_panoramio_(225).jpg"
+ },
+ "Thuluth": {
+  "f": "photos/97b39cbfee26.webp",
+  "by": "Signed by Sultan Mahmud II 1785 Details on Google Art Project",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Signed_by_Sultan_Mahmud_II_-_Levha_(calligraphic_inscription)_-_Google_Art_Project.jpg",
+  "file": "File:Signed_by_Sultan_Mahmud_II_-_Levha_(calligraphic_inscription)_-_Google_Art_Project.jpg"
+ },
+ "Tide pool": {
+  "f": "photos/bed9fd2303b5.webp",
+  "by": "Alvesgaspar",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Porto_Covo_February_2009-2.jpg",
+  "file": "File:Porto_Covo_February_2009-2.jpg"
  },
  "Tigris": {
   "f": "photos/p177.webp",
@@ -3968,12 +5585,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Toothbrush_20050716_004.jpg",
   "file": "File:Toothbrush_20050716_004.jpg"
  },
+ "Torch": {
+  "f": "photos/15e952efc573.webp",
+  "by": "Unknown author",
+  "lic": "CC BY-SA 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Lewes_Bonfire,_discarded_torch.jpg",
+  "file": "File:Lewes_Bonfire,_discarded_torch.jpg"
+ },
  "Toyota Corolla": {
   "f": "photos/p240.webp",
   "by": "Alexander Migl",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Toyota_Corolla_Hybrid_(E210)_IMG_4338.jpg",
   "file": "File:Toyota_Corolla_Hybrid_(E210)_IMG_4338.jpg"
+ },
+ "Tozeur": {
+  "f": "photos/fdd4567ce0a9.webp",
+  "by": "Rawen Ab",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Tozeur_sud_tunisien.jpg",
+  "file": "File:Tozeur_sud_tunisien.jpg"
  },
  "Treasure": {
   "f": "photos/p125.webp",
@@ -3982,12 +5613,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Tesoro_de_Villena.jpg",
   "file": "File:Tesoro_de_Villena.jpg"
  },
+ "Tree": {
+  "f": "photos/4ac903b2c4d2.webp",
+  "by": "menergo",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Usamljeni_jasen_-_panoramio_(cropped).jpg",
+  "file": "File:Usamljeni_jasen_-_panoramio_(cropped).jpg"
+ },
  "Triangle": {
   "f": "photos/p097.webp",
   "by": "Oleg Alexandrov, Optimised by 17jiangz1",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Triangle_illustration.svg",
   "file": "File:Triangle_illustration.svg"
+ },
+ "Trophy": {
+  "f": "photos/1c1ba9140e52.webp",
+  "by": "Homo Anchorus",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Benin,_Championnats_nationaux_de_scrabble_2019,_troph%C3%A9es.jpg",
+  "file": "File:Benin,_Championnats_nationaux_de_scrabble_2019,_trophées.jpg"
  },
  "Tsunami": {
   "f": "photos/p024.webp",
@@ -4094,6 +5739,13 @@
   "src": "https://commons.wikimedia.org/wiki/File:Ayasofya_13_(cropped).JPG",
   "file": "File:Ayasofya_13_(cropped).JPG"
  },
+ "Varanasi": {
+  "f": "photos/9dcca4e8da41.webp",
+  "by": "Vyacheslav Argenberg",
+  "lic": "CC BY 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Varanasi,_India,_Ghats,_Cremation_ceremony_in_progress.jpg",
+  "file": "File:Varanasi,_India,_Ghats,_Cremation_ceremony_in_progress.jpg"
+ },
  "Vatican City": {
   "f": "photos/p295.webp",
   "by": "Goran_tek-en",
@@ -4150,12 +5802,26 @@
   "src": "https://commons.wikimedia.org/wiki/File:Mountain_in_Wadi_Rum,_Jordan.jpg",
   "file": "File:Mountain_in_Wadi_Rum,_Jordan.jpg"
  },
+ "Waffle": {
+  "f": "photos/0f69e60dc6c6.webp",
+  "by": "Parkerman & Christie from San Diego, USA",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Waffles_with_Strawberries.jpg",
+  "file": "File:Waffles_with_Strawberries.jpg"
+ },
  "Warner Bros. Studios, Burbank": {
   "f": "photos/p341.webp",
   "by": "Coolcaesar",
   "lic": "CC BY-SA 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Gate_4_Warner_Bros._Studios.jpg",
   "file": "File:Gate_4_Warner_Bros._Studios.jpg"
+ },
+ "Washington, D.C.": {
+  "f": "photos/ea2288329eff.webp",
+  "by": "Ralf Roletschek (talk) - Infos über Fahrräder auf fahrradmonteur.de Wi",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:12-07-13-washington-by-RalfR-08.jpg",
+  "file": "File:12-07-13-washington-by-RalfR-08.jpg"
  },
  "Water": {
   "f": "photos/p578.webp",
@@ -4170,6 +5836,13 @@
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Faryab-_village_dug_well.JPG",
   "file": "File:Faryab-_village_dug_well.JPG"
+ },
+ "Weaving": {
+  "f": "photos/94807c67ab71.webp",
+  "by": "Alfred Barlow, Ryj, PKM",
+  "lic": "CC BY-SA 3.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Warp_and_weft_2.jpg",
+  "file": "File:Warp_and_weft_2.jpg"
  },
  "Wellington": {
   "f": "photos/p499.webp",
@@ -4199,6 +5872,27 @@
   "src": "https://commons.wikimedia.org/wiki/File:Similan_Dive_Center_-_great_whale_shark.jpg",
   "file": "File:Similan_Dive_Center_-_great_whale_shark.jpg"
  },
+ "Wheat": {
+  "f": "photos/7ef667fc35fc.webp",
+  "by": "kallerna",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Vehn%C3%A4pelto_6.jpg",
+  "file": "File:Vehnäpelto_6.jpg"
+ },
+ "Wheel": {
+  "f": "photos/8dd4de6b5c2d.webp",
+  "by": "Bybbisch94, Christian Gebhardt",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg",
+  "file": "File:Landesmuseum_Württemberg_Kelten_011.4.jpg"
+ },
+ "White House": {
+  "f": "photos/770b446728cc.webp",
+  "by": "(top)Cezary p(bottom)MattWade",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:White_House_north_and_south_sides.jpg",
+  "file": "File:White_House_north_and_south_sides.jpg"
+ },
  "White-headed capuchin": {
   "f": "photos/p358.webp",
   "by": "David M. Jensen (Storkk)",
@@ -4219,6 +5913,13 @@
   "lic": "CC0",
   "src": "https://commons.wikimedia.org/wiki/File:Cherry_tree_moving_in_the_wind_1.gif",
   "file": "File:Cherry_tree_moving_in_the_wind_1.gif"
+ },
+ "Wind wave": {
+  "f": "photos/7b154c3d76ff.webp",
+  "by": "Alvesgaspar",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Porto_Covo_Outubro_2014-3.jpg",
+  "file": "File:Porto_Covo_Outubro_2014-3.jpg"
  },
  "World Ocean": {
   "f": "photos/p307.webp",
@@ -4248,12 +5949,33 @@
   "src": "https://commons.wikimedia.org/wiki/File:Chrome_on_Linux.png",
   "file": "File:Chrome_on_Linux.png"
  },
+ "World map": {
+  "f": "photos/283b27d3fdc5.webp",
+  "by": "Tom Patterson",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:Equal-Earth-Physical-No-Type_(cropped).jpg",
+  "file": "File:Equal-Earth-Physical-No-Type_(cropped).jpg"
+ },
+ "Wright Flyer": {
+  "f": "photos/f507e5ec1b21.webp",
+  "by": "John T. Daniels",
+  "lic": "Public domain",
+  "src": "https://commons.wikimedia.org/wiki/File:First_flight2.jpg",
+  "file": "File:First_flight2.jpg"
+ },
  "Wright brothers": {
   "f": "photos/p173.webp",
   "by": "Orville Wright and Wilbur Wright (credited as photographers) [1], [2]",
   "lic": "Public domain",
   "src": "https://commons.wikimedia.org/wiki/File:Orville_Wright_1905-crop.jpg",
   "file": "File:Orville_Wright_1905-crop.jpg"
+ },
+ "X-ray": {
+  "f": "photos/6539c408916e.webp",
+  "by": "NickSpiker",
+  "lic": "CC BY-SA 4.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Color_X-ray_photogram.jpg",
+  "file": "File:Color_X-ray_photogram.jpg"
  },
  "Xbox (console)": {
   "f": "photos/p300.webp",
@@ -4303,6 +6025,13 @@
   "lic": "CC BY 4.0",
   "src": "https://commons.wikimedia.org/wiki/File:Zinedine_Zidane_by_Tasnim_03.jpg",
   "file": "File:Zinedine_Zidane_by_Tasnim_03.jpg"
+ },
+ "Zuma Rock": {
+  "f": "photos/6fa7836961ea.webp",
+  "by": "Jeff Attaway",
+  "lic": "CC BY 2.0",
+  "src": "https://commons.wikimedia.org/wiki/File:Zuma_Rock.jpg",
+  "file": "File:Zuma_Rock.jpg"
  },
  "iPhone": {
   "f": "photos/p608.webp",

@@ -1,8 +1,11 @@
-// Picture rounds: the photo IS the question, so every category here uses pic: "q".
-// Each question: [level, question, answer, photo, show]
+// Each question: [level, question, answer, questionPhoto, answerPhoto]
+//   level: 1 = 200, 2 = 400, 3 = 600
+//   questionPhoto: shown while the teams answer, so it must NOT give the answer away
+//   answerPhoto (optional): shown when the answer is revealed; defaults to questionPhoto
+//   photos: English Wikipedia article title, "File:..." on Commons, or "search:..." (Commons search)
 module.exports = [
   {
-    id: "flagpics", name: "لمن هذا العلم؟", icon: "🏳️", group: "بالصور", pic: "q",
+    id: "flagpics", name: "لمن هذا العلم؟", icon: "🏳️", group: "بالصور",
     q: [
       [1, "لأي دولة هذا العلم؟", "ألمانيا", "Flag of Germany"],
       [1, "لأي دولة هذا العلم؟", "إيطاليا", "Flag of Italy"],
@@ -26,7 +29,7 @@ module.exports = [
     ]
   },
   {
-    id: "placepics", name: "وين هذا المكان؟", icon: "📸", group: "بالصور", pic: "q",
+    id: "placepics", name: "وين هذا المكان؟", icon: "📸", group: "بالصور",
     q: [
       [1, "في أي دولة يقع هذا المكان؟", "الإمارات (برج العرب في دبي)", "Burj Al Arab"],
       [1, "في أي دولة يقع هذا المكان؟", "إيطاليا (برج بيزا المائل)", "Leaning Tower of Pisa"],
@@ -46,7 +49,7 @@ module.exports = [
     ]
   },
   {
-    id: "playerpics", name: "من هذا اللاعب؟", icon: "🏃", group: "بالصور", pic: "q",
+    id: "playerpics", name: "من هذا اللاعب؟", icon: "🏃", group: "بالصور",
     q: [
       [1, "من هذا اللاعب؟", "ليونيل ميسي", "Lionel Messi"],
       [1, "من هذا اللاعب؟", "كريستيانو رونالدو", "Cristiano Ronaldo"],

@@ -200,7 +200,8 @@ button.life:not(:disabled):hover{border-color:var(--tc)}
 .q-body.enter{animation:pop .3s ease}
 .q-body.has-pic{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center;gap:1.6rem}
 .q-txt{display:flex;flex-direction:column;gap:1.1rem;min-width:0}
-.q-pic{margin:0;display:flex;flex-direction:column;gap:.35rem;min-width:0;animation:pop .35s ease}
+.q-pic{margin:0;display:flex;flex-direction:column;gap:.35rem;min-width:0}
+.q-body.enter .q-pic,.q-body.revealed .q-pic{animation:pop .35s ease}
 .q-pic img{display:block;width:auto;max-width:100%;height:auto;max-height:min(56vh,34rem);margin-inline:auto;border-radius:1rem;background:#f6efe2}
 .q-pic figcaption{direction:ltr;text-align:left;font-size:.66rem;color:var(--muted);line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .q-pic figcaption a{color:inherit}
@@ -288,7 +289,7 @@ const DATA = BANK.cats, PHOTOS = BANK.photos;
 const VAL = {1: 200, 2: 400, 3: 600};
 const CATS = {}, QS = {};
 for (const c of DATA) {
-  c.qs = c.q.map((x, i) => ({id: c.id + "-" + i, d: x[0], t: x[1], a: x[2], m: x[3], p: x[4]}));
+  c.qs = c.q.map((x, i) => ({id: c.id + "-" + i, d: x[0], t: x[1], a: x[2], p: x[3], ap: x[4]}));
   delete c.q;
   CATS[c.id] = c;
   c.qs.forEach(q => { QS[q.id] = q; });
@@ -434,7 +435,7 @@ function preloadBoard() {
   if (BUNDLE) { loadBundles(G.board.map(b => b.id)); return; }
   for (const b of G.board) for (const t of b.tiles) {
     const q = QS[t.q];
-    if (q && q.p >= 0) { const im = new Image(); im.decoding = "async"; im.src = PHOTOS[q.p][0]; preloaded.push(im); }
+    if (q) for (const pi of [q.p, q.ap]) if (pi >= 0) { const im = new Image(); im.decoding = "async"; im.src = PHOTOS[pi][0]; preloaded.push(im); }
   }
 }
 function markSeen(id) {
@@ -704,9 +705,10 @@ function vQuestion() {
   else if (c.timeup) who = `<span class="bad">خلص الوقت!</span>`;
   else if (c.stage === "steal") who = `فرصة لـ${esc(G.teams[c.team].name)} يسرق السؤال`;
   else who = `دور ${esc(chooser)}${c.paused ? " (الوقت متوقف)" : ""}`;
-  const showPic = q.p >= 0 && (q.m === "q" || c.stage === "reveal");
-  const ph = showPic ? PHOTOS[q.p] : null;
-  const src = ph ? photoSrc(q.p, b.id) : "";
+  // Question photo while answering; on reveal switch to the answer photo when there is one.
+  const pi = c.stage === "reveal" && q.ap >= 0 ? q.ap : q.p;
+  const ph = pi >= 0 ? PHOTOS[pi] : null;
+  const src = ph ? photoSrc(pi, b.id) : "";
   if (ph && !src) loadBundles([b.id]);
   const pic = ph && src ? `<figure class="q-pic"><img src="${src.startsWith("data:") ? src : esc(src)}" alt=""><figcaption>Photo: ${esc(ph[1])} · ${esc(ph[2])}${ph[3] ? ` · <a href="${esc(ph[3])}" target="_blank" rel="noopener">source</a>` : ""}</figcaption></figure>` : "";
   const canLife = c.stage === "ask";
@@ -726,7 +728,7 @@ function vQuestion() {
   }
   return `<div class="qv ${T(tone)}">
     <header class="q-head"><span class="q-cat"><span>${cat.icon}</span>${esc(cat.name)}</span><span class="q-val num">${v}</span>${c.bet !== null ? `<span class="bet-badge ${T(c.bet)}">دبّلها ×2</span>` : ""}<span class="spacer"></span><button class="icon-btn" data-act="menu" aria-label="القائمة">${ICON.menu}</button></header>
-    <section class="q-body ${ui.enter ? "enter" : ""} ${pic ? "has-pic" : ""} ${q.m === "q" ? "pic-q" : ""} ${c.stage === "reveal" ? "revealed" : ""}"><div class="q-txt"><p class="q-who">${who}</p><p class="q-text">${esc(q.t)}</p>${c.stage === "reveal" ? `<div class="q-ans"><small>الإجابة</small><strong>${esc(q.a)}</strong></div>` : ""}</div>${pic}</section>
+    <section class="q-body ${ui.enter ? "enter" : ""} ${pic ? "has-pic pic-q" : ""} ${c.stage === "reveal" ? "revealed" : ""}"><div class="q-txt"><p class="q-who">${who}</p><p class="q-text">${esc(q.t)}</p>${c.stage === "reveal" ? `<div class="q-ans"><small>الإجابة</small><strong>${esc(q.a)}</strong></div>` : ""}</div>${pic}</section>
     <aside class="q-side">${ring(c)}<div class="q-lifes ${T(c.chooser)}"><h3>مساعدات ${esc(chooser)}</h3>
       <button class="life ${L.time ? "" : "spent"}" data-act="time" ${canLife && L.time && c.total ? "" : "disabled"}>${ICON.time}<span>وقت زيادة +30</span></button>
       <button class="life ${L.swap ? "" : "spent"}" data-act="swap" ${canSwap ? "" : "disabled"}>${ICON.swap}<span>بدّل السؤال</span></button>
@@ -751,7 +753,7 @@ function helpHTML() {
     <li>الفريق اللي عليه الدور يختار فئة وقيمة: <b>200</b> سهل، <b>400</b> متوسط، <b>600</b> صعب.</li>
     <li>إذا أخطأ أو خلص وقته، تنتقل <b>فرصة السرقة</b> للفريق الثاني بنص الوقت.</li>
     <li>المقدّم يضغط «إظهار الإجابة» ويختار مين جاوب صح. الدور ينتقل بعد كل سؤال.</li>
-    <li>صورة كل سؤال تطلع مع الإجابة حتى ما تكشفها، إلا في فئات <b>بالصور</b> (الأعلام والأماكن واللاعبين) لأن الصورة هي السؤال.</li>
+    <li>كل سؤال له صورة تلميح تطلع وأنتم تجاوبون، وإذا انكشفت الإجابة تتبدل لصورة الإجابة. في فئات <b>بالصور</b> (الأعلام والأماكن واللاعبين) الصورة هي السؤال نفسه.</li>
     <li>لكل فريق 3 مساعدات، كل وحدة مرة وحدة: <b>دبّلها</b> (تفعّلها قبل ما تختار السؤال: صح = ضعف النقاط، غلط = تنخصم قيمته)، <b>بدّل السؤال</b>، و<b>وقت زيادة</b> 30 ثانية.</li>
     <li>اللي نقاطه أعلى بعد آخر سؤال يفوز.</li>
   </ol>
