@@ -34,6 +34,11 @@
   "address": {"@type": "PostalAddress", "addressLocality": "Shaab Al Bahri", "addressCountry": "KW"},
   "geo": {"@type": "GeoCoordinates", "latitude": 29.3551647, "longitude": 48.0250314},
   "hasMap": "https://www.google.com/maps/search/?api=1&query=Cozy%20Corner%20Cafe&query_place_id=ChIJ5ZDafgCdzz8R5nT9uE3XsWA",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "06:30", "closes": "23:59"
+  }],
   "sameAs": ["https://www.instagram.com/coozykw/"]
 }
 </script>
@@ -322,7 +327,7 @@
       <h2 data-i="visitTitle">Come find your corner.</h2>
       <div class="info">
         <div class="info-row"><div class="ic"><svg class="i"><use href="#i-pin"/></svg></div><div><h3 data-i="locT">Location</h3><p data-i="locD">Shaab Al Bahri, Kuwait</p></div></div>
-        <div class="info-row"><div class="ic"><svg class="i"><use href="#i-clock"/></svg></div><div><h3 data-i="hrsT">Hours</h3><p data-i="hrsD">Open every day from 7 AM.</p></div></div>
+        <div class="info-row"><div class="ic"><svg class="i"><use href="#i-clock"/></svg></div><div><h3 data-i="hrsT">Hours</h3><p data-i="hrsD">Open every day, 6:30 AM to midnight.</p></div></div>
         <div class="info-row"><div class="ic"><svg class="i"><use href="#i-car"/></svg></div><div><h3 data-i="parkT">Parking</h3><p data-i="parkD">A few spots right by the café. Grab one and sit outside.</p></div></div>
       </div>
       <div class="cta" style="justify-content:flex-start">
@@ -406,7 +411,7 @@ const T = {
   errBusy:["Too many tries. Wait a few minutes.","محاولات واجد. انتظر شوي وحاول."],
   visitEyebrow:["Visit","زورونا"], visitTitle:["Come find your corner.","تعال لقى زاويتك."],
   locT:["Location","الموقع"], locD:["Shaab Al Bahri, Kuwait","الشعب البحري، الكويت"],
-  hrsT:["Hours","أوقات الدوام"], hrsD:["Open every day from 7 AM.","نفتح يومياً من الساعة ٧ الصبح."],
+  hrsT:["Hours","أوقات الدوام"], hrsD:["Open every day, 6:30 AM to midnight.","مفتوحين يومياً من ٦:٣٠ الصبح لين نص الليل."],
   parkT:["Parking","المواقف"], parkD:["A few spots right by the café. Grab one and sit outside.","في مواقف قليلة جنب المقهى. وقف واقعد برا."],
   dirBtn:["Get directions","الاتجاهات"]
 };
