@@ -22,7 +22,7 @@
     l=l||((navigator.language||"").indexOf("ar")===0?"ar":"en");
     if(l==="ar"){d.lang="ar";d.dir="rtl"}})();
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"SOR Café","description":"Good coffee, no rush. Opening soon in Kuwait.","address":{"@type":"PostalAddress","addressCountry":"KW"},"sameAs":["https://www.instagram.com/kw_sor/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"SOR Café","description":"Good coffee, no rush. Opening soon in Kuwait.","address":{"@type":"PostalAddress","addressCountry":"KW"},"hasMap":"https://maps.app.goo.gl/vjBTJvkEqidgKygL7","sameAs":["https://www.instagram.com/kw_sor/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
@@ -167,6 +167,7 @@
   a.vbox{display:block;transition:transform .12s,box-shadow .12s}
   a.vbox:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--brown)}
   .vlink{display:inline-block;margin-top:10px;font-weight:800;color:var(--brown);direction:ltr}
+  .vlink.dir{direction:inherit}
   .ig-btn{display:inline-flex;align-items:center;gap:8px;margin:6px 0 14px;padding:9px 18px;border:2.5px solid var(--cream);border-radius:99px;font-weight:700;font-size:15px;direction:ltr}
   .ig-btn svg{width:18px;height:18px}
   .ig-btn:hover{background:var(--cream);color:var(--brown)}
@@ -295,7 +296,7 @@
       <h2 data-i="visitTitle">Come say hi.</h2>
     </div>
     <div class="visit reveal">
-      <a class="vbox" href="https://www.instagram.com/kw_sor/" target="_blank" rel="noopener"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3 data-i="locT">Location</h3><p data-i="locD">Pinned on our Instagram.</p><span class="vlink">@kw_sor →</span></a>
+      <a class="vbox" href="https://maps.app.goo.gl/vjBTJvkEqidgKygL7" target="_blank" rel="noopener"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3 data-i="locT">Location</h3><p data-i="locD">Kuwait. Tap for directions.</p><span class="vlink dir" data-i="dirLink">Open in Google Maps →</span></a>
       <div class="vbox"><div class="ic"><svg><use href="#i-clock"/></svg></div><h3 data-i="hrsT">Hours</h3><p data-i="hrsD">Coming soon. Hours announced on opening day.</p></div>
       <a class="vbox" href="https://www.instagram.com/kw_sor/" target="_blank" rel="noopener"><div class="ic"><svg><use href="#i-ig"/></svg></div><h3 data-i="igT">Follow along</h3><p data-i="igD">Opening day news drops on Instagram first.</p><span class="vlink">@kw_sor →</span></a>
     </div>
@@ -370,7 +371,7 @@ const T = {
   errNet:["Couldn't load your card. Try again in a bit.","ما قدرنا نجيب بطاقتك. حاول مرة ثانية."],
   errBusy:["Too many tries. Wait a few minutes.","محاولات واجد. انتظر شوي وحاول."],
   visitEye:["Visit","زورونا"], visitTitle:["Come say hi.","تعال سلّم علينا."],
-  locT:["Location","الموقع"], locD:["Pinned on our Instagram.","الموقع مثبت على إنستغرامنا."],
+  locT:["Location","الموقع"], locD:["Kuwait. Tap for directions.","الكويت. اضغط للاتجاهات."], dirLink:["Open in Google Maps →","افتح في خرائط جوجل ←"],
   hrsT:["Hours","الأوقات"], hrsD:["Coming soon. Hours announced on opening day.","قريباً. نعلن الأوقات يوم الافتتاح."],
   igT:["Follow along","تابعونا"], igD:["Opening day news drops on Instagram first.","أخبار الافتتاح أول شي على إنستغرام."]
 };
