@@ -22,7 +22,7 @@
     l=l||((navigator.language||"").indexOf("ar")===0?"ar":"en");
     if(l==="ar"){d.lang="ar";d.dir="rtl"}})();
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"SOR Café","description":"Good coffee, no rush. Opening soon in Kuwait.","address":{"@type":"PostalAddress","addressCountry":"KW"},"hasMap":"https://maps.app.goo.gl/vjBTJvkEqidgKygL7","sameAs":["https://www.instagram.com/kw_sor/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"SOR Café","description":"Good coffee, no rush. Opening soon in Kuwait.","address":{"@type":"PostalAddress","addressCountry":"KW"},"hasMap":"https://maps.app.goo.gl/vjBTJvkEqidgKygL7","geo":{"@type":"GeoCoordinates","latitude":29.1449571,"longitude":48.1205064},"sameAs":["https://www.instagram.com/kw_sor/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
@@ -172,7 +172,9 @@
   .ig-btn svg{width:18px;height:18px}
   .ig-btn:hover{background:var(--cream);color:var(--brown)}
   .vbox p{font-size:15px;opacity:.85}
-  @media(max-width:760px){.visit{grid-template-columns:1fr}}
+  .map{margin-top:22px;border:var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--pop);background:var(--soft);height:340px}
+  .map iframe{width:100%;height:100%;border:0;display:block;filter:sepia(.35) saturate(.85) contrast(1.02)}
+  @media(max-width:760px){.visit{grid-template-columns:1fr}.map{height:280px}}
 
   footer{background:var(--brown);color:var(--cream);text-align:center;padding:44px 0 calc(44px + env(safe-area-inset-bottom));font-size:13px}
   footer img{width:76px;height:76px;object-fit:cover;border-radius:50%;margin:0 auto 14px;border:2.5px solid var(--cream)}
@@ -300,6 +302,7 @@
       <div class="vbox"><div class="ic"><svg><use href="#i-clock"/></svg></div><h3 data-i="hrsT">Hours</h3><p data-i="hrsD">Coming soon. Hours announced on opening day.</p></div>
       <a class="vbox" href="https://www.instagram.com/kw_sor/" target="_blank" rel="noopener"><div class="ic"><svg><use href="#i-ig"/></svg></div><h3 data-i="igT">Follow along</h3><p data-i="igD">Opening day news drops on Instagram first.</p><span class="vlink">@kw_sor →</span></a>
     </div>
+    <div class="map reveal"><iframe loading="lazy" title="SOR Café on the map" src="https://maps.google.com/maps?q=29.1449571,48.1205064&z=16&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
   </div>
 </section>
 
