@@ -3,20 +3,19 @@
   // Setup steps are in README.md.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "cozy-corner",
+  "account_id": "531233e6e15318e9368a07ff54e56694",
   "main": "src/worker.js",
   "compatibility_date": "2026-11-01",
-  "assets": {
-    "directory": "./public",
-    "binding": "ASSETS",
-    "html_handling": "auto-trailing-slash",
-    "not_found_handling": "404-page"
-  },
+  // Pages in public/ are imported by src/worker.js and shipped inside the worker.
+  "rules": [
+    { "type": "Text", "globs": ["**/*.html", "**/*.txt"], "fallthrough": true },
+    { "type": "Data", "globs": ["**/*.jpg"], "fallthrough": true }
+  ],
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "cozy-corner",
-      // Paste the id printed by `npx wrangler d1 create cozy-corner` here.
-      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+      "database_name": "cozy-corner-kw",
+      "database_id": "a616dd95-e3cc-482e-878b-9e48595053b5",
       "migrations_dir": "migrations"
     }
   ],

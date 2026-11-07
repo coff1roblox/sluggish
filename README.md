@@ -6,7 +6,7 @@ loyalty card: **buy 4 drinks, the 5th is free**, tracked by phone number.
 ```
 public/index.html   the website (menu + prices live in the MENU list near the bottom)
 public/staff.html   barista screen at /staff (passcode protected)
-src/worker.js       loyalty API (Cloudflare Worker)
+src/worker.js       loyalty API + serves the pages (Cloudflare Worker)
 migrations/         database schema (Cloudflare D1, i.e. SQLite)
 wrangler.jsonc      Cloudflare config
 ```
@@ -31,30 +31,40 @@ Security notes:
   dates). That's the trade-off for not making customers create accounts. If that's not OK for you,
   say so and add a customer PIN.
 
-## Deploy (free Cloudflare account, ~10 minutes)
+## Live site
 
-You need Node.js 20+ and a Cloudflare account.
+**https://cozy-corner.naser-a-alhamad.workers.dev** (barista screen: `/staff`)
+
+Runs on Cloudflare Workers (free plan). The D1 database `cozy-corner-kw` is in Eastern Europe, the
+closest region to Kuwait. The pages in `public/` are bundled into the worker, so a deploy is one upload.
+
+### Updating the live site
+
+After editing anything (menu, text, code):
 
 ```bash
 npm install
-npx wrangler login
-
-# 1. Create the database, then paste the printed database_id into wrangler.jsonc
-npx wrangler d1 create cozy-corner
-
-# 2. Set the staff passcode. Use a real passphrase, not 1234.
-npx wrangler secret put STAFF_PIN
-
-# 3. Create the tables and publish the site
-npm run deploy
+npx wrangler login      # once per computer
+npm run deploy          # applies any new database migrations, then publishes
 ```
 
-It deploys to `https://cozy-corner.<your-subdomain>.workers.dev`. To use your own domain, add it in
-the Cloudflare dashboard: Workers & Pages > cozy-corner > Settings > Domains & Routes.
+Change the staff passcode any time with `npx wrangler secret put STAFF_PIN`, or in the dashboard:
+Workers & Pages > cozy-corner > Settings > Variables and Secrets.
 
-**After you have a domain:** change `<meta property="og:image" content="/og.jpg">` in
-`public/index.html` to the full URL (e.g. `https://yourdomain.com/og.jpg`). WhatsApp and Instagram
-link previews need the full address.
+### Custom domain
+
+Add it in the dashboard: Workers & Pages > cozy-corner > Settings > Domains & Routes. Then update the
+`og:image` and `og:url` tags in `public/index.html` to the new domain and redeploy, so WhatsApp and
+Instagram link previews keep working.
+
+### Setting it up from scratch (another account)
+
+```bash
+npx wrangler d1 create <name> --location eeur   # put the printed id + name in wrangler.jsonc
+npx wrangler secret put STAFF_PIN
+npm run deploy
+```
+Also change `account_id` in `wrangler.jsonc` and the `og:image`/`og:url` URLs.
 
 ## Run it locally
 
@@ -75,7 +85,7 @@ Site: http://localhost:8787, barista screen: http://localhost:8787/staff
 
 ## Looking at the data
 
-Cloudflare dashboard > Storage & Databases > D1 > cozy-corner > Console. For example:
+Cloudflare dashboard > Storage & Databases > D1 > cozy-corner-kw > Console. For example:
 
 ```sql
 -- Top 20 regulars

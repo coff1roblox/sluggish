@@ -9,6 +9,29 @@
 //
 // Staff requests carry `Authorization: Bearer <passcode>`; the passcode is the
 // STAFF_PIN secret (`npx wrangler secret put STAFF_PIN`).
+//
+// The pages in public/ are bundled into this worker (see "rules" in
+// wrangler.jsonc), so a deploy is a single upload. Edit them in public/ as usual.
+
+import INDEX_HTML from "../public/index.html";
+import STAFF_HTML from "../public/staff.html";
+import NOT_FOUND_HTML from "../public/404.html";
+import ROBOTS_TXT from "../public/robots.txt";
+import OG_JPG from "../public/og.jpg";
+
+const HTML = "text/html; charset=utf-8";
+const PAGES = {
+  "/":           { body: INDEX_HTML, type: HTML, cache: "public, max-age=300" },
+  "/staff":      { body: STAFF_HTML, type: HTML, cache: "no-store", staff: true },
+  "/robots.txt": { body: ROBOTS_TXT, type: "text/plain; charset=utf-8", cache: "public, max-age=86400" },
+  "/og.jpg":     { body: OG_JPG,     type: "image/jpeg", cache: "public, max-age=86400" },
+};
+const REDIRECTS = { "/index.html": "/", "/staff/": "/staff", "/staff.html": "/staff" };
+const SECURITY_HEADERS = {
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+};
 
 const PER_FREE = 4;                      // buy 4, the 5th is free
 const MAX_STAMPS_PER_ORDER = 10;
@@ -22,7 +45,7 @@ const PHONE_RE = /^[124569]\d{7}$/;
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    if (!url.pathname.startsWith("/api/")) return env.ASSETS.fetch(request);
+    if (!url.pathname.startsWith("/api/")) return servePage(request, url);
 
     if (Math.random() < 0.02) {
       ctx.waitUntil(
@@ -39,6 +62,17 @@ export default {
     }
   },
 };
+
+function servePage(request, url) {
+  if (request.method !== "GET" && request.method !== "HEAD") return methodNotAllowed("GET, HEAD");
+  const to = REDIRECTS[url.pathname];
+  if (to) return Response.redirect(new URL(to + url.search, url).toString(), 301);
+  const page = PAGES[url.pathname];
+  const headers = { ...SECURITY_HEADERS, "Content-Type": page ? page.type : HTML, "Cache-Control": page ? page.cache : "no-store" };
+  if (page && page.staff) Object.assign(headers, { "X-Robots-Tag": "noindex, nofollow", "X-Frame-Options": "DENY" });
+  const body = request.method === "HEAD" ? null : page ? page.body : NOT_FOUND_HTML;
+  return new Response(body, { status: page ? 200 : 404, headers });
+}
 
 async function route(request, env, url) {
   const path = url.pathname.replace(/\/+$/, "");
