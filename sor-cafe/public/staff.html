@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#3E1F17">
+<title>Staff · SOR Café</title>
+<link rel="icon" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<style>
+  :root{--bg:#3E1F17;--card:#703B2D;--line:#8A5444;--text:#FBF1E4;--muted:#E9CDB0;--glow:#F4E1CC;--warm:#F4E1CC;--bad:#FFB49A}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100svh}
+  button,input{font:inherit;color:inherit}
+  .wrap{max-width:520px;margin:0 auto;padding:18px 18px calc(28px + env(safe-area-inset-bottom))}
+  header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+  .logo{width:46px;height:46px;border-radius:50%;border:2px solid var(--glow)}
+  header .t{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--warm);font-weight:600;margin-inline-start:12px}
+  .left{display:flex;align-items:center}
+  .ghost{background:transparent;border:1px solid var(--line);border-radius:99px;padding:7px 14px;font-size:13px;cursor:pointer}
+  .ghost:hover{border-color:var(--muted)}
+  h1{font-size:24px;margin-bottom:6px}
+  .muted{color:var(--muted);font-size:14px}
+  .row{display:flex;gap:8px;margin-top:16px}
+  .pre{display:grid;place-items:center;padding:0 14px;border:1px solid var(--line);border-radius:14px;color:var(--muted)}
+  input{flex:1;min-width:0;background:#2C150F;border:1px solid var(--line);border-radius:14px;padding:14px;font-size:20px;letter-spacing:1px;outline:none}
+  input:focus{border-color:var(--warm)}
+  .btn{border:0;border-radius:14px;padding:0 20px;font-weight:600;cursor:pointer;background:var(--glow);color:#3E1F17;transition:transform .1s,opacity .2s}
+  .btn:active{transform:scale(.97)}
+  .btn[disabled],button[disabled]{opacity:.45;cursor:not-allowed}
+  .msg{min-height:22px;margin-top:10px;font-size:14px;color:var(--bad)}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;margin-top:18px}
+  .head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+  .num{font-size:20px;font-weight:600;direction:ltr}
+  .tag{font-size:12px;color:var(--warm);border:1px solid var(--warm);border-radius:99px;padding:2px 10px;white-space:nowrap}
+  .stamps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:18px 0 14px}
+  .stamp{aspect-ratio:1;border-radius:50%;border:2px dashed #A8705E;display:grid;place-items:center}
+  .stamp.full{border:2px solid var(--glow);background:var(--glow)}
+  .stamp.full svg{width:50%;height:50%;color:#703B2D}
+  .stamp.free{border-color:var(--warm);color:var(--warm);font-size:11px;font-weight:700;position:relative}
+  .stamp.free.ready{background:var(--glow);color:#703B2D;box-shadow:0 0 0 4px rgba(244,225,204,.3)}
+  .stamp .x{position:absolute;top:-6px;right:-6px;background:var(--glow);color:#3E1F17;border-radius:99px;font-size:11px;padding:2px 6px}
+  .banner{background:var(--warm);color:#3E1F17;font-weight:700;text-align:center;border-radius:12px;padding:10px;margin-bottom:12px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}
+  .stats div{background:#5A2D22;border:1px solid var(--line);border-radius:12px;padding:10px 4px}
+  .stats b{display:block;font-size:18px}
+  .stats span{font-size:11px;color:var(--muted)}
+  .actions{display:grid;gap:10px;margin-top:18px}
+  .actions .btn{padding:18px;font-size:18px}
+  .more{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .more button,.redeem,.undo,.next{border:1px solid var(--line);background:transparent;border-radius:14px;padding:14px;font-weight:600;cursor:pointer}
+  .redeem{border-color:var(--warm);color:var(--warm)}
+  .redeem.on{background:var(--warm);color:#3E1F17}
+  .undo{color:var(--muted);font-weight:500}
+  .toast{position:fixed;left:50%;top:calc(14px + env(safe-area-inset-top));transform:translate(-50%,-180%);background:var(--glow);color:#3E1F17;font-weight:600;padding:12px 20px;border-radius:99px;box-shadow:0 10px 30px rgba(0,0,0,.5);transition:transform .3s;max-width:90vw;text-align:center}
+  .toast.show{transform:translate(-50%,0)}
+  .toast.bad{background:var(--bad)}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+        <symbol id="i-cup" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 3c0 1.2 1 1.6 1 3M12 3c0 1.2 1 1.6 1 3"/></g></symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <header>
+    <div class="left"><img class="logo" src="/logo.webp" alt="SOR Café"><span class="t">Staff</span></div>
+    <button class="ghost" id="lockBtn" hidden>Lock</button>
+  </header>
+
+  <section id="login">
+    <h1>Barista mode</h1>
+    <p class="muted">Enter the staff passcode. This device stays unlocked until you press Lock.</p>
+    <form class="row" id="loginForm">
+      <input id="pin" type="password" autocomplete="current-password" placeholder="Passcode" aria-label="Staff passcode" required>
+      <button class="btn" type="submit">Unlock</button>
+    </form>
+    <p class="msg" id="loginMsg" role="alert"></p>
+  </section>
+
+  <section id="app" hidden>
+    <form class="row" id="findForm" autocomplete="off">
+      <span class="pre">+965</span>
+      <input id="phone" type="tel" inputmode="numeric" placeholder="Customer number" aria-label="Customer phone number">
+      <button class="btn" type="submit">Find</button>
+    </form>
+    <p class="msg" id="findMsg" role="alert"></p>
+
+    <div class="panel" id="cust" hidden>
+      <div class="head"><div class="num" id="custNum"></div><div class="tag" id="custTag" hidden>New customer</div></div>
+      <div class="stamps" id="stamps"></div>
+      <div class="banner" id="banner" hidden></div>
+      <div class="stats">
+        <div><b id="stDrinks">0</b><span>Paid drinks</span></div>
+        <div><b id="stFree">0</b><span>Free drinks used</span></div>
+        <div><b id="stLast">-</b><span>Last visit</span></div>
+      </div>
+      <div class="actions">
+        <button class="btn" id="stamp1" data-n="1">+1 stamp</button>
+        <div class="more"><button data-n="2">+2</button><button data-n="3">+3</button><button data-n="4">+4</button></div>
+        <button class="redeem" id="redeem">Give free drink</button>
+        <button class="undo" id="undo" hidden></button>
+        <button class="next" id="next">Next customer</button>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const PER_FREE = 4;
+const $ = id => document.getElementById(id);
+let pin = null, current = null, busy = false, toastTimer;
+try { pin = localStorage.getItem("cc_staff"); } catch (e) {}
+
+function cleanPhone(v){
+  let d = String(v).replace(/[٠-٩]/g,c=>c.charCodeAt(0)-0x660)
+                   .replace(/[۰-۹]/g,c=>c.charCodeAt(0)-0x6F0)
+                   .replace(/\D/g,"");
+  if(d.length>8 && d.startsWith("00965")) d=d.slice(5);
+  else if(d.length>8 && d.startsWith("965")) d=d.slice(3);
+  return d.slice(0,8);
+}
+
+async function api(path, body){
+  const opts = { headers:{ Authorization:"Bearer " + encodeURIComponent(pin || "") }, cache:"no-store" };
+  if(body){ opts.method = "POST"; opts.headers["Content-Type"] = "application/json"; opts.body = JSON.stringify(body); }
+  let r;
+  try { r = await fetch(path, opts); } catch (e) { throw new Error("No connection. Check the internet and try again."); }
+  if(r.status === 401){ lock("Wrong passcode."); throw new Error("Wrong passcode."); }
+  if(r.status === 429){ const w = Math.ceil((+r.headers.get("Retry-After")||900)/60); lock(`Too many wrong passcodes. Try again in ${w} min.`); throw new Error("Locked."); }
+  if(r.status === 503){ throw new Error("Staff passcode isn't set up on the server yet (STAFF_PIN)."); }
+  const data = r.status === 204 ? {} : await r.json().catch(()=>({}));
+  if(!r.ok && r.status !== 409) throw new Error("Something went wrong (" + r.status + "). Try again.");
+  return { status:r.status, data };
+}
+
+function lock(message){
+  pin = null; current = null;
+  try { localStorage.removeItem("cc_staff"); } catch (e) {}
+  $("app").hidden = true; $("lockBtn").hidden = true; $("login").hidden = false;
+  $("loginMsg").textContent = message || "";
+  $("pin").value = ""; $("pin").focus();
+}
+
+function unlocked(){
+  $("login").hidden = true; $("app").hidden = false; $("lockBtn").hidden = false;
+  $("loginMsg").textContent = "";
+  $("phone").focus();
+}
+
+function toast(text, bad){
+  const t = $("toast");
+  t.textContent = text; t.className = "toast show" + (bad ? " bad" : "");
+  clearTimeout(toastTimer); toastTimer = setTimeout(()=>t.className = "toast" + (bad ? " bad" : ""), 2600);
+}
+
+function ago(ms){
+  if(!ms) return "-";
+  const s = (Date.now() - ms) / 1000;
+  if(s < 90) return "now";
+  if(s < 3600) return Math.round(s/60) + "m ago";
+  if(s < 86400) return Math.round(s/3600) + "h ago";
+  return Math.round(s/86400) + "d ago";
+}
+
+function describe(ev){
+  return ev.kind === "redeem" ? "free drink" : `+${ev.delta} stamp${ev.delta>1?"s":""}`;
+}
+
+function render(c){
+  current = c;
+  $("cust").hidden = false;
+  $("custNum").textContent = "+965 " + c.phone.slice(0,4) + " " + c.phone.slice(4);
+  $("custTag").hidden = c.drinks > 0;
+  const filled = c.free > 0 ? PER_FREE : c.progress;
+  $("stamps").innerHTML = Array.from({length:PER_FREE}, (_,i) =>
+    i < filled ? '<div class="stamp full"><svg><use href="#i-cup"/></svg></div>' : '<div class="stamp"></div>'
+  ).join("") + `<div class="stamp free${c.free>0?" ready":""}">FREE${c.free>1?`<span class="x">×${c.free}</span>`:""}</div>`;
+  $("banner").hidden = c.free === 0;
+  $("banner").textContent = c.free > 1 ? `${c.free} FREE DRINKS READY` : "FREE DRINK READY";
+  $("stDrinks").textContent = c.drinks;
+  $("stFree").textContent = c.redeemed;
+  $("stLast").textContent = ago(c.lastAt);
+  $("redeem").disabled = c.free === 0;
+  $("redeem").classList.toggle("on", c.free > 0);
+  $("undo").hidden = !c.undoable;
+  if(c.undoable) $("undo").textContent = `Undo ${describe(c.undoable)} (${ago(c.undoable.at)})`;
+}
+
+function summary(c){
+  return c.free > 0 ? (c.free > 1 ? `${c.free} free drinks ready` : "free drink ready") : `${c.progress}/${PER_FREE}`;
+}
+
+async function run(fn){
+  if(busy) return;
+  busy = true;
+  document.querySelectorAll("#app button").forEach(b => b.disabled = true);
+  try { await fn(); }
+  catch (e) { if(pin) toast(e.message, true); }
+  finally {
+    busy = false;
+    document.querySelectorAll("#app button").forEach(b => b.disabled = false);
+    if(current) render(current);
+  }
+}
+
+$("loginForm").onsubmit = e => {
+  e.preventDefault();
+  pin = $("pin").value;
+  $("loginMsg").textContent = "";
+  api("/api/staff/check").then(()=>{
+    try { localStorage.setItem("cc_staff", pin); } catch (e) {}
+    unlocked();
+  }).catch(err => { if(!$("loginMsg").textContent) $("loginMsg").textContent = err.message; });
+};
+
+$("lockBtn").onclick = () => lock("");
+
+$("phone").addEventListener("input", () => { $("phone").value = cleanPhone($("phone").value); });
+$("phone").addEventListener("focus", () => $("phone").select());
+
+$("findForm").onsubmit = e => {
+  e.preventDefault();
+  const p = cleanPhone($("phone").value);
+  $("findMsg").textContent = "";
+  if(!/^[124569]\d{7}$/.test(p)){ $("findMsg").textContent = "Enter an 8-digit Kuwait number."; return; }
+  run(async () => { const { data } = await api("/api/staff/card?phone=" + p); render(data); });
+};
+
+document.querySelectorAll("[data-n]").forEach(b => b.onclick = () => run(async () => {
+  const n = +b.dataset.n;
+  const { data } = await api("/api/staff/stamp", { phone: current.phone, count: n });
+  render(data);
+  toast(`+${n} stamp${n>1?"s":""}. Now ${summary(data)}.`);
+}));
+
+$("redeem").onclick = () => run(async () => {
+  const { status, data } = await api("/api/staff/redeem", { phone: current.phone });
+  render(data);
+  if(status === 409) toast("No free drink on this card yet.", true);
+  else toast(`Free drink given. Now ${summary(data)}.`);
+});
+
+$("undo").onclick = () => run(async () => {
+  const { status, data } = await api("/api/staff/undo", { phone: current.phone });
+  render(data);
+  if(status === 409) toast("Nothing recent to undo.", true);
+  else toast(`Undid ${describe(data.undid)}. Now ${summary(data)}.`);
+});
+
+$("next").onclick = () => {
+  current = null; $("cust").hidden = true; $("phone").value = ""; $("findMsg").textContent = ""; $("phone").focus();
+};
+
+// Restore a saved session. Open straight away and re-check in the background:
+// a wrong/changed passcode locks the screen, a flaky connection doesn't.
+if(pin){
+  unlocked();
+  api("/api/staff/check").catch(() => {});
+} else {
+  $("pin").focus();
+}
+</script>
+</body>
+</html>

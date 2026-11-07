@@ -1,0 +1,22 @@
+{
+  // SOR Café: static site + loyalty API on one Cloudflare Worker.
+  // Setup steps are in README.md.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sor-cafe",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-01",
+  // Pages in public/ are imported by src/worker.js and shipped inside the worker.
+  "rules": [
+    { "type": "Text", "globs": ["**/*.html", "**/*.txt"], "fallthrough": true },
+    { "type": "Data", "globs": ["**/*.jpg", "**/*.webp", "**/*.png"], "fallthrough": true }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "sor-cafe",
+      "database_id": "REPLACE_AFTER_D1_CREATE",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "observability": { "enabled": true }
+}
