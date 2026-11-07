@@ -3,6 +3,7 @@
   // Setup steps are in README.md.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "sor-cafe",
+  "account_id": "531233e6e15318e9368a07ff54e56694",
   "main": "src/worker.js",
   "compatibility_date": "2026-11-01",
   // Pages in public/ are imported by src/worker.js and shipped inside the worker.
@@ -14,7 +15,7 @@
     {
       "binding": "DB",
       "database_name": "sor-cafe",
-      "database_id": "REPLACE_AFTER_D1_CREATE",
+      "database_id": "1ecb0a17-2bce-4adf-8092-17bab3e22124",
       "migrations_dir": "migrations"
     }
   ],

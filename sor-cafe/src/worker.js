@@ -19,6 +19,7 @@ import NOT_FOUND_HTML from "../public/404.html";
 import ROBOTS_TXT from "../public/robots.txt";
 import LOGO_WEBP from "../public/logo.webp";
 import ICON_PNG from "../public/icon.png";
+import OG_JPG from "../public/og.jpg";
 
 const HTML = "text/html; charset=utf-8";
 const PAGES = {
@@ -27,6 +28,7 @@ const PAGES = {
   "/robots.txt": { body: ROBOTS_TXT, type: "text/plain; charset=utf-8", cache: "public, max-age=86400" },
   "/logo.webp":  { body: LOGO_WEBP,  type: "image/webp", cache: "public, max-age=604800" },
   "/icon.png":   { body: ICON_PNG,   type: "image/png",  cache: "public, max-age=604800" },
+  "/og.jpg":     { body: OG_JPG,     type: "image/jpeg", cache: "public, max-age=86400" },
 };
 const REDIRECTS = { "/index.html": "/", "/staff/": "/staff", "/staff.html": "/staff" };
 const SECURITY_HEADERS = {
