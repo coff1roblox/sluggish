@@ -1,0 +1,11 @@
+{
+  "name": "cafe-platform",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:db": "node tests/db/run.mjs"
+  },
+  "devDependencies": {
+    "pg": "^8.13.0"
+  }
+}
