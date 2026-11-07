@@ -22,6 +22,7 @@
     l=l||((navigator.language||"").indexOf("ar")===0?"ar":"en");
     if(l==="ar"){d.lang="ar";d.dir="rtl"}})();
 </script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"SOR Café","description":"Good coffee, no rush. Opening soon in Kuwait.","address":{"@type":"PostalAddress","addressCountry":"KW"},"sameAs":["https://www.instagram.com/kw_sor/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
@@ -163,6 +164,12 @@
   .vbox .ic{width:42px;height:42px;border-radius:50%;background:var(--brown);color:var(--cream);display:grid;place-items:center;margin-bottom:12px}
   .vbox .ic svg{width:21px;height:21px}
   .vbox h3{font-size:17px;color:var(--brown)}
+  a.vbox{display:block;transition:transform .12s,box-shadow .12s}
+  a.vbox:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--brown)}
+  .vlink{display:inline-block;margin-top:10px;font-weight:800;color:var(--brown);direction:ltr}
+  .ig-btn{display:inline-flex;align-items:center;gap:8px;margin:6px 0 14px;padding:9px 18px;border:2.5px solid var(--cream);border-radius:99px;font-weight:700;font-size:15px;direction:ltr}
+  .ig-btn svg{width:18px;height:18px}
+  .ig-btn:hover{background:var(--cream);color:var(--brown)}
   .vbox p{font-size:15px;opacity:.85}
   @media(max-width:760px){.visit{grid-template-columns:1fr}}
 
@@ -219,7 +226,7 @@
     <p data-i="heroSub">Good coffee. No rush. Pull up, grab a cup, stay a while.</p>
     <div class="cta">
       <a href="#menu" class="btn btn-main" data-i="ctaMenu">See the menu</a>
-      <a href="#loyalty" class="btn btn-alt" data-i="ctaLoyal">Get your stamp card</a>
+      <a href="https://www.instagram.com/kw_sor/" class="btn btn-alt" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#i-ig"/></svg>@kw_sor</a>
     </div>
   </div>
 </header>
@@ -288,9 +295,9 @@
       <h2 data-i="visitTitle">Come say hi.</h2>
     </div>
     <div class="visit reveal">
-      <div class="vbox"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3 data-i="locT">Location</h3><p data-i="locD">Kuwait. Exact spot announced soon.</p></div>
-      <div class="vbox"><div class="ic"><svg><use href="#i-clock"/></svg></div><h3 data-i="hrsT">Hours</h3><p data-i="hrsD">Opening soon. Hours coming with the doors.</p></div>
-      <div class="vbox"><div class="ic"><svg><use href="#i-ig"/></svg></div><h3 data-i="igT">Follow along</h3><p data-i="igD">Opening day news drops on Instagram first.</p></div>
+      <a class="vbox" href="https://www.instagram.com/kw_sor/" target="_blank" rel="noopener"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3 data-i="locT">Location</h3><p data-i="locD">Pinned on our Instagram.</p><span class="vlink">@kw_sor →</span></a>
+      <div class="vbox"><div class="ic"><svg><use href="#i-clock"/></svg></div><h3 data-i="hrsT">Hours</h3><p data-i="hrsD">Coming soon. Hours announced on opening day.</p></div>
+      <a class="vbox" href="https://www.instagram.com/kw_sor/" target="_blank" rel="noopener"><div class="ic"><svg><use href="#i-ig"/></svg></div><h3 data-i="igT">Follow along</h3><p data-i="igD">Opening day news drops on Instagram first.</p><span class="vlink">@kw_sor →</span></a>
     </div>
   </div>
 </section>
@@ -305,6 +312,7 @@
   <div class="wrap">
     <img src="/logo.webp" alt="" width="76" height="76" loading="lazy">
     <div class="display">SOR CAFÉ</div>
+    <a class="ig-btn" href="https://www.instagram.com/kw_sor/" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>@kw_sor</a>
     <div>© <span id="yr"></span> SOR Café · Kuwait</div>
   </div>
 </footer>
@@ -362,8 +370,8 @@ const T = {
   errNet:["Couldn't load your card. Try again in a bit.","ما قدرنا نجيب بطاقتك. حاول مرة ثانية."],
   errBusy:["Too many tries. Wait a few minutes.","محاولات واجد. انتظر شوي وحاول."],
   visitEye:["Visit","زورونا"], visitTitle:["Come say hi.","تعال سلّم علينا."],
-  locT:["Location","الموقع"], locD:["Kuwait. Exact spot announced soon.","الكويت. نعلن المكان قريب."],
-  hrsT:["Hours","الأوقات"], hrsD:["Opening soon. Hours coming with the doors.","قريباً. الأوقات مع الافتتاح."],
+  locT:["Location","الموقع"], locD:["Pinned on our Instagram.","الموقع مثبت على إنستغرامنا."],
+  hrsT:["Hours","الأوقات"], hrsD:["Coming soon. Hours announced on opening day.","قريباً. نعلن الأوقات يوم الافتتاح."],
   igT:["Follow along","تابعونا"], igD:["Opening day news drops on Instagram first.","أخبار الافتتاح أول شي على إنستغرام."]
 };
 
