@@ -1,0 +1,396 @@
+{
+  "cafe": {
+    "id": "c8862e10-5422-44ad-bee0-1ae6feb62283",
+    "site": {
+      "hero": {
+        "chips_ar": [
+          "قهوة مختصة",
+          "الحيوانات الأليفة مرحّب بها",
+          "كتب",
+          "قطط تعيش معنا"
+        ],
+        "chips_en": [
+          "Specialty coffee",
+          "Pets welcome",
+          "Books",
+          "Resident cats"
+        ],
+        "title_ar": [
+          "قهوة على مهل.",
+          "قطط نعسانة."
+        ],
+        "title_en": [
+          "Slow coffee.",
+          "Sleepy cats."
+        ]
+      },
+      "menu": {
+        "title_ar": "المفضّلة عندنا",
+        "title_en": "Our favourites",
+        "eyebrow_ar": "المنيو",
+        "eyebrow_en": "Menu"
+      },
+      "decor": {
+        "drips": true,
+        "crawler": "slug"
+      },
+      "visit": {
+        "title_ar": "تعال وخذها على مهل",
+        "title_en": "Come slow down",
+        "eyebrow_ar": "زورونا",
+        "eyebrow_en": "Visit"
+      },
+      "footer": {
+        "line_ar": "قهوة مختصة ترحّب بالحيوانات الأليفة · رأس السالمية، الكويت",
+        "line_en": "Pet-friendly specialty coffee · Ras Salmiya, Kuwait",
+        "slogan_ar": "خذها على مهل",
+        "slogan_en": "Take it slow"
+      },
+      "sections": [
+        {
+          "type": "lists",
+          "boxes": [
+            {
+              "items_ar": [
+                "خلّوا القطط النايمة ترتاح",
+                "المداعبة بلطف فقط",
+                "ممنوع إطعام القطط"
+              ],
+              "items_en": [
+                "Let sleeping cats lie",
+                "Gentle pets only",
+                "No snacks for the cats"
+              ],
+              "title_ar": "قططنا",
+              "title_en": "Our cats"
+            },
+            {
+              "items_ar": [
+                "الكلاب بالمقود",
+                "القطط داخل الحقيبة",
+                "اتركوا مساحة لقططنا"
+              ],
+              "items_en": [
+                "Dogs on a lead",
+                "Cats in a carrier",
+                "Give our cats space"
+              ],
+              "title_ar": "حيواناتكم",
+              "title_en": "Your pets"
+            }
+          ],
+          "style": "dark",
+          "anchor": "cats",
+          "nav_ar": "القطط والحيوانات",
+          "nav_en": "Cats & Pets",
+          "title_ar": "جيب رفيقك معك",
+          "title_en": "Bring your best friend",
+          "eyebrow_ar": "القطط والحيوانات الأليفة",
+          "eyebrow_en": "Cats & Pets"
+        },
+        {
+          "type": "callout",
+          "image": "logo_alt",
+          "text_ar": "اتركوا أكل أو مستلزمات للحيوانات في سلة التبرعات عندنا.",
+          "text_en": "Drop pet food or supplies in our donation basket.",
+          "chips_ar": [
+            "أكل",
+            "بطانيات",
+            "مستلزمات"
+          ],
+          "chips_en": [
+            "Food",
+            "Blankets",
+            "Supplies"
+          ],
+          "title_ar": "ساعدوا جمعيات الإنقاذ",
+          "title_en": "Help local rescues"
+        }
+      ],
+      "marquee_ar": [
+        "خذها على مهل",
+        "قهوة على مهل",
+        "قطط نعسانة",
+        "كتب حلوة",
+        "حيواناتكم مرحّب بها"
+      ],
+      "marquee_en": [
+        "Take it slow",
+        "Slow coffee",
+        "Sleepy cats",
+        "Good books",
+        "Pets welcome"
+      ]
+    },
+    "slug": "sluggish",
+    "hours": {
+      "0": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "1": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "2": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "3": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "4": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "5": {
+        "open": "08:00",
+        "close": "22:00"
+      },
+      "6": {
+        "open": "06:00",
+        "close": "22:00"
+      }
+    },
+    "phone": "+965 6651 0916",
+    "active": true,
+    "colors": {
+      "accent": "#FFFFFF",
+      "primary": "#1A1E3D",
+      "background": "#F6F2EA"
+    },
+    "loyalty": {
+      "enabled": true,
+      "required": 9,
+      "reward_ar": "مشروب مجاني",
+      "reward_en": "Free drink"
+    },
+    "name_ar": "Sluggish",
+    "name_en": "Sluggish",
+    "about_ar": "قهوة مختصة، كتب حلوة، وقطط تعيش معنا. جيبوا حيواناتكم الأليفة وخذوها على مهل.",
+    "about_en": "Specialty coffee, good books and resident cats. Bring your pet and take it slow.",
+    "logo_url": "/assets/cafes/sluggish/logo-white.png",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Sluggish%20Salmiya%20Kuwait&query_place_id=ChIJSfjaJ5Kdzz8RD_EbVSCs0tg",
+    "whatsapp": null,
+    "address_ar": "مبنى بلو باي، شارع 104، رأس السالمية",
+    "address_en": "Blue Bay Building, Street 104, Ras Salmiya",
+    "tagline_ar": "مقهى قهوة مختصة يرحّب بالحيوانات الأليفة في رأس السالمية.",
+    "tagline_en": "Pet-friendly specialty café in Ras Salmiya.",
+    "font_family": "Londrina Solid",
+    "talabat_url": null,
+    "logo_alt_url": "/assets/cafes/sluggish/logo-navy.png",
+    "instagram_url": "https://www.instagram.com/sluggish.kw/"
+  },
+  "categories": [
+    {
+      "id": "62c91380-467d-4526-81df-7fa0224eb1fe",
+      "icon": "cup",
+      "items": [
+        {
+          "id": "0650826e-85cc-4efe-8d2f-17daaa8c8a2d",
+          "price": 1,
+          "name_ar": "إسبريسو",
+          "name_en": "Espresso",
+          "featured": false,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "شوت مزدوج، طعم قوي ومنعش",
+          "description_en": "Double shot, bright and bold"
+        },
+        {
+          "id": "75ee356f-edb7-4a8f-907c-6b380e2fb6ad",
+          "price": 1.25,
+          "name_ar": "أمريكانو",
+          "name_en": "Americano",
+          "featured": false,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "إسبريسو مع ماي حار",
+          "description_en": "Espresso and hot water"
+        },
+        {
+          "id": "47b9aa31-e955-40c9-9596-db24e56422e2",
+          "price": 1.5,
+          "name_ar": "فلات وايت",
+          "name_en": "Flat White",
+          "featured": false,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "حليب ناعم مع شوت مزدوج",
+          "description_en": "Velvety milk, double shot"
+        },
+        {
+          "id": "999f64bf-f81d-47c3-b57e-4ffa0758ddd5",
+          "price": 1.75,
+          "name_ar": "سبانش لاتيه",
+          "name_en": "Spanish Latte",
+          "featured": false,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "حلو وكريمي، المفضّل عند الكل",
+          "description_en": "Sweet, creamy, a local favourite"
+        },
+        {
+          "id": "91557b06-7fa3-4626-bb35-12fa1e173c49",
+          "price": 1.75,
+          "name_ar": "قهوة مقطّرة",
+          "name_en": "Filter Coffee",
+          "featured": true,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "محضّرة يدويًا",
+          "description_en": "Brewed by hand"
+        }
+      ],
+      "name_ar": "قهوة",
+      "name_en": "Coffee"
+    },
+    {
+      "id": "69334e9e-8d50-4838-babd-5e43aecd01e3",
+      "icon": "iced",
+      "items": [
+        {
+          "id": "ff0112ca-233b-45bb-8e68-a8479de26a05",
+          "price": 1.75,
+          "name_ar": "كولد برو",
+          "name_en": "Cold Brew",
+          "featured": true,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "ناعمة وقوية",
+          "description_en": "Smooth and strong"
+        },
+        {
+          "id": "bc1c9bbe-5219-4d1a-ab2e-10b86fa05b87",
+          "price": 1.75,
+          "name_ar": "آيس لاتيه",
+          "name_en": "Iced Latte",
+          "featured": false,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "إسبريسو على حليب بارد",
+          "description_en": "Espresso over cold milk"
+        },
+        {
+          "id": "ec51bfda-7cd8-4d92-9354-c27b106951c1",
+          "price": 2,
+          "name_ar": "آيس سبانش لاتيه",
+          "name_en": "Iced Spanish Latte",
+          "featured": false,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "المفضّل، بس بارد",
+          "description_en": "The favourite, on ice"
+        },
+        {
+          "id": "4e4f669c-7bc7-42b8-a8a4-d5660542f70b",
+          "price": 2.25,
+          "name_ar": "أوبي ماتشا",
+          "name_en": "Ube Matcha",
+          "featured": true,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "الأوبي يلتقي بالماتشا",
+          "description_en": "Ube meets matcha"
+        }
+      ],
+      "name_ar": "مشروبات باردة",
+      "name_en": "Iced drinks"
+    },
+    {
+      "id": "8a948c7a-a367-4e80-8678-044841fb950b",
+      "icon": "dessert",
+      "items": [
+        {
+          "id": "182be4f9-c305-44b8-a933-a7b7aca6c29a",
+          "price": 1.25,
+          "name_ar": "براونيز",
+          "name_en": "Brownies",
+          "featured": true,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "غنية وطرية",
+          "description_en": "Rich and gooey"
+        },
+        {
+          "id": "081cbafc-567c-4e8e-9270-430d99f5cfab",
+          "price": 1.5,
+          "name_ar": "كرات الفدج",
+          "name_en": "Oh Fudge Balls",
+          "featured": true,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "لقمات فدج بالبروتين",
+          "description_en": "Fudgy protein bites"
+        },
+        {
+          "id": "0835d87f-83f2-411b-a075-7c56ac34c21e",
+          "price": 0.75,
+          "name_ar": "كوكيز",
+          "name_en": "Cookie",
+          "featured": false,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "ينخبز طازج كل صباح",
+          "description_en": "Baked fresh every morning"
+        },
+        {
+          "id": "c1612259-e2d6-4959-9e28-35d069f0e1b4",
+          "price": 2,
+          "name_ar": "تشيزكيك باسك",
+          "name_en": "Basque Cheesecake",
+          "featured": false,
+          "sold_out": true,
+          "photo_url": null,
+          "description_ar": "وجه محروق وقلب كريمي",
+          "description_en": "Burnt top, creamy middle"
+        }
+      ],
+      "name_ar": "حلويات",
+      "name_en": "Desserts"
+    },
+    {
+      "id": "27a6f906-47d7-4126-8a30-2fdd4ab2a103",
+      "icon": "paw",
+      "items": [
+        {
+          "id": "3cd1c30a-3f17-4aff-be3d-f445d9248374",
+          "price": 0.5,
+          "name_ar": "كوب الجراء",
+          "name_en": "Pup Cup",
+          "featured": false,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "شوية كريمة مخفوقة لكلبك",
+          "description_en": "A little whipped cream for your dog"
+        },
+        {
+          "id": "fe42bae8-bda2-4e79-8b45-1f8e937e1e6f",
+          "price": 0.75,
+          "name_ar": "بسكويت للكلاب",
+          "name_en": "Dog Biscuits",
+          "featured": false,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "مقرمش ومكوّناته آمنة للكلاب",
+          "description_en": "Crunchy, dog-safe ingredients"
+        },
+        {
+          "id": "d15c5f85-d9df-4d8a-acd2-4967f67d072a",
+          "price": 0.75,
+          "name_ar": "سناك للقطط",
+          "name_en": "Cat Treats",
+          "featured": false,
+          "sold_out": false,
+          "photo_url": null,
+          "description_ar": "لقطّتك، مو لقططنا",
+          "description_en": "For your cat, not ours"
+        }
+      ],
+      "name_ar": "سناكات للحيوانات",
+      "name_en": "Pet treats"
+    }
+  ],
+  "updated_at": "2026-11-07T07:03:31.329017+00:00"
+}

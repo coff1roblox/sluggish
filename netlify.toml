@@ -1,0 +1,15 @@
+# Netlify: no build step, the site is the public/ folder.
+[build]
+  publish = "public"
+  command = ""
+
+# Long cache for fonts, logos and libraries; HTML and JS stay fresh.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

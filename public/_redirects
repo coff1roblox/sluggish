@@ -1,0 +1,9 @@
+# Pretty URLs for every café. Real files (css, js, assets) are served as-is first.
+/c/:slug        /menu.html    200
+/c/:slug/       /menu.html    200
+/admin          /admin/index.html 200
+/admin/*        /admin/index.html 200
+/super          /super/index.html 200
+/super/*        /super/index.html 200
+/:slug          /site.html    200
+/:slug/         /site.html    200

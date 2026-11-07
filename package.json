@@ -3,7 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test:db": "node tests/db/run.mjs"
+    "start": "node tools/serve.mjs",
+    "test:db": "node tests/db/run.mjs",
+    "test:web": "node tests/web/site.test.cjs",
+    "demo": "node tools/make-demo.mjs",
+    "preview": "node tools/build-preview.mjs"
   },
   "devDependencies": {
     "pg": "^8.13.0"
