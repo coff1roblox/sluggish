@@ -33,7 +33,7 @@ Security notes:
 
 ## Live site
 
-**https://cozy-corner.naser-a-alhamad.workers.dev** (barista screen: `/staff`)
+**https://cozy-corner.cornerstudio.workers.dev** (barista screen: `/staff`)
 
 Runs on Cloudflare Workers (free plan). The D1 database `cozy-corner-kw` is in Eastern Europe, the
 closest region to Kuwait. The pages in `public/` are bundled into the worker, so a deploy is one upload.
