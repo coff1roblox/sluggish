@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cozy Corner Café | Shaab, Kuwait</title>
+<meta name="description" content="Cozy Corner, a tiny café in Shaab Al Bahri, Kuwait. Simple menu, good coffee, quiet mornings.">
+<meta name="theme-color" content="#120e0b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='15 8 180 180'%3E%3Crect x='15' y='8' width='180' height='180' rx='40' fill='%23120e0b'/%3E%3Cpath d='M120 76A30 30 0 1 0 90 76L120 120A30 30 0 1 1 90 120Z' fill='none' stroke='%23fff3df' stroke-width='14' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta property="og:title" content="Cozy Corner Café">
+<meta property="og:description" content="A tiny café in Shaab Al Bahri, Kuwait. Simple menu, good coffee, quiet mornings.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+  /* Runs before first paint: enables scroll-reveal only when JS works, and
+     sets Arabic layout early so RTL visitors don't see the page flip. */
+  (function(){var d=document.documentElement,l=null;d.classList.add("js");
+    try{l=localStorage.getItem("cc_lang")}catch(e){}
+    l=l||((navigator.language||"").indexOf("ar")===0?"ar":"en");
+    if(l==="ar"){d.lang="ar";d.dir="rtl"}})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Cozy Corner Café",
+  "description": "A tiny café in Shaab Al Bahri, Kuwait. Simple menu, good coffee, quiet mornings.",
+  "servesCuisine": "Coffee",
+  "priceRange": "KD 0.500 - 2.000",
+  "address": {"@type": "PostalAddress", "addressLocality": "Shaab Al Bahri", "addressCountry": "KW"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 29.3551647, "longitude": 48.0250314},
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Cozy%20Corner%20Cafe&query_place_id=ChIJ5ZDafgCdzz8R5nT9uE3XsWA",
+  "sameAs": ["https://www.instagram.com/coozykw/"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#120e0b; --bg2:#1a1410; --card:#221a14; --line:#33291f;
+    --text:#f6eee3; --muted:#b3a593; --glow:#fff3df; --warm:#e8b46a; --warm2:#c98b3e;
+    --r:20px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  [dir=rtl] body, [dir=rtl] .wordmark, [dir=rtl] h2, [dir=rtl] h3{font-family:Tajawal,system-ui,sans-serif}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+  /* Nav */
+  nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,backdrop-filter .3s}
+  nav.scrolled{background:rgba(18,14,11,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:block;font-family:Comfortaa,sans-serif;font-weight:700;font-size:20px;letter-spacing:-.5px;color:var(--glow);text-shadow:0 0 10px rgba(255,247,234,.5)}
+  .nav-links{display:flex;gap:6px;align-items:center}
+  .nav-links a{font-size:14px;color:var(--muted);padding:8px 12px;border-radius:99px;transition:color .2s}
+  .nav-links a:hover{color:var(--text)}
+  .lang{background:transparent;border:1px solid var(--line);color:var(--text);font:600 13px Tajawal,Inter,sans-serif;padding:7px 14px;border-radius:99px;cursor:pointer}
+  .lang:hover{border-color:var(--warm)}
+  @media(max-width:640px){.nav-links a{display:none}}
+
+  /* Hero */
+  .hero{min-height:100svh;display:grid;place-items:center;text-align:center;position:relative;padding:100px 0 60px;
+    background:radial-gradient(ellipse 70% 50% at 50% 40%,rgba(255,200,140,.10),transparent 70%)}
+  .sign{width:min(460px,86vw);margin:0 auto 44px}
+  .neon-logo{opacity:0;animation:powerOn 1.6s .3s forwards, flick 9s 3s infinite}
+  @keyframes powerOn{0%{opacity:0}10%{opacity:.8}14%{opacity:.1}22%{opacity:.9}26%{opacity:.3}40%,100%{opacity:1}}
+  .neon-logo{width:100%;aspect-ratio:434/182;color:#fff6e6;filter:url(#neon) drop-shadow(0 0 2px #fff)}
+  .mini-logo{width:64px;aspect-ratio:434/182;display:block;color:#fff6e6;filter:drop-shadow(0 0 4px rgba(255,236,205,.55))}
+  .foot-logo{width:110px;aspect-ratio:434/182;display:block;margin:0 auto;color:#fff6e6;filter:drop-shadow(0 0 6px rgba(255,236,205,.5))}
+  .i{width:18px;height:18px;flex:none;color:var(--warm)}
+  .info-row .ic .i{width:22px;height:22px}
+  .stamp .i{width:46%;height:46%;color:var(--glow)}
+  @keyframes flick{0%,94%,100%{opacity:1}95%{opacity:.7}96%{opacity:1}97.5%{opacity:.82}}
+  .hero h1{font-family:Comfortaa,sans-serif;font-weight:600;font-size:clamp(26px,5vw,40px);letter-spacing:-.5px;line-height:1.25}
+  [dir=rtl] .hero h1{font-family:Tajawal,sans-serif;font-weight:700}
+  .hero p{color:var(--muted);max-width:440px;margin:14px auto 0;font-size:16px}
+  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:99px;font-weight:600;font-size:15px;transition:transform .15s,box-shadow .2s;cursor:pointer;border:0}
+  .btn:active{transform:scale(.97)}
+  .btn-glow{background:var(--glow);color:#1a1612;box-shadow:0 0 24px rgba(255,247,234,.35)}
+  .btn-glow:hover{box-shadow:0 0 36px rgba(255,247,234,.55)}
+  .btn-ghost{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.02)}
+  .btn-ghost:hover{border-color:var(--muted)}
+  .scroll-hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:12px;letter-spacing:2px;text-transform:uppercase;opacity:.6}
+
+  section{padding:90px 0}
+  .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--warm);font-weight:600}
+  [dir=rtl] .eyebrow{letter-spacing:0;font-size:14px}
+  h2{font-family:Comfortaa,sans-serif;font-weight:700;font-size:clamp(28px,4.5vw,40px);letter-spacing:-.8px;line-height:1.2;margin:10px 0 16px}
+  .lead{color:var(--muted);font-size:17px;max-width:560px}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .pill{border:1px solid var(--line);background:var(--card);padding:10px 16px;border-radius:99px;font-size:14px;display:flex;align-items:center;gap:8px}
+  
+  .quote-card{background:linear-gradient(160deg,#211d19,#151311);border:1px solid var(--line);border-radius:var(--r);padding:34px}
+  .quote-card .big{font-family:Comfortaa,sans-serif;font-size:22px;line-height:1.45;color:var(--glow)}
+  [dir=rtl] .quote-card .big{font-family:Tajawal,sans-serif}
+  .quote-card .small{color:var(--muted);font-size:14px;margin-top:18px}
+  @media(max-width:800px){.about-grid{grid-template-columns:1fr;gap:30px}}
+
+  /* Menu */
+  .menu-bg{background:var(--bg2);border-block:1px solid var(--line)}
+  .tabs{display:flex;gap:8px;margin:30px 0 24px;overflow-x:auto;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:none;padding:10px 18px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--muted);font:500 14px Inter,Tajawal,sans-serif;cursor:pointer}
+  [dir=rtl] .tab{font-family:Tajawal,sans-serif;font-size:15px}
+  .tab.on{background:var(--glow);color:#1a1612;border-color:var(--glow)}
+  .menu-list{display:grid;grid-template-columns:repeat(2,1fr);gap:4px 40px}
+  .item{display:flex;align-items:baseline;gap:12px;padding:16px 0;border-bottom:1px dashed var(--line)}
+  .item .n{font-weight:600;font-size:16px}
+  .item .d{color:var(--muted);font-size:13px;margin-top:2px}
+  .item .dots{flex:1}
+  .item .p{font-family:Comfortaa,sans-serif;font-weight:700;color:var(--warm);white-space:nowrap;font-size:15px}
+  .menu-note{color:var(--muted);font-size:13px;margin-top:22px}
+  @media(max-width:700px){.menu-list{grid-template-columns:1fr}}
+
+  /* Loyalty */
+  .loyal{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+  .card{background:linear-gradient(145deg,#24201b,#14120f);border:1px solid #3a332c;border-radius:24px;padding:28px;position:relative;overflow:hidden;overflow:clip;
+    box-shadow:0 30px 60px rgba(0,0,0,.5)}
+  .card:before{content:"";position:absolute;inset:-40% -20% auto auto;width:260px;height:260px;background:radial-gradient(circle,rgba(255,240,215,.12),transparent 70%)}
+  .card-top{display:flex;justify-content:space-between;align-items:center;position:relative}
+  .card-top .brand{font-size:18px}
+  .card-top small{color:var(--muted);font-size:12px}
+  .stamps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:30px 0 22px;position:relative}
+  .stamp{aspect-ratio:1;border-radius:50%;border:2px dashed #4a4239;display:grid;place-items:center;font-size:22px;transition:all .3s}
+  .stamp.full{border:2px solid var(--glow);background:rgba(255,247,234,.08);box-shadow:0 0 16px rgba(255,247,234,.3)}
+  .stamp.free{border-color:var(--warm);color:var(--warm);font:700 11px Inter,sans-serif;text-align:center;line-height:1.1}
+  [dir=rtl] .stamp.free{font-family:Tajawal,sans-serif;font-size:12px}
+  .stamp.free.ready{background:var(--warm);color:#1a1612;box-shadow:0 0 22px rgba(232,180,106,.55);animation:pulse 1.4s infinite}
+  @keyframes pulse{50%{transform:scale(1.07)}}
+  .stamp.pop{animation:pop .35s}
+  @keyframes pop{0%{transform:scale(.6)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+  .stamp.free{position:relative}
+  .stamp .x{position:absolute;top:-6px;inset-inline-end:-6px;background:var(--glow);color:#1a1612;border-radius:99px;font:700 11px Inter,sans-serif;padding:2px 6px}
+  .card-msg{position:relative;font-size:14px;color:var(--muted);min-height:22px}
+  .card-msg.err{color:#f0a48a}
+  .card-who button{background:none;border:0;color:var(--muted);font:inherit;text-decoration:underline;cursor:pointer;margin-inline-start:8px;padding:0}
+  .card-who button:hover{color:var(--text)}
+  .phone .btn[disabled]{opacity:.6;cursor:progress}
+  .stamps.loading .stamp{animation:breathe 1.2s infinite}
+  @keyframes breathe{50%{opacity:.45}}
+  .steps{list-style:none;margin-top:24px;display:grid;gap:14px}
+  .steps li{display:flex;gap:14px;align-items:flex-start}
+  .steps b{flex:none;width:30px;height:30px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;font-size:13px;color:var(--warm)}
+  .loyal>*,.visit>*,.about-grid>*{min-width:0}
+  @media(max-width:800px){.loyal{grid-template-columns:1fr;gap:34px}}
+
+  /* Visit */
+  .visit-bg{background:var(--bg2);border-top:1px solid var(--line)}
+  .visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:stretch}
+  .info{display:grid;gap:14px;margin-top:24px}
+  .info-row{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+  .info-row .ic{display:flex;padding-top:1px}
+  .info-row h3{font-size:15px;font-weight:600}
+  .info-row p{color:var(--muted);font-size:14px}
+  .map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:340px;background:#1a1714}
+  .map iframe{width:100%;height:100%;min-height:340px;border:0;filter:invert(.9) hue-rotate(180deg) saturate(.6) brightness(.95)}
+  @media(max-width:800px){.visit{grid-template-columns:1fr}}
+
+  body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .bar{display:none}
+  @media(max-width:640px){
+    .bar{display:flex;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;gap:6px;padding:6px;
+      background:rgba(26,20,16,.88);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:99px;box-shadow:0 10px 30px rgba(0,0,0,.5);
+      transform:translateY(140%);transition:transform .35s}
+    .bar.show{transform:none}
+    .bar a{flex:1;text-align:center;padding:11px 0;border-radius:99px;font-size:14px;font-weight:600;color:var(--muted)}
+    .bar a.main{background:var(--glow);color:#1a1612}
+  }
+  .phone{display:flex;gap:8px;margin:22px 0 4px;position:relative}
+  .phone .pre{display:grid;place-items:center;padding:0 14px;border:1px solid var(--line);border-radius:14px;color:var(--muted);font-size:15px;direction:ltr}
+  .phone input{flex:1;min-width:0;width:100%;background:#120e0b;border:1px solid var(--line);border-radius:14px;color:var(--text);font:500 17px Inter,sans-serif;padding:13px 14px;letter-spacing:1px;direction:ltr;outline:none}
+  .phone input:focus{border-color:var(--warm)}
+  .phone .btn{padding:0 18px;border-radius:14px}
+  .card-who{position:relative;font-size:13px;color:var(--warm);margin-top:4px;min-height:20px;text-align:start}
+  footer{border-top:1px solid var(--line);padding:40px 0 calc(40px + env(safe-area-inset-bottom));text-align:center;color:var(--muted);font-size:13px}
+  /* Must come after the base footer rule, or the floating bar covers the footer on phones. */
+  @media(max-width:640px){footer{padding-bottom:calc(100px + env(safe-area-inset-bottom))}}
+  footer .brand{font-size:24px;display:block;margin-bottom:14px}
+  .socials{display:flex;gap:10px;justify-content:center;margin:18px 0}
+  .socials a{border:1px solid var(--line);padding:9px 16px;border-radius:99px;font-size:13px;color:var(--text)}
+  .socials a:hover{border-color:var(--warm)}
+
+  .js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+  .js .reveal.in{opacity:1;transform:none}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--warm);outline-offset:3px}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none}.neon-logo{opacity:1;animation:none}.stamp.free.ready,.stamp.pop,.stamps.loading .stamp{animation:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="neon" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="b2"/>
+      <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <symbol id="logo" viewBox="-12 8 434 182">
+      <g fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+<path d="M51.2 28.8A30 30 0 1 0 51.2 71.2"/>
+<path d="M120 76A30 30 0 1 0 90 76L120 120A30 30 0 1 1 90 120Z"/>
+<path d="M150 20H200L150 80H200"/>
+<path d="M225 20V52A25 25 0 0 0 275 52M275 20V84A20 20 0 0 1 255 104H245"/>
+<path d="M51.2 124.8A30 30 0 1 0 51.2 167.2"/>
+<path d="M150 176V146A30 30 0 0 1 180 116H188"/>
+<path d="M210 116V176M210 141A25 25 0 0 1 260 141V176"/>
+<path d="M285 146H345A30 30 0 1 0 336.2 167.2"/>
+<path d="M370 176V146A30 30 0 0 1 400 116H408"/>
+      </g>
+    </symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 3c0 1.2 1 1.6 1 3M12 3c0 1.2 1 1.6 1 3"/></g></symbol>
+    <symbol id="i-seat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11V8a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v3"/><path d="M4 11a2 2 0 0 1 2 2v1h12v-1a2 2 0 1 1 4 0v4H2v-4a2 2 0 0 1 2-2z"/><path d="M5 17v2M19 17v2"/></g></symbol>
+    <symbol id="i-sweet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M9 9h.01M14.5 9.5h.01M10 14.5h.01M15 14h.01M12.5 11.8h.01" stroke-width="2.6"/></g></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18v2H3z"/><circle cx="7.5" cy="13" r=".6"/><circle cx="16.5" cy="13" r=".6"/></g></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 18h18M7 18a5 5 0 0 1 10 0M12 7v2M5.6 11.6l1.4 1.4M18.4 11.6 17 13"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+  </defs>
+</svg>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand" aria-label="Cozy Corner"><svg class="mini-logo" aria-hidden="true"><use href="#logo"/></svg></a>
+    <div class="nav-links">
+      <a href="#menu" data-i="navMenu">Menu</a>
+      <a href="#loyalty" data-i="navLoyalty">Loyalty</a>
+      <a href="#visit" data-i="navVisit">Visit</a>
+      <button class="lang" id="langBtn">العربية</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="sign"><svg class="neon-logo" role="img" aria-label="cozy corner"><use href="#logo"/></svg></div>
+    <h1 data-i="heroTitle">A tiny café with a warm glow.</h1>
+    <p data-i="heroSub">No crowded menu, no chasing trends. Just good coffee, done right, in a quiet corner of Shaab.</p>
+    <div class="cta">
+      <a href="#menu" class="btn btn-glow" data-i="ctaMenu">See the menu</a>
+      <a href="#visit" class="btn btn-ghost" data-i="ctaVisit">Find us</a>
+    </div>
+  </div>
+  <div class="scroll-hint" data-i="scroll">scroll</div>
+</header>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="eyebrow" data-i="aboutEyebrow">Our corner</div>
+      <h2 data-i="aboutTitle">Small on purpose.</h2>
+      <p class="lead" data-i="aboutText">Cozy Corner keeps it simple: a short menu we can make perfectly every time, a barista who knows your order, and seats inside or out where you can slow down for a minute.</p>
+      <div class="pills">
+        <div class="pill"><svg class="i"><use href="#i-cup"/></svg><b data-i="p1">Specialty coffee</b></div>
+        <div class="pill"><svg class="i"><use href="#i-seat"/></svg><b data-i="p2">Indoor & outdoor seating</b></div>
+        <div class="pill"><svg class="i"><use href="#i-sweet"/></svg><b data-i="p3">Freshly baked sweets</b></div>
+        <div class="pill"><svg class="i"><use href="#i-sun"/></svg><b data-i="p4">Quiet early mornings</b></div>
+      </div>
+    </div>
+    <div class="quote-card reveal">
+      <div class="big" data-i="quote">Pull up a chair, take your time. The coffee will wait for you.</div>
+      <div class="small" data-i="quoteBy">Cozy Corner, Shaab Al Bahri</div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu-bg">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow" data-i="menuEyebrow">Menu</div>
+      <h2 data-i="menuTitle">Just the basics, done right.</h2>
+    </div>
+    <div class="tabs" id="tabs" role="group" aria-label="Menu categories"></div>
+    <div class="menu-list" id="menuList" aria-live="polite"></div>
+    <p class="menu-note" data-i="menuNote">Prices in Kuwaiti Dinar. Ask about today's beans.</p>
+  </div>
+</section>
+
+<section id="loyalty">
+  <div class="wrap loyal">
+    <div class="reveal">
+      <div class="eyebrow" data-i="loyEyebrow">Loyalty</div>
+      <h2 data-i="loyTitle">Buy 4, the 5th is on us.</h2>
+      <p class="lead" data-i="loyText">No paper card to lose. Your stamps live on your phone number.</p>
+      <ul class="steps">
+        <li><b>1</b><span data-i="s1">Give the barista your phone number when you order.</span></li>
+        <li><b>2</b><span data-i="s2">Every drink adds a stamp to your card.</span></li>
+        <li><b>3</b><span data-i="s3">Your 5th drink is free. Then it starts again.</span></li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="card">
+        <div class="card-top"><span class="brand"><svg class="mini-logo" aria-hidden="true"><use href="#logo"/></svg></span><small data-i="cardLabel">Loyalty card</small></div>
+        <form class="phone" id="phoneForm" autocomplete="off" novalidate>
+          <span class="pre">+965</span>
+          <input id="phoneIn" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="XXXXXXXX" aria-label="Phone number">
+          <button class="btn btn-glow" id="checkBtn" type="submit" data-i="checkBtn">Check</button>
+        </form>
+        <div class="card-who" id="cardWho" aria-live="polite"></div>
+        <div class="stamps" id="stamps"></div>
+        <div class="card-msg" id="cardMsg" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="visit-bg">
+  <div class="wrap visit">
+    <div class="reveal">
+      <div class="eyebrow" data-i="visitEyebrow">Visit</div>
+      <h2 data-i="visitTitle">Come find your corner.</h2>
+      <div class="info">
+        <div class="info-row"><div class="ic"><svg class="i"><use href="#i-pin"/></svg></div><div><h3 data-i="locT">Location</h3><p data-i="locD">Shaab Al Bahri, Kuwait</p></div></div>
+        <div class="info-row"><div class="ic"><svg class="i"><use href="#i-clock"/></svg></div><div><h3 data-i="hrsT">Hours</h3><p data-i="hrsD">Open every day from 7 AM.</p></div></div>
+        <div class="info-row"><div class="ic"><svg class="i"><use href="#i-car"/></svg></div><div><h3 data-i="parkT">Parking</h3><p data-i="parkD">A few spots right by the café. Grab one and sit outside.</p></div></div>
+      </div>
+      <div class="cta" style="justify-content:flex-start">
+        <a class="btn btn-glow" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cozy%20Corner%20Cafe&query_place_id=ChIJ5ZDafgCdzz8R5nT9uE3XsWA" data-i="dirBtn">Get directions</a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe loading="lazy" title="Map" src="https://maps.google.com/maps?q=29.3551647,48.0250314&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<div class="bar" id="bar">
+  <a href="#menu" class="main" data-i="navMenu">Menu</a>
+  <a href="#loyalty" data-i="navLoyalty">Loyalty</a>
+  <a href="#visit" data-i="navVisit">Visit</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span class="brand"><svg class="foot-logo" role="img" aria-label="cozy corner"><use href="#logo"/></svg></span>
+    <div class="socials">
+      <a href="https://www.instagram.com/coozykw/" target="_blank" rel="noopener">Instagram @coozykw</a>
+    </div>
+    <div>© <span id="yr"></span> Cozy Corner Café · Kuwait</div>
+  </div>
+</footer>
+
+<script>
+/* ---------- Content (edit menu + prices here) ---------- */
+const MENU = [
+  {cat:{en:"Coffee",ar:"قهوة"}, items:[
+    {en:"Espresso",ar:"إسبريسو",den:"Double shot",dar:"شوت مزدوج",p:"1.000"},
+    {en:"Americano",ar:"أمريكانو",den:"Hot or iced",dar:"حار أو بارد",p:"1.250"},
+    {en:"Cortado",ar:"كورتادو",den:"Equal espresso and milk",dar:"إسبريسو وحليب بالتساوي",p:"1.500"},
+    {en:"Flat White",ar:"فلات وايت",den:"Silky and strong",dar:"ناعم وقوي",p:"1.500"},
+    {en:"Spanish Latte",ar:"سبانش لاتيه",den:"Sweet, creamy, hot or iced",dar:"حلو وكريمي، حار أو بارد",p:"1.750"},
+    {en:"V60",ar:"في ٦٠",den:"Today's single origin",dar:"محصول اليوم",p:"2.000"}
+  ]},
+  {cat:{en:"Not coffee",ar:"بدون قهوة"}, items:[
+    {en:"Matcha Latte",ar:"ماتشا لاتيه",den:"Hot or iced",dar:"حار أو بارد",p:"1.750"},
+    {en:"Hot Chocolate",ar:"هوت شوكلت",den:"Rich and thick",dar:"غني وكثيف",p:"1.500"},
+    {en:"Karak",ar:"كرك",den:"Spiced milk tea",dar:"شاي بالحليب والهيل",p:"0.500"},
+    {en:"Fresh Lemonade",ar:"ليمون فريش",den:"With mint",dar:"بالنعناع",p:"1.250"}
+  ]},
+  {cat:{en:"Sweets",ar:"حلويات"}, items:[
+    {en:"Chocolate Chip Cookie",ar:"كوكيز شوكولاتة",den:"Baked daily",dar:"يخبز يومياً",p:"0.750"},
+    {en:"San Sebastian Cheesecake",ar:"تشيز كيك سان سيباستيان",den:"Slice",dar:"قطعة",p:"1.750"},
+    {en:"Croissant",ar:"كرواسون",den:"Butter or zaatar",dar:"زبدة أو زعتر",p:"0.750"}
+  ]}
+];
+
+const T = {
+  navMenu:["Menu","المنيو"], navLoyalty:["Loyalty","بطاقة الولاء"], navVisit:["Visit","زورونا"],
+  heroTitle:["A tiny café with a warm glow.","مقهى صغير بإحساس دافئ."],
+  heroSub:["No crowded menu, no chasing trends. Just good coffee, done right, in a quiet corner of Shaab.","بدون منيو طويل وبدون ترندات. قهوة طيبة مسوية صح، في زاوية هادية بالشعب."],
+  ctaMenu:["See the menu","شوف المنيو"], ctaVisit:["Find us","وين مكاننا"], scroll:["scroll","انزل"],
+  aboutEyebrow:["Our corner","زاويتنا"], aboutTitle:["Small on purpose.","صغير عن قصد."],
+  aboutText:["Cozy Corner keeps it simple: a short menu we can make perfectly every time, a barista who knows your order, and seats inside or out where you can slow down for a minute.","كوزي كورنر بسيط: منيو قصير نسويه صح كل مرة، باريستا يعرف طلبك، وجلسات داخلية وخارجية ترتاح فيها شوي."],
+  p1:["Specialty coffee","قهوة مختصة"], p2:["Indoor & outdoor seating","جلسات داخلية وخارجية"], p3:["Freshly baked sweets","مخبوزات وحلويات"], p4:["Quiet early mornings","صباح هادي"],
+  quote:["Pull up a chair, take your time. The coffee will wait for you.","خذ لك كرسي وارتاح. القهوة تنتظرك."],
+  quoteBy:["Cozy Corner, Shaab Al Bahri","كوزي كورنر، الشعب البحري"],
+  menuEyebrow:["Menu","المنيو"], menuTitle:["Just the basics, done right.","الأساسيات، مسوية صح."],
+  menuNote:["Prices in Kuwaiti Dinar. Ask about today's beans.","الأسعار بالدينار الكويتي. اسأل عن محصول اليوم."],
+  loyEyebrow:["Loyalty","الولاء"], loyTitle:["Buy 4, the 5th is on us.","اشتر ٤، والخامس علينا."],
+  loyText:["No paper card to lose. Your stamps live on your phone number.","لا بطاقة ورق تضيع. أختامك محفوظة على رقم تلفونك."],
+  s1:["Give the barista your phone number when you order.","عط الباريستا رقم تلفونك وقت الطلب."],
+  s2:["Every drink adds a stamp to your card.","كل مشروب يضيف ختم لبطاقتك."],
+  s3:["Your 5th drink is free. Then it starts again.","المشروب الخامس مجاني، وبعدها نبدأ من جديد."],
+  cardLabel:["Loyalty card","بطاقة الولاء"],
+  free:["FREE","مجاني"], checkBtn:["Check","تحقق"],
+  badPhone:["Enter your 8-digit number.","اكتب رقمك من ٨ أرقام."],
+  cardFor:["Card for","بطاقة"],
+  notYou:["Not you?","مو أنت؟"],
+  msgAsk:["Enter your number to see your stamps.","اكتب رقمك عشان تشوف أختامك."],
+  msgNone:["No stamps yet. Give the barista this number with your next order.","ما عندك أختام للحين. عط الباريستا هالرقم مع طلبك الجاي."],
+  msgN:["{n} more until your free drink.","باقي {n} على مشروبك المجاني."],
+  msgReady:["Your next drink is on us.","مشروبك الجاي علينا."],
+  msgReadyN:["You have {n} free drinks waiting.","عندك {n} مشروبات مجانية تنتظرك."],
+  errNet:["Couldn't load your card. Try again in a bit.","ما قدرنا نجيب بطاقتك. حاول مرة ثانية."],
+  errBusy:["Too many tries. Wait a few minutes.","محاولات واجد. انتظر شوي وحاول."],
+  visitEyebrow:["Visit","زورونا"], visitTitle:["Come find your corner.","تعال لقى زاويتك."],
+  locT:["Location","الموقع"], locD:["Shaab Al Bahri, Kuwait","الشعب البحري، الكويت"],
+  hrsT:["Hours","أوقات الدوام"], hrsD:["Open every day from 7 AM.","نفتح يومياً من الساعة ٧ الصبح."],
+  parkT:["Parking","المواقف"], parkD:["A few spots right by the café. Grab one and sit outside.","في مواقف قليلة جنب المقهى. وقف واقعد برا."],
+  dirBtn:["Get directions","الاتجاهات"]
+};
+
+let saved=null; try{saved=localStorage.getItem("cc_lang")}catch(e){}
+let lang = saved || ((navigator.language||"").startsWith("ar") ? "ar" : "en");
+let cat = 0;
+const tr = k => T[k][lang==="ar"?1:0];
+const store = {
+  get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},
+  set:(k,v)=>{try{v==null?localStorage.removeItem(k):localStorage.setItem(k,v)}catch(e){}}
+};
+
+function applyLang(){
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang==="ar" ? "rtl" : "ltr";
+  const lb = document.getElementById("langBtn");
+  lb.textContent = lang==="ar" ? "English" : "العربية";
+  lb.lang = lang==="ar" ? "en" : "ar";
+  document.querySelectorAll("[data-i]").forEach(el => el.textContent = tr(el.dataset.i));
+  renderMenu(); renderCard(false);
+}
+
+function renderMenu(){
+  const tabs = document.getElementById("tabs");
+  tabs.innerHTML = "";
+  MENU.forEach((c,i)=>{
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "tab" + (i===cat?" on":"");
+    b.setAttribute("aria-pressed", i===cat);
+    b.textContent = c.cat[lang];
+    b.onclick = ()=>{cat=i;renderMenu();};
+    tabs.appendChild(b);
+  });
+  const list = document.getElementById("menuList");
+  list.innerHTML = MENU[cat].items.map(it=>`
+    <div class="item"><div><div class="n">${lang==="ar"?it.ar:it.en}</div><div class="d">${lang==="ar"?it.dar:it.den}</div></div>
+    <div class="dots"></div><div class="p">${it.p} ${lang==="ar"?"د.ك":"KD"}</div></div>`).join("");
+}
+
+/* ---------- Loyalty card (real data from /api/card) ---------- */
+const PER_FREE = 4;
+// state: "ask" | "loading" | "ok" | "bad" | "error" | "busy"
+const card = { state:"ask", phone:"", stamps:0, free:0, progress:0, member:false };
+const phoneIn = document.getElementById("phoneIn");
+const checkBtn = document.getElementById("checkBtn");
+
+// Arabic keyboards type ٠١٢٣٤٥٦٧٨٩ (or Persian ۰۱۲...); convert them before stripping non-digits.
+function cleanPhone(v){
+  let d = String(v).replace(/[٠-٩]/g,c=>c.charCodeAt(0)-0x660)
+                   .replace(/[۰-۹]/g,c=>c.charCodeAt(0)-0x6F0)
+                   .replace(/\D/g,"");
+  if(d.length>8 && d.startsWith("00965")) d=d.slice(5);
+  else if(d.length>8 && d.startsWith("965")) d=d.slice(3);
+  return d.slice(0,8);
+}
+
+function renderCard(animate){
+  const who = document.getElementById("cardWho"), box = document.getElementById("stamps"), msg = document.getElementById("cardMsg");
+  const ok = card.state==="ok";
+  const filled = ok ? (card.free>0 ? PER_FREE : card.progress) : 0;
+
+  who.textContent = "";
+  if(card.state==="bad") who.textContent = tr("badPhone");
+  else if(card.phone && card.state!=="ask"){
+    // Keep the number in its own LTR island so Arabic text around it doesn't scramble it.
+    const num = document.createElement("bdi");
+    num.dir = "ltr"; num.textContent = "+965 ••••" + card.phone.slice(-4);
+    who.append(tr("cardFor") + " ", num);
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = tr("notYou"); b.onclick = forget;
+    who.appendChild(b);
+  }
+
+  box.className = "stamps" + (card.state==="loading" ? " loading" : "");
+  box.innerHTML = "";
+  for(let i=0;i<PER_FREE;i++){
+    const s = document.createElement("div");
+    s.className = "stamp" + (i<filled?" full":"") + (animate && i<filled?" pop":"");
+    if(animate && i<filled) s.style.animationDelay = (i*90)+"ms";
+    if(i<filled) s.innerHTML = '<svg class="i" aria-hidden="true"><use href="#i-cup"/></svg>';
+    box.appendChild(s);
+  }
+  const f = document.createElement("div");
+  f.className = "stamp free" + (ok && card.free>0 ? " ready" : "");
+  f.textContent = tr("free");
+  if(ok && card.free>1){ const x=document.createElement("span"); x.className="x"; x.textContent="×"+card.free; f.appendChild(x); }
+  box.appendChild(f);
+
+  msg.className = "card-msg" + (card.state==="error"||card.state==="busy" ? " err" : "");
+  msg.textContent =
+      card.state==="ask"||card.state==="bad" ? tr("msgAsk")
+    : card.state==="loading" ? ""
+    : card.state==="error" ? tr("errNet")
+    : card.state==="busy" ? tr("errBusy")
+    : card.stamps===0 && !card.member ? tr("msgNone")
+    : card.free>1 ? tr("msgReadyN").replace("{n}", card.free)
+    : card.free===1 ? tr("msgReady")
+    : tr("msgN").replace("{n}", PER_FREE-card.progress);
+}
+
+async function lookup(phone){
+  card.phone = phone; card.state = "loading"; renderCard(false);
+  checkBtn.disabled = true;
+  const ctl = new AbortController(), timer = setTimeout(()=>ctl.abort(), 8000);
+  try{
+    const r = await fetch("/api/card?phone="+encodeURIComponent(phone), {signal:ctl.signal, cache:"no-store"});
+    if(r.status===429){ card.state="busy"; return; }
+    if(r.status===400){ card.state="bad"; return; }
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    const d = await r.json();
+    Object.assign(card, {state:"ok", stamps:d.stamps, free:d.free, progress:d.progress, member:!!d.member});
+    store.set("cc_phone", phone);
+  }catch(e){
+    card.state = "error";
+  }finally{
+    clearTimeout(timer); checkBtn.disabled = false; renderCard(card.state==="ok");
+  }
+}
+
+function forget(){
+  store.set("cc_phone", null);
+  Object.assign(card, {state:"ask", phone:"", stamps:0, free:0, progress:0, member:false});
+  phoneIn.value = ""; renderCard(false); phoneIn.focus();
+}
+
+phoneIn.addEventListener("input",()=>{ phoneIn.value = cleanPhone(phoneIn.value); });
+document.getElementById("phoneForm").onsubmit = e=>{
+  e.preventDefault();
+  const v = cleanPhone(phoneIn.value);
+  if(!/^[124569]\d{7}$/.test(v)){ card.state="bad"; card.phone=""; renderCard(false); phoneIn.focus(); return; }
+  lookup(v);
+};
+document.getElementById("langBtn").onclick = ()=>{ lang = lang==="ar"?"en":"ar"; store.set("cc_lang",lang); applyLang(); };
+
+const bar=document.getElementById("bar"), hero=document.getElementById("top");
+new IntersectionObserver(([e])=>bar.classList.toggle("show",!e.isIntersecting),{threshold:.2}).observe(hero);
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+const nav = document.getElementById("nav");
+addEventListener("scroll", ()=> nav.classList.toggle("scrolled", scrollY>30), {passive:true});
+
+const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} }),{threshold:.15});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+applyLang();
+const rememberedPhone = store.get("cc_phone");
+if(rememberedPhone && /^[124569]\d{7}$/.test(rememberedPhone)){ phoneIn.value = rememberedPhone; lookup(rememberedPhone); }
+</script>
+</body>
+</html>

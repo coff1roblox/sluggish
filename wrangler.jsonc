@@ -1,0 +1,24 @@
+{
+  // Cozy Corner: static site + loyalty API on one Cloudflare Worker.
+  // Setup steps are in README.md.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cozy-corner",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cozy-corner",
+      // Paste the id printed by `npx wrangler d1 create cozy-corner` here.
+      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "observability": { "enabled": true }
+}
