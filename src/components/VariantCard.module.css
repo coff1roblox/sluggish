@@ -1,0 +1,229 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px 18px 16px;
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  animation: lahja-fade-up 320ms var(--ease) both;
+  animation-delay: calc(var(--i, 0) * 70ms);
+  transition: border-color var(--press) var(--ease);
+}
+
+.card:focus-within {
+  border-color: var(--hair-strong);
+}
+
+.top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.count {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.body {
+  position: relative;
+}
+
+.text {
+  display: block;
+  width: 100%;
+  min-height: 3.6em;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  resize: none;
+  overflow: hidden;
+  font-family: var(--font-copy);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--ink);
+  white-space: pre-wrap;
+  transition: opacity var(--press) var(--ease);
+}
+
+.text:focus {
+  outline: none;
+}
+
+.body:focus-within::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: -6px;
+  height: 1px;
+  background: var(--hair-strong);
+}
+
+.body[data-busy] .text {
+  opacity: 0;
+}
+
+/* Refine shimmer: one bar per line of the text being rewritten. */
+.overlay {
+  --line: calc(1.0625rem * 1.8);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    var(--shimmer-a) 0%,
+    var(--shimmer-b) 50%,
+    var(--shimmer-a) 100%
+  );
+  background-size: 200% 100%;
+  animation: lahja-shimmer 1.4s linear infinite;
+  -webkit-mask-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(var(--line) * 0.3),
+    #000 calc(var(--line) * 0.3),
+    #000 calc(var(--line) * 0.7),
+    transparent calc(var(--line) * 0.7),
+    transparent var(--line)
+  );
+  mask-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(var(--line) * 0.3),
+    #000 calc(var(--line) * 0.3),
+    #000 calc(var(--line) * 0.7),
+    transparent calc(var(--line) * 0.7),
+    transparent var(--line)
+  );
+  border-radius: 4px;
+}
+
+:global([dir="rtl"]) .overlay {
+  animation-direction: reverse;
+}
+
+.status {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.error {
+  font-size: 0.875rem;
+  color: var(--error);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.undo {
+  margin-inline-start: auto;
+}
+
+/* Refine chips -------------------------------------------------------------- */
+
+.refine {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-block-start: 14px;
+  border-block-start: 1px solid var(--hair);
+}
+
+.refineLabel {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+:global(:lang(en)) .refineLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.6875rem;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-inline: -18px;
+  padding-inline: 18px;
+  scroll-padding-inline: 18px;
+  mask-image: linear-gradient(
+    to var(--fade-to, left),
+    transparent 0,
+    #000 18px,
+    #000 calc(100% - 28px),
+    transparent 100%
+  );
+}
+
+:global([dir="ltr"]) .chips {
+  --fade-to: right;
+}
+
+.chips::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  flex: none;
+  min-height: var(--tap);
+  padding-inline: 14px;
+  border: 1px solid var(--hair-strong);
+  border-radius: var(--radius-pill);
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition:
+    background-color var(--press) var(--ease),
+    border-color var(--press) var(--ease),
+    color var(--press) var(--ease),
+    transform var(--press) var(--ease);
+}
+
+.chip:hover:not(:disabled) {
+  border-color: var(--ink);
+}
+
+.chip:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.chip:disabled {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+.chip[data-active] {
+  opacity: 1;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--on-ink);
+}
+
+@media (min-width: 960px) {
+  .card {
+    padding: 22px 24px 18px;
+  }
+  .chips {
+    flex-wrap: wrap;
+    overflow: visible;
+    margin-inline: 0;
+    padding-inline: 0;
+    mask-image: none;
+  }
+}
