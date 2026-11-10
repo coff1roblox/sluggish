@@ -1,0 +1,111 @@
+/* Pills ------------------------------------------------------------------ */
+
+.pillGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  min-height: var(--tap);
+  padding-inline: 18px;
+  border: 1px solid var(--hair-strong);
+  border-radius: var(--radius-pill);
+  background: var(--card);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition:
+    background-color var(--press) var(--ease),
+    border-color var(--press) var(--ease),
+    color var(--press) var(--ease),
+    transform var(--press) var(--ease);
+}
+
+.pill:hover {
+  border-color: var(--ink);
+}
+
+.pill:active {
+  transform: scale(0.97);
+}
+
+.pill[aria-checked="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--on-ink);
+}
+
+/* Segmented -------------------------------------------------------------- */
+
+.segmentGroup {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  padding: 3px;
+  border: 1px solid var(--hair-strong);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.segment {
+  min-height: var(--tap);
+  border-radius: 9px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  transition:
+    background-color var(--press) var(--ease),
+    color var(--press) var(--ease);
+}
+
+.segment:not([aria-checked="true"]):hover {
+  background: var(--shimmer-a);
+}
+
+.segment[aria-checked="true"] {
+  background: var(--ink);
+  color: var(--on-ink);
+}
+
+/* Cards ------------------------------------------------------------------ */
+
+.cardGroup {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+  min-height: 84px;
+  padding: 12px 14px;
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  text-align: start;
+  transition:
+    background-color var(--press) var(--ease),
+    border-color var(--press) var(--ease),
+    color var(--press) var(--ease),
+    transform var(--press) var(--ease);
+}
+
+.card:hover {
+  border-color: var(--hair-strong);
+}
+
+.card:active {
+  transform: scale(0.985);
+}
+
+.card[aria-checked="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--on-ink);
+}

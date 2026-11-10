@@ -1,0 +1,96 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  min-height: var(--tap);
+  padding-inline: 16px 0;
+  border-radius: var(--radius-pill);
+  background: var(--ink);
+  color: var(--on-ink);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  animation: lahja-fade-up 180ms var(--ease) both;
+}
+
+.remove {
+  display: grid;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: opacity var(--press) var(--ease);
+}
+
+.remove:hover {
+  opacity: 1;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  min-height: var(--tap);
+  padding-inline: 16px;
+  border: 1px solid var(--hair-strong);
+  border-radius: var(--radius);
+  background: var(--card);
+  font-size: 1rem;
+  transition:
+    border-color var(--press) var(--ease),
+    box-shadow var(--press) var(--ease);
+}
+
+.input::placeholder {
+  color: var(--muted);
+  opacity: 0.75;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--focus);
+  box-shadow: 0 0 0 3px var(--focus-soft);
+}
+
+.add {
+  flex: none;
+  min-height: var(--tap);
+  padding-inline: 18px;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition:
+    background-color var(--press) var(--ease),
+    color var(--press) var(--ease),
+    opacity var(--press) var(--ease);
+}
+
+.add:hover:not(:disabled) {
+  background: var(--ink);
+  color: var(--on-ink);
+}
+
+.add:disabled {
+  border-color: var(--hair-strong);
+  color: var(--muted);
+}

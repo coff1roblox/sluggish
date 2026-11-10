@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F5EFE6" />
+    <meta name="description" content="لهجة: كلام تسويقي خليجي طبيعي للمشاريع الصغيرة في الكويت والخليج." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>لهجة · كلام تسويقي بلهجتك</title>
+    <script>
+      // Apply saved language and theme before first paint (no flash).
+      (function () {
+        try {
+          var p = JSON.parse(localStorage.getItem("lahja.prefs") || "{}");
+          var el = document.documentElement;
+          if (p.lang === "en") {
+            el.lang = "en";
+            el.dir = "ltr";
+          }
+          var dark = p.theme
+            ? p.theme === "dark"
+            : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          el.dataset.theme = dark ? "dark" : "light";
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+.page > * {
+  width: 100%;
+  max-width: 640px;
+}
+
+.page {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: 28px var(--gutter) 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.125rem, 9.4vw, 3.25rem);
+  line-height: var(--lh-tight);
+}
+
+:global(:lang(en)) .title {
+  letter-spacing: -0.025em;
+}
+
+.deck {
+  max-width: 44ch;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.sectionGap {
+  margin-block-start: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.help {
+  margin-block-start: -6px;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.input {
+  min-height: 52px;
+  padding-inline: 16px;
+  border: 1px solid var(--hair-strong);
+  border-radius: var(--radius);
+  background: var(--card);
+  font-size: 1.0625rem;
+  transition:
+    border-color var(--press) var(--ease),
+    box-shadow var(--press) var(--ease);
+}
+
+.input::placeholder {
+  color: var(--muted);
+  opacity: 0.75;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--focus);
+  box-shadow: 0 0 0 3px var(--focus-soft);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-block-start: 24px;
+  border-block-start: 1px solid var(--hair);
+}
+
+.saved {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  transition: color 300ms var(--ease);
+}
+
+.saved[data-flash] {
+  color: var(--accent);
+}
+
+:global([data-theme="dark"]) .saved[data-flash] {
+  color: var(--focus);
+}
+
+.footerActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.footerActions > :first-child {
+  flex: 1 1 auto;
+}
+
+.clear[data-confirm] {
+  color: var(--error);
+  text-decoration-color: currentColor;
+}
+
+@media (min-width: 640px) {
+  .footerActions > :first-child {
+    flex: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .page {
+    padding-block-start: 52px;
+  }
+}

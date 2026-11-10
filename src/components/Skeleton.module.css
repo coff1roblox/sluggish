@@ -1,0 +1,103 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 24px;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+:global([data-theme="dark"]) .dot {
+  background: var(--focus);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.label,
+.line,
+.btn {
+  display: block;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--shimmer-a) 0%,
+    var(--shimmer-b) 50%,
+    var(--shimmer-a) 100%
+  );
+  background-size: 200% 100%;
+  animation: lahja-shimmer 1.4s linear infinite;
+}
+
+:global([dir="rtl"]) .label,
+:global([dir="rtl"]) .line,
+:global([dir="rtl"]) .btn {
+  animation-direction: reverse;
+}
+
+.label {
+  width: 18px;
+  height: 26px;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.line {
+  height: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  width: 100px;
+  height: 48px;
+  border-radius: var(--radius);
+}
+
+.btn:first-child {
+  width: 148px;
+}
+
+@media (min-width: 960px) {
+  .card {
+    padding: 22px 24px;
+  }
+}

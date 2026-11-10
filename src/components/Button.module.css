@@ -1,0 +1,119 @@
+/* Shared button styles */
+
+.primary,
+.solid,
+.secondary,
+.quiet,
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--tap);
+  border-radius: var(--radius);
+  font-weight: 600;
+  line-height: 1.2;
+  transition:
+    background-color var(--press) var(--ease),
+    border-color var(--press) var(--ease),
+    color var(--press) var(--ease),
+    transform var(--press) var(--ease),
+    opacity var(--press) var(--ease);
+}
+
+.primary {
+  min-height: 56px;
+  padding-inline: 28px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 1.0625rem;
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--accent-press);
+}
+
+.primary:active:not(:disabled) {
+  transform: scale(0.985);
+}
+
+.primary:disabled {
+  opacity: 0.72;
+}
+
+/* Ink-filled: the main action inside a card. Turns green to confirm. */
+.solid {
+  padding-inline: 20px;
+  background: var(--ink);
+  color: var(--on-ink);
+  font-size: 0.9375rem;
+}
+
+.solid:hover {
+  opacity: 0.88;
+}
+
+.solid:active {
+  transform: scale(0.985);
+}
+
+.solid[data-done] {
+  background: var(--accent);
+  color: var(--on-accent);
+  opacity: 1;
+}
+
+.secondary {
+  padding-inline: 20px;
+  border: 1px solid var(--ink);
+  font-size: 0.9375rem;
+}
+
+.secondary:hover {
+  background: var(--ink);
+  color: var(--on-ink);
+}
+
+.secondary:active,
+.quiet:active {
+  transform: scale(0.98);
+}
+
+.quiet {
+  padding-inline: 14px;
+  border: 1px solid var(--hair-strong);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.quiet:hover {
+  border-color: var(--ink);
+}
+
+.quiet[data-done],
+.quiet[data-active] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+:global([data-theme="dark"]) .quiet[data-done],
+:global([data-theme="dark"]) .quiet[data-active] {
+  border-color: var(--focus);
+  color: var(--focus);
+}
+
+.link {
+  min-height: var(--tap);
+  padding-inline: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: var(--hair-strong);
+  text-underline-offset: 4px;
+}
+
+.link:hover {
+  color: var(--ink);
+  text-decoration-color: currentColor;
+}

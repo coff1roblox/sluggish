@@ -1,0 +1,31 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 24px 20px;
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  animation: lahja-fade-up 260ms var(--ease) both;
+}
+
+.rule {
+  width: 28px;
+  height: 2px;
+  background: var(--error);
+  margin-block-end: 6px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: var(--lh-tight);
+}
+
+.body {
+  max-width: 46ch;
+  color: var(--muted);
+  margin-block-end: 8px;
+}
