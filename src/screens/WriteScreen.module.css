@@ -10,13 +10,18 @@
   display: none;
 }
 
+.form,
+.results {
+  animation: lahja-fade 220ms var(--ease) both;
+}
+
 /* Form ------------------------------------------------------------------- */
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 36px;
-  padding-block: 28px 40px;
+  gap: 32px;
+  padding-block: 24px 40px;
 }
 
 .resume {
@@ -26,9 +31,10 @@
   gap: 12px;
   min-height: 52px;
   padding-inline: 16px;
-  margin-block-end: -12px;
+  margin-block-end: -8px;
   border: 1px solid var(--hair-strong);
   border-radius: var(--radius);
+  background: var(--card);
   font-size: 0.9375rem;
   font-weight: 500;
   text-align: start;
@@ -39,7 +45,7 @@
   border-color: var(--ink);
 }
 
-/* "Back" arrow points toward the end edge here, i.e. forward. */
+/* The "back" arrow points toward the end edge here, i.e. forward. */
 .resumeIcon {
   flex: none;
   transform: scaleX(-1);
@@ -52,46 +58,64 @@
 .intro {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+}
+
+.dateline {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin-block-end: -2px;
+}
+
+:global(:lang(en)) .dateline {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.6875rem;
 }
 
 .title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.125rem, 9.4vw, 3.25rem);
+  font-size: clamp(2.25rem, 10vw, 3.5rem);
   line-height: var(--lh-tight);
   text-wrap: balance;
 }
 
 :global(:lang(en)) .title {
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
 }
 
 .deck {
-  max-width: 38ch;
-  font-size: 1.0625rem;
+  max-width: 36ch;
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--muted);
   text-wrap: pretty;
 }
 
+/* Byline: who the copy is written as. */
 .profile {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  min-height: 56px;
-  padding-block: 4px;
+  min-height: 52px;
+  margin-block-start: -8px;
   border-block: 1px solid var(--hair);
   font-size: 0.875rem;
   line-height: 1.6;
-  margin-block-start: -8px;
 }
 
 .profileName {
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .profileEmpty {
+  padding-block: 8px;
   color: var(--muted);
 }
 
@@ -105,38 +129,12 @@
   gap: 14px;
 }
 
-.stepHead {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  font-size: 1.0625rem;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.stepNum {
-  min-width: 1.6em;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-}
-
 /* Type card contents */
-
-.cardNum {
-  margin-block-end: auto;
-  font-size: 0.6875rem;
-  font-weight: 500;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-}
 
 .cardLabel {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.4;
-  padding-block-start: 14px;
 }
 
 .cardHint {
@@ -145,18 +143,21 @@
   color: var(--muted);
 }
 
-[aria-checked="true"] > .cardHint,
-[aria-checked="true"] > .cardNum {
+[aria-checked="true"] > .cardHint {
   color: inherit;
-  opacity: 0.68;
+  opacity: 0.7;
 }
 
 /* Brief */
 
+.briefWrap {
+  position: relative;
+}
+
 .brief {
   display: block;
   width: 100%;
-  min-height: 116px;
+  min-height: 124px;
   padding: 14px 16px;
   border: 1px solid var(--hair-strong);
   border-radius: var(--radius);
@@ -190,6 +191,19 @@
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--error) 16%, transparent);
 }
 
+.counter {
+  position: absolute;
+  inset-block-end: 8px;
+  inset-inline-end: 12px;
+  padding-inline: 6px;
+  border-radius: 6px;
+  background: var(--card);
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+}
+
 .briefHelp,
 .briefError {
   font-size: 0.8125rem;
@@ -209,7 +223,8 @@
 .examples {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
+  margin-block-start: 4px;
 }
 
 .examplesLabel {
@@ -227,6 +242,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.examples li + li {
   border-block-start: 1px solid var(--hair);
 }
 
@@ -236,7 +254,6 @@
   width: 100%;
   min-height: var(--tap);
   padding-block: 10px;
-  border-block-end: 1px solid var(--hair);
   font-size: 0.9375rem;
   line-height: 1.6;
   text-align: start;
@@ -252,27 +269,66 @@
   color: var(--focus);
 }
 
+/* Sticky bar: the current picks on one side, Write on the other. */
+
 .submitBar {
   position: fixed;
   inset-inline: 0;
   inset-block-end: 0;
   z-index: 10;
-  padding: 12px var(--gutter) calc(12px + env(safe-area-inset-bottom));
+  padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom));
   background: var(--paper);
-  border-block-start: 1px solid var(--hair);
+  border-block-start: 1px solid var(--hair-strong);
+}
+
+.submitInner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: var(--max);
+  margin-inline: auto;
+}
+
+.summary {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.45;
+}
+
+.summaryType,
+.summaryRest {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.summaryType {
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.summaryRest {
+  font-size: 0.8125rem;
+  color: var(--muted);
 }
 
 .submit {
-  width: 100%;
+  flex: none;
+  min-width: 136px;
 }
 
 /* Results ---------------------------------------------------------------- */
 
 .results {
-  padding-block: 8px 56px;
+  display: flex;
+  flex-direction: column;
+  padding-block: 4px 56px;
 }
 
 .back {
+  align-self: flex-start;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -288,11 +344,23 @@
   color: var(--ink);
 }
 
-.summary {
+.resultsHead {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-block-start: 8px;
+  margin-block: 8px 20px;
+}
+
+.resultsTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.875rem, 8.4vw, 2.5rem);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  text-wrap: balance;
+}
+
+:global(:lang(en)) .resultsTitle {
+  letter-spacing: -0.025em;
 }
 
 .meta {
@@ -301,30 +369,24 @@
 }
 
 .quote {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
   margin: 0;
   padding-inline-start: 14px;
-  border-inline-start: 2px solid var(--hair-strong);
+  border-inline-start: 2px solid var(--ink);
   font-family: var(--font-copy);
   font-size: 1rem;
   line-height: 1.7;
-  white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 
-.resultsTitle {
-  margin-block: 28px 16px;
-  font-family: var(--font-display);
-  font-size: 1.625rem;
-  font-weight: 700;
-  line-height: var(--lh-tight);
-}
-
-:global(:lang(en)) .resultsTitle {
-  letter-spacing: -0.015em;
-}
-
-.state {
-  margin-block-start: 24px;
+.note {
+  margin-block-end: 12px;
+  font-size: 0.8125rem;
+  color: var(--muted);
 }
 
 .cards {
@@ -334,11 +396,12 @@
 }
 
 .again {
+  display: flex;
   margin-block-start: 20px;
 }
 
 .again button {
-  width: 100%;
+  flex: 1;
 }
 
 /* Desktop empty state */
@@ -397,20 +460,26 @@
     align-items: start;
   }
 
-  .resume {
-    display: none;
-  }
-
   .layout[data-view] .form,
   .layout[data-view] .results {
     display: flex;
   }
 
+  .resume,
+  .back {
+    display: none;
+  }
+
   .form {
-    padding-block: 52px 72px;
+    gap: 36px;
+    padding-block: 48px 72px;
     padding-inline-end: 56px;
     border-inline-end: 1px solid var(--hair);
     min-height: calc(100dvh - 130px);
+  }
+
+  .deck {
+    font-size: 1.0625rem;
   }
 
   .submitBar {
@@ -420,32 +489,37 @@
     border: 0;
   }
 
+  .submitInner {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
   .submit {
-    width: auto;
-    min-width: 220px;
+    min-width: 200px;
   }
 
   .results {
     position: sticky;
     inset-block-start: 0;
-    flex-direction: column;
-    max-height: 100dvh;
+    /* Leave room for the page footer, so the column is never pushed up and clipped. */
+    max-height: calc(100dvh - 72px);
     overflow-y: auto;
-    padding-block: 52px 56px;
+    padding-block: 48px 56px;
     padding-inline-start: 56px;
     scrollbar-width: thin;
     scrollbar-color: var(--hair-strong) transparent;
   }
 
-  .back {
-    display: none;
-  }
-
-  .summary {
+  .resultsHead {
     margin-block-start: 0;
   }
 
+  .resultsTitle {
+    font-size: 2.25rem;
+  }
+
   .again button {
-    width: auto;
+    flex: none;
   }
 }

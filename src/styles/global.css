@@ -161,6 +161,15 @@ a {
   }
 }
 
+@keyframes lahja-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes lahja-shimmer {
   from {
     background-position: 100% 0;

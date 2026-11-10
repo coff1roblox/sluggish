@@ -8,7 +8,7 @@ interface Props<T extends string> {
   value: T;
   onChange: (v: T) => void;
   variant: "pill" | "segment" | "card";
-  render: (v: T, index: number) => ReactNode;
+  render: (v: T, selected: boolean) => ReactNode;
 }
 
 /**
@@ -64,7 +64,7 @@ export function Choice<T extends string>({
             className={styles[variant]}
             onClick={() => onChange(opt)}
           >
-            {render(opt, i)}
+            {render(opt, selected)}
           </button>
         );
       })}

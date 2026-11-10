@@ -1,6 +1,7 @@
 /* Shared button styles */
 
 .primary,
+.solid,
 .secondary,
 .quiet,
 .link {
@@ -38,6 +39,28 @@
 
 .primary:disabled {
   opacity: 0.72;
+}
+
+/* Ink-filled: the main action inside a card. Turns green to confirm. */
+.solid {
+  padding-inline: 20px;
+  background: var(--ink);
+  color: var(--on-ink);
+  font-size: 0.9375rem;
+}
+
+.solid:hover {
+  opacity: 0.88;
+}
+
+.solid:active {
+  transform: scale(0.985);
+}
+
+.solid[data-done] {
+  background: var(--accent);
+  color: var(--on-accent);
+  opacity: 1;
 }
 
 .secondary {

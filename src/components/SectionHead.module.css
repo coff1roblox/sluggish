@@ -1,0 +1,38 @@
+.head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.head::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin-inline-start: 4px;
+  background: var(--hair);
+}
+
+.num {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  min-width: 0;
+}
+
+.head[data-quiet] {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+:global(:lang(en)) .head[data-quiet] {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.6875rem;
+}

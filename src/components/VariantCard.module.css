@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding: 18px 18px 16px;
+  padding: 16px 18px;
   border: 1px solid var(--hair);
   border-radius: var(--radius);
   background: var(--card);
@@ -17,15 +17,18 @@
 
 .top {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 12px;
 }
 
-.label {
-  font-size: 0.8125rem;
-  font-weight: 600;
-  color: var(--ink);
+/* Big editorial numeral: draft 1, 2, 3. */
+.num {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
 }
 
 .count {
@@ -41,7 +44,7 @@
 .text {
   display: block;
   width: 100%;
-  min-height: 3.6em;
+  min-height: 1.8em;
   padding: 0;
   margin: 0;
   border: 0;
@@ -60,13 +63,14 @@
   outline: none;
 }
 
+/* While editing, a quiet underline shows the text is live. */
 .body:focus-within::after {
   content: "";
   position: absolute;
   inset-inline: 0;
-  inset-block-end: -6px;
+  inset-block-end: -7px;
   height: 1px;
-  background: var(--hair-strong);
+  background: var(--ink);
 }
 
 .body[data-busy] .text {
@@ -122,15 +126,21 @@
   color: var(--error);
 }
 
+/* Copy is the point of the card, so it gets the weight. */
 .actions {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
 }
 
-.undo {
-  margin-inline-start: auto;
+.copy {
+  flex: none;
+  min-width: 148px;
+}
+
+.save {
+  flex: none;
+  min-width: 100px;
 }
 
 /* Refine chips -------------------------------------------------------------- */
@@ -138,8 +148,8 @@
 .refine {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding-block-start: 14px;
+  gap: 8px;
+  padding-block-start: 12px;
   border-block-start: 1px solid var(--hair);
 }
 
@@ -154,6 +164,7 @@
   font-size: 0.6875rem;
 }
 
+/* One swipeable row on phones; it bleeds off the card edge to show there is more. */
 .chips {
   display: flex;
   gap: 6px;
@@ -162,17 +173,7 @@
   margin-inline: -18px;
   padding-inline: 18px;
   scroll-padding-inline: 18px;
-  mask-image: linear-gradient(
-    to var(--fade-to, left),
-    transparent 0,
-    #000 18px,
-    #000 calc(100% - 28px),
-    transparent 100%
-  );
-}
-
-:global([dir="ltr"]) .chips {
-  --fade-to: right;
+  overscroll-behavior-x: contain;
 }
 
 .chips::-webkit-scrollbar {
@@ -181,10 +182,14 @@
 
 .chip {
   flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   min-height: var(--tap);
   padding-inline: 14px;
   border: 1px solid var(--hair-strong);
   border-radius: var(--radius-pill);
+  background: var(--paper);
   font-size: 0.875rem;
   font-weight: 500;
   white-space: nowrap;
@@ -215,15 +220,25 @@
   color: var(--on-ink);
 }
 
+.undo {
+  border-color: var(--ink);
+  background: transparent;
+  animation: lahja-fade 200ms var(--ease) both;
+}
+
 @media (min-width: 960px) {
   .card {
-    padding: 22px 24px 18px;
+    padding: 20px 24px;
   }
+
+  .copy {
+    min-width: 168px;
+  }
+
   .chips {
     flex-wrap: wrap;
     overflow: visible;
     margin-inline: 0;
     padding-inline: 0;
-    mask-image: none;
   }
 }

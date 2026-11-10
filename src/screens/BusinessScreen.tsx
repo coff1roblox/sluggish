@@ -4,6 +4,7 @@ import { LIMITS, type BusinessProfile } from "../shared/types";
 import { EMPTY_PROFILE, hasProfile } from "../lib/model";
 import type { Route } from "../lib/route";
 import { TagInput } from "../components/TagInput";
+import { SectionHead } from "../components/SectionHead";
 import { Icon } from "../components/Icon";
 import btn from "../components/Button.module.css";
 import styles from "./BusinessScreen.module.css";
@@ -69,6 +70,7 @@ export function BusinessScreen({ t, profile, setProfile, go }: Props) {
       </header>
 
       <div className={styles.form}>
+        <SectionHead quiet>{t.business.sectionAbout}</SectionHead>
         {field("name", t.business.name, t.business.namePh, { autoComplete: "organization" })}
         {field("sells", t.business.sells, t.business.sellsPh)}
         {field("area", t.business.area, t.business.areaPh, { list: `${id}-areas` })}
@@ -77,6 +79,10 @@ export function BusinessScreen({ t, profile, setProfile, go }: Props) {
             <option key={a} value={a} />
           ))}
         </datalist>
+
+        <div className={styles.sectionGap}>
+          <SectionHead quiet>{t.business.sectionVoice}</SectionHead>
+        </div>
 
         <div className={styles.field}>
           <label htmlFor={`${id}-always`} className={styles.label}>

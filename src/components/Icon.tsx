@@ -10,7 +10,8 @@ type Name =
   | "moon"
   | "sun"
   | "close"
-  | "undo";
+  | "undo"
+  | "again";
 
 const PATHS: Record<Name, React.ReactNode> = {
   copy: (
@@ -43,6 +44,12 @@ const PATHS: Record<Name, React.ReactNode> = {
   ),
   close: <path d="M7 7l10 10M17 7L7 17" />,
   undo: <path d="M9 7L5 11l4 4M5 11h9a5 5 0 0 1 0 10h-2" />,
+  again: (
+    <>
+      <path d="M19.5 12a7.5 7.5 0 1 1-2.3-5.4" />
+      <path d="M19.5 4.5v4h-4" />
+    </>
+  ),
 };
 
 export function Icon({

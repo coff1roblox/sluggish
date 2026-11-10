@@ -13,6 +13,7 @@ import { hasProfile } from "../lib/model";
 import type { Route } from "../lib/route";
 import type { useSession } from "../lib/useSession";
 import { Choice } from "../components/Choice";
+import { SectionHead } from "../components/SectionHead";
 import { VariantCard } from "../components/VariantCard";
 import { SkeletonCards } from "../components/Skeleton";
 import { ErrorPanel } from "../components/ErrorPanel";
@@ -52,12 +53,21 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
 
   const typeCopy = t.types[prefs.type];
   const num = (n: number) => t.digits(String(n).padStart(2, "0"));
+  const briefLength = [...session.brief].length;
+  const nearLimit = briefLength > LIMITS.brief * 0.8;
+
+  const scrollResultsTop = (smooth: boolean) => {
+    const behavior = smooth ? "smooth" : "auto";
+    if (window.matchMedia(DESKTOP).matches) resultsRef.current?.scrollTo({ top: 0, behavior });
+    else window.scrollTo({ top: 0, behavior });
+  };
 
   const submit = () => {
     const brief = session.brief.trim();
     if (!brief) {
       setBriefError(true);
       briefRef.current?.focus();
+      briefRef.current?.scrollIntoView({ block: "center", behavior: "smooth" });
       return;
     }
     void write({
@@ -68,21 +78,23 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
       brief,
     });
     go("results");
-    if (window.matchMedia(DESKTOP).matches) {
-      resultsRef.current?.scrollTo({ top: 0 });
-    } else {
-      window.scrollTo({ top: 0 });
-    }
+    scrollResultsTop(false);
   };
 
   const again = () => {
     if (!session.request) return;
     void write(session.request);
-    if (!window.matchMedia(DESKTOP).matches) window.scrollTo({ top: 0, behavior: "smooth" });
-    else resultsRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+    scrollResultsTop(true);
   };
 
+  const dateline = new Intl.DateTimeFormat(t.dateLocale, {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+  }).format(new Date());
+
   const req = session.request;
+  const namedProfile = hasProfile(profile) && Boolean(profile.name);
 
   return (
     <div className={styles.layout} data-view={view}>
@@ -90,12 +102,13 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
       <section className={styles.form} aria-labelledby={`${uid}-title`}>
         {req && session.status !== "idle" && (
           <button type="button" className={styles.resume} onClick={() => go("results")}>
-            <span>{session.status === "loading" ? t.write.submitting : t.results.resume}</span>
+            <span>{loading ? t.write.submitting : t.results.resume}</span>
             <Icon name="back" size={18} className={styles.resumeIcon} />
           </button>
         )}
 
         <header className={styles.intro}>
+          <p className={styles.dateline}>{dateline}</p>
           <h1 id={`${uid}-title`} className={styles.title}>
             {t.write.title}
           </h1>
@@ -103,12 +116,10 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
         </header>
 
         <div className={styles.profile}>
-          {hasProfile(profile) && profile.name ? (
-            <p>
-              <span className={styles.profileName}>
-                {t.write.writingFor(profile.name)}
-                {profile.area ? ` · ${profile.area}` : ""}
-              </span>
+          {namedProfile ? (
+            <p className={styles.profileName}>
+              {t.write.writingFor(profile.name)}
+              {profile.area ? ` · ${profile.area}` : ""}
             </p>
           ) : (
             <p className={styles.profileEmpty}>{t.write.noProfile}</p>
@@ -121,15 +132,14 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
               go("business");
             }}
           >
-            {hasProfile(profile) && profile.name ? t.write.editProfile : t.write.setupProfile}
+            {namedProfile ? t.write.editProfile : t.write.setupProfile}
           </a>
         </div>
 
         <div className={styles.step}>
-          <h2 className={styles.stepHead} id={`${uid}-type`}>
-            <span className={styles.stepNum}>{num(1)}</span>
+          <SectionHead num={num(1)} id={`${uid}-type`}>
             {t.write.stepType}
-          </h2>
+          </SectionHead>
           <Choice
             label={t.write.stepType}
             labelId={`${uid}-type`}
@@ -137,9 +147,8 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
             options={WRITE_TYPES}
             value={prefs.type}
             onChange={set("type")}
-            render={(v, i) => (
+            render={(v) => (
               <>
-                <span className={styles.cardNum}>{num(i + 1)}</span>
                 <span className={styles.cardLabel}>{t.types[v].label}</span>
                 <span className={styles.cardHint}>{t.types[v].hint}</span>
               </>
@@ -148,10 +157,9 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
         </div>
 
         <div className={styles.step}>
-          <h2 className={styles.stepHead} id={`${uid}-dialect`}>
-            <span className={styles.stepNum}>{num(2)}</span>
+          <SectionHead num={num(2)} id={`${uid}-dialect`}>
             {t.write.stepDialect}
-          </h2>
+          </SectionHead>
           <Choice
             label={t.write.stepDialect}
             labelId={`${uid}-dialect`}
@@ -164,10 +172,9 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
         </div>
 
         <div className={styles.step}>
-          <h2 className={styles.stepHead} id={`${uid}-tone`}>
-            <span className={styles.stepNum}>{num(3)}</span>
+          <SectionHead num={num(3)} id={`${uid}-tone`}>
             {t.write.stepTone}
-          </h2>
+          </SectionHead>
           <Choice
             label={t.write.stepTone}
             labelId={`${uid}-tone`}
@@ -180,10 +187,9 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
         </div>
 
         <div className={styles.step}>
-          <h2 className={styles.stepHead} id={`${uid}-length`}>
-            <span className={styles.stepNum}>{num(4)}</span>
+          <SectionHead num={num(4)} id={`${uid}-length`}>
             {t.write.stepLength}
-          </h2>
+          </SectionHead>
           <Choice
             label={t.write.stepLength}
             labelId={`${uid}-length`}
@@ -196,33 +202,39 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
         </div>
 
         <div className={styles.step}>
-          <h2 className={styles.stepHead}>
-            <span className={styles.stepNum}>{num(5)}</span>
+          <SectionHead num={num(5)}>
             <label htmlFor={`${uid}-brief`}>{t.write.stepBrief}</label>
-          </h2>
-          <textarea
-            id={`${uid}-brief`}
-            ref={briefRef}
-            className={styles.brief}
-            data-invalid={briefError || undefined}
-            aria-invalid={briefError}
-            aria-describedby={`${uid}-brief-help`}
-            dir="auto"
-            rows={3}
-            maxLength={LIMITS.brief}
-            placeholder={typeCopy.placeholder}
-            value={session.brief}
-            onChange={(e) => {
-              setBrief(e.target.value);
-              if (briefError && e.target.value.trim()) setBriefError(false);
-            }}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
-                e.preventDefault();
-                submit();
-              }
-            }}
-          />
+          </SectionHead>
+          <div className={styles.briefWrap}>
+            <textarea
+              id={`${uid}-brief`}
+              ref={briefRef}
+              className={styles.brief}
+              data-invalid={briefError || undefined}
+              aria-invalid={briefError}
+              aria-describedby={`${uid}-brief-help`}
+              dir="auto"
+              rows={3}
+              maxLength={LIMITS.brief}
+              placeholder={typeCopy.placeholder}
+              value={session.brief}
+              onChange={(e) => {
+                setBrief(e.target.value);
+                if (briefError && e.target.value.trim()) setBriefError(false);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
+                  e.preventDefault();
+                  submit();
+                }
+              }}
+            />
+            {nearLimit && (
+              <span className={styles.counter}>
+                {t.digits(briefLength)} / {t.digits(LIMITS.brief)}
+              </span>
+            )}
+          </div>
           <p
             id={`${uid}-brief-help`}
             className={briefError ? styles.briefError : styles.briefHelp}
@@ -255,107 +267,108 @@ export function WriteScreen({ t, route, go, prefs, setPrefs, profile, writer, on
           )}
         </div>
 
+        {/* Always in reach: what will be written, and the button that writes it. */}
         <div className={styles.submitBar}>
-          <button
-            type="button"
-            className={`${btn.primary} ${styles.submit}`}
-            onClick={submit}
-            disabled={loading}
-          >
-            {loading ? t.write.submitting : t.write.submit}
-          </button>
+          <div className={styles.submitInner}>
+            <p className={styles.summary}>
+              <span className={styles.summaryType}>{typeCopy.label}</span>
+              <span className={styles.summaryRest}>
+                {[t.dialects[prefs.dialect], t.tones[prefs.tone], t.lengths[prefs.length]].join(
+                  " · ",
+                )}
+              </span>
+            </p>
+            <button
+              type="button"
+              className={`${btn.primary} ${styles.submit}`}
+              onClick={submit}
+              disabled={loading}
+            >
+              {loading ? t.write.submitting : t.write.submit}
+            </button>
+          </div>
         </div>
       </section>
 
       {/* --------------------------------------------------------- Results */}
-      <section
-        ref={resultsRef}
-        className={styles.results}
-        aria-labelledby={`${uid}-results`}
-      >
-        <div className={styles.resultsInner}>
-          <button
-            type="button"
-            className={styles.back}
-            onClick={() => go("write")}
-          >
-            <Icon name="back" size={20} className="flip-rtl" />
-            {t.results.back}
-          </button>
+      <section ref={resultsRef} className={styles.results} aria-labelledby={`${uid}-results`}>
+        <button type="button" className={styles.back} onClick={() => go("write")}>
+          <Icon name="back" size={20} className="flip-rtl" />
+          {t.results.back}
+        </button>
 
-          {req && (
-            <div className={styles.summary}>
-              <p className={styles.meta}>
-                {[
-                  t.types[req.type].label,
-                  t.dialects[req.dialect],
-                  t.tones[req.tone],
-                  t.lengths[req.length],
-                ].join(" · ")}
-              </p>
-              <blockquote className={styles.quote} dir="auto">
-                {req.brief}
-              </blockquote>
-            </div>
-          )}
-
-          <h2
-            id={`${uid}-results`}
-            className={req && session.status === "done" ? styles.resultsTitle : "visually-hidden"}
-          >
+        {req ? (
+          <header className={styles.resultsHead}>
+            <h2 id={`${uid}-results`} className={styles.resultsTitle}>
+              {loading
+                ? t.write.submitting
+                : session.status === "error"
+                  ? t.errors.title
+                  : t.results.title}
+            </h2>
+            <p className={styles.meta}>
+              {[
+                t.types[req.type].label,
+                t.dialects[req.dialect],
+                t.tones[req.tone],
+                t.lengths[req.length],
+              ].join(" · ")}
+            </p>
+            <blockquote className={styles.quote} dir="auto">
+              {req.brief}
+            </blockquote>
+          </header>
+        ) : (
+          <h2 id={`${uid}-results`} className="visually-hidden">
             {t.results.title}
           </h2>
+        )}
 
-          {!req && session.status === "idle" && (
-            <div className={styles.empty}>
-              <h3 className={styles.emptyTitle}>{t.results.emptyTitle}</h3>
-              <p className={styles.emptyBody}>{t.results.emptyBody}</p>
-              <figure className={styles.sample}>
-                <figcaption>{t.results.emptySampleLabel}</figcaption>
-                <p dir="rtl" lang="ar">
-                  {t.results.emptySample}
-                </p>
-              </figure>
+        {!req && session.status === "idle" && (
+          <div className={styles.empty}>
+            <h3 className={styles.emptyTitle}>{t.results.emptyTitle}</h3>
+            <p className={styles.emptyBody}>{t.results.emptyBody}</p>
+            <figure className={styles.sample}>
+              <figcaption>{t.results.emptySampleLabel}</figcaption>
+              <p dir="rtl" lang="ar">
+                {t.results.emptySample}
+              </p>
+            </figure>
+          </div>
+        )}
+
+        {loading && <SkeletonCards status={t.results.writing(req?.dialect ?? prefs.dialect)} />}
+
+        {session.status === "error" && session.error && (
+          <ErrorPanel t={t} code={session.error} onRetry={req ? again : undefined} hideTitle={!!req} />
+        )}
+
+        {session.status === "done" && req && (
+          <>
+            <p className={styles.note}>{t.results.editNote}</p>
+            <div className={styles.cards}>
+              {session.variants.map((v, i) => (
+                <VariantCard
+                  key={v.id}
+                  t={t}
+                  index={i}
+                  variant={v}
+                  dialect={req.dialect}
+                  onEdit={(text) => edit(v.id, text)}
+                  onRefine={(a) => void refine(v.id, a)}
+                  onUndo={() => undo(v.id)}
+                  onSave={() => onSave(v, req)}
+                />
+              ))}
             </div>
-          )}
-
-          {loading && (
-            <div className={styles.state}>
-              <SkeletonCards status={t.results.writing(req?.dialect ?? prefs.dialect)} />
+            <div className={styles.again}>
+              <button type="button" className={btn.secondary} onClick={again}>
+                <Icon name="again" size={18} />
+                {t.results.again}
+              </button>
             </div>
-          )}
-
-          {session.status === "error" && session.error && (
-            <div className={styles.state}>
-              <ErrorPanel t={t} code={session.error} onRetry={req ? again : undefined} />
-            </div>
-          )}
-
-          {session.status === "done" && req && (
-            <>
-              <div className={styles.cards}>
-                {session.variants.map((v, i) => (
-                  <VariantCard
-                    key={v.id}
-                    t={t}
-                    index={i}
-                    variant={v}
-                    dialect={req.dialect}
-                    onEdit={(text) => edit(v.id, text)}
-                    onRefine={(a) => void refine(v.id, a)}
-                    onUndo={() => undo(v.id)}
-                    onSave={() => onSave(v, req)}
-                  />
-                ))}
-              </div>
-              <div className={styles.again}>
-                <button type="button" className={btn.secondary} onClick={again}>
-                  {t.results.again}
-                </button>
-              </div>
-            </>
-          )}
-        </div>
+          </>
+        )}
       </section>
     </div>
   );

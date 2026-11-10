@@ -9,6 +9,9 @@
   inset-inline-start: 12px;
   inset-block-start: -100px;
   z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
   padding: 10px 14px;
   border-radius: var(--radius);
   background: var(--ink);
@@ -121,7 +124,7 @@
 .nav {
   display: flex;
   gap: 22px;
-  border-block-end: 1px solid var(--hair);
+  border-block-end: 1px solid var(--ink);
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -157,8 +160,8 @@
   content: "";
   position: absolute;
   inset-inline: 0;
-  inset-block-end: -1px;
-  height: 2px;
+  inset-block-end: 0;
+  height: 3px;
   background: var(--ink);
 }
 

@@ -7,15 +7,17 @@ export function ErrorPanel({
   t,
   code,
   onRetry,
+  hideTitle,
 }: {
   t: Strings;
   code: ApiErrorCode;
   onRetry?: () => void;
+  hideTitle?: boolean;
 }) {
   return (
     <div className={styles.panel} role="alert">
       <span className={styles.rule} aria-hidden="true" />
-      <h2 className={styles.title}>{t.errors.title}</h2>
+      {!hideTitle && <h2 className={styles.title}>{t.errors.title}</h2>}
       <p className={styles.body}>{t.errors.byCode[code]}</p>
       {onRetry && (
         <button type="button" className={btn.secondary} onClick={onRetry}>

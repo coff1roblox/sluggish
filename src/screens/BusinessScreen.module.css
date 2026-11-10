@@ -38,7 +38,11 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 22px;
+}
+
+.sectionGap {
+  margin-block-start: 14px;
 }
 
 .field {

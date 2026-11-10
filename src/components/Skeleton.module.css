@@ -67,8 +67,8 @@
 }
 
 .label {
-  width: 56px;
-  height: 10px;
+  width: 18px;
+  height: 26px;
 }
 
 .lines {
@@ -87,9 +87,13 @@
 }
 
 .btn {
-  width: 84px;
-  height: 40px;
+  width: 100px;
+  height: 48px;
   border-radius: var(--radius);
+}
+
+.btn:first-child {
+  width: 148px;
 }
 
 @media (min-width: 960px) {

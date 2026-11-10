@@ -45,7 +45,9 @@ export function VariantCard({
       aria-label={label}
     >
       <header className={styles.top}>
-        <span className={styles.label}>{label}</span>
+        <span className={styles.num} aria-hidden="true">
+          {t.digits(index + 1)}
+        </span>
         <span className={styles.count}>{t.results.chars(length)}</span>
       </header>
 
@@ -60,9 +62,7 @@ export function VariantCard({
           readOnly={busy}
           onChange={(e) => onEdit(e.target.value)}
         />
-        {busy && (
-          <div className={styles.overlay} aria-hidden="true" />
-        )}
+        {busy && <div className={styles.overlay} aria-hidden="true" />}
       </div>
 
       {busy && (
@@ -78,14 +78,14 @@ export function VariantCard({
 
       <div className={styles.actions}>
         <CopyButton
-          className={btn.quiet}
+          className={`${btn.solid} ${styles.copy}`}
           text={variant.text}
           label={t.results.copy}
           doneLabel={t.results.copied}
         />
         <button
           type="button"
-          className={btn.quiet}
+          className={`${btn.quiet} ${styles.save}`}
           data-active={isSaved || undefined}
           aria-pressed={isSaved}
           onClick={() => !isSaved && onSave()}
@@ -93,23 +93,24 @@ export function VariantCard({
           <Icon name={isSaved ? "bookmark-filled" : "bookmark"} size={18} />
           <span>{isSaved ? t.results.saved : t.results.save}</span>
         </button>
-        {variant.prev.length > 0 && !busy && (
-          <button type="button" className={`${btn.link} ${styles.undo}`} onClick={onUndo}>
-            <Icon name="undo" size={16} className="flip-rtl" />
-            {t.results.undo}
-          </button>
-        )}
       </div>
 
       <div className={styles.refine}>
         <span className={styles.refineLabel} id={`refine-${variant.id}`}>
           {t.results.refineLabel}
         </span>
-        <div
-          className={styles.chips}
-          role="group"
-          aria-labelledby={`refine-${variant.id}`}
-        >
+        <div className={styles.chips} role="group" aria-labelledby={`refine-${variant.id}`}>
+          {variant.prev.length > 0 && (
+            <button
+              type="button"
+              className={`${styles.chip} ${styles.undo}`}
+              disabled={busy}
+              onClick={onUndo}
+            >
+              <Icon name="undo" size={16} className="flip-rtl" />
+              {t.results.undo}
+            </button>
+          )}
           {actions.map((a) => (
             <button
               key={a}

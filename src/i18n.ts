@@ -58,6 +58,8 @@ export interface Strings {
     refineLabel: string;
     undo: string;
     editHint: string;
+    editNote: string;
+    yourBrief: string;
     writing: (dialect: Dialect) => string;
     refining: string;
     emptyTitle: string;
@@ -94,6 +96,8 @@ export interface Strings {
   business: {
     title: string;
     deck: string;
+    sectionAbout: string;
+    sectionVoice: string;
     name: string;
     namePh: string;
     sells: string;
@@ -173,7 +177,7 @@ const ar: Strings = {
   },
 
   results: {
-    title: "٣ نسخ، اختار اللي يعجبك",
+    title: "اختار اللي يعجبك",
     back: "عدّل الطلب",
     resume: "ارجع لآخر نسخ",
     again: "اكتب ٣ غيرها",
@@ -186,6 +190,8 @@ const ar: Strings = {
     refineLabel: "عدّل هالنسخة",
     undo: "رجّع اللي قبل",
     editHint: "تقدر تعدل على النص قبل لا تنسخه",
+    editNote: "اضغط على أي نص وعدّل عليه قبل لا تنسخه.",
+    yourBrief: "طلبك",
     writing: (d) => `قاعدين نكتب ٣ نسخ ${arDialectIn[d]}…`,
     refining: "قاعدين نعدّل…",
     emptyTitle: "النسخ تطلع هني",
@@ -242,6 +248,8 @@ const ar: Strings = {
   business: {
     title: "مشروعي",
     deck: "هالمعلومات تدخل في كل نص نكتبه لك. تنحفظ على جهازك بس، وما تطلع منه إلا وقت الكتابة.",
+    sectionAbout: "عن المشروع",
+    sectionVoice: "طريقة الكلام",
     name: "اسم المشروع",
     namePh: "مثلاً: قهوة نخلة",
     sells: "شنو تبيعون؟",
@@ -384,7 +392,7 @@ const en: Strings = {
   },
 
   results: {
-    title: "Three drafts. Pick your favourite.",
+    title: "Pick your favourite",
     back: "Edit request",
     resume: "Back to your latest drafts",
     again: "Write three more",
@@ -397,6 +405,8 @@ const en: Strings = {
     refineLabel: "Adjust this draft",
     undo: "Undo",
     editHint: "You can edit the text before copying",
+    editNote: "Tap any draft to edit it before you copy.",
+    yourBrief: "Your brief",
     writing: (d) => `Writing three drafts ${enDialectIn[d]}…`,
     refining: "Rewriting…",
     emptyTitle: "Your drafts land here",
@@ -449,6 +459,8 @@ const en: Strings = {
   business: {
     title: "My business",
     deck: "This goes into everything we write for you. It’s stored on this device and only leaves it when you write.",
+    sectionAbout: "About the business",
+    sectionVoice: "Voice",
     name: "Business name",
     namePh: "e.g. Nakhla Coffee",
     sells: "What do you sell?",
